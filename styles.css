@@ -1520,7 +1520,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .project-card.project-featured { grid-column: 1; }
 
   .hero-photo-frame { width: min(260px, 80vw); }
-  .hero-stat-card { transform: scale(0.85); }
+  .hero-stat-card { display: none; }
 
   .chat-panel { width: calc(100vw - 2rem); right: -1rem; }
 }
