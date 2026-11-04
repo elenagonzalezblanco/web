@@ -1,429 +1,79 @@
 /* ============================================================
-   Elena González-Blanco García — Personal Branding Website
-   JavaScript — Interactions, Animations, Virtual Chat
+   Elena González-Blanco García — Personal website
+   Navigation, scroll reveal, filters and EN/ES translations
    ============================================================ */
 
 'use strict';
 
-// ── Navbar scroll effect ──────────────────────────────────
+document.documentElement.classList.add('js');
+
+// ── Navigation ───────────────────────────────────────────
 const navbar = document.getElementById('navbar');
 const navLinks = document.getElementById('navLinks');
 const navToggle = document.getElementById('navToggle');
 
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 60);
+function onScroll() {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
   updateActiveNavLink();
-});
+}
+window.addEventListener('scroll', onScroll, { passive: true });
 
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-  navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
-});
+function setMenu(open) {
+  navLinks.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', String(open));
+  if (open) navbar.classList.add('scrolled');
+  else onScroll();
+}
+navToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
 
-// Close nav when a link is clicked (mobile)
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
-});
-
-// Active section highlighting
 function updateActiveNavLink() {
-  const sections = document.querySelectorAll('section[id]');
   let current = '';
-  sections.forEach(sec => {
-    if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
+  document.querySelectorAll('main section[id]').forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 140) current = sec.id;
   });
   navLinks.querySelectorAll('a').forEach(a => {
     a.classList.toggle('active', a.getAttribute('href') === `#${current}`);
   });
 }
 
-// ── Intersection Observer for [data-aos] animations ──────
-const aosElements = document.querySelectorAll('[data-aos]');
-const aosObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('aos-animate');
-      aosObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+// ── Reveal on scroll ─────────────────────────────────────
+const revealEls = document.querySelectorAll('[data-reveal]');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => io.observe(el));
+} else {
+  revealEls.forEach(el => el.classList.add('in'));
+}
 
-aosElements.forEach(el => aosObserver.observe(el));
-
-// ── Publication filter ────────────────────────────────────
-const pubFilters = document.querySelectorAll('.pub-filter');
-const pubCards   = document.querySelectorAll('.pub-card');
-
-pubFilters.forEach(btn => {
-  btn.addEventListener('click', () => {
-    pubFilters.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-
-    pubCards.forEach(card => {
-      const cats = (card.dataset.cat || '').split(' ');
-      const show = filter === 'all' || cats.includes(filter);
-      card.classList.toggle('hidden', !show);
+// ── Filters ──────────────────────────────────────────────
+function setupFilter(buttonSelector, attr, itemSelector, matches) {
+  const buttons = document.querySelectorAll(buttonSelector);
+  const items = document.querySelectorAll(itemSelector);
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => {
+        b.classList.toggle('active', b === btn);
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+      const value = btn.getAttribute(attr);
+      items.forEach(item => {
+        item.classList.toggle('hidden', !(value === 'all' || matches(item, value)));
+        if (!item.classList.contains('hidden')) item.classList.add('in');
+      });
     });
   });
-});
-
-// ── Chat Widget ───────────────────────────────────────────
-const chatWidget    = document.getElementById('chatWidget');
-const chatToggleBtn = document.getElementById('chatToggleBtn');
-const chatPanel     = document.getElementById('chatPanel');
-const chatMessages  = document.getElementById('chatMessages');
-const chatInput     = document.getElementById('chatInput');
-const chatSendBtn   = document.getElementById('chatSendBtn');
-const chatNotif     = document.getElementById('chatNotif');
-const chatIcon      = document.getElementById('chatIcon');
-const chatCloseIcon = document.getElementById('chatCloseIcon');
-const openChatBtn   = document.getElementById('openChatBtn');
-const chatNavBtn    = document.getElementById('chatNavBtn');
-const chatMinimize  = document.getElementById('chatMinimize');
-let chatOpen = false;
-
-function toggleChat(open) {
-  chatOpen = open !== undefined ? open : !chatOpen;
-  chatWidget.classList.toggle('chat-open', chatOpen);
-  chatWidget.classList.toggle('chat-closed', !chatOpen);
-  chatIcon.style.display     = chatOpen ? 'none'         : 'inline-block';
-  chatCloseIcon.style.display = chatOpen ? 'inline-block' : 'none';
-  if (chatOpen) {
-    chatNotif && (chatNotif.style.display = 'none');
-    chatInput.focus();
-  }
 }
-
-chatToggleBtn.addEventListener('click', () => toggleChat());
-chatMinimize.addEventListener('click', () => toggleChat(false));
-if (openChatBtn) openChatBtn.addEventListener('click', () => toggleChat(true));
-if (chatNavBtn) chatNavBtn.addEventListener('click', () => { toggleChat(true); });
-
-document.querySelectorAll('.suggestion-chip').forEach(chip => {
-  chip.addEventListener('click', () => {
-    const msg = chip.dataset.msg;
-    sendMessage(msg);
-    chip.closest('.chat-suggestions')?.remove();
-  });
-});
-
-// Send on Enter
-chatInput.addEventListener('keydown', e => {
-  if (e.key === 'Enter' && !e.shiftKey) {
-    e.preventDefault();
-    sendMessage(chatInput.value.trim());
-  }
-});
-
-chatSendBtn.addEventListener('click', () => {
-  sendMessage(chatInput.value.trim());
-});
-
-function sendMessage(text) {
-  if (!text) return;
-  appendMessage(text, 'user');
-  chatInput.value = '';
-  document.querySelectorAll('.chat-suggestions').forEach(el => el.remove());
-  const typing = appendTyping();
-  const delay = 800 + Math.random() * 700;
-  setTimeout(() => {
-    typing.remove();
-    const reply = getReply(text);
-    appendMessage(reply, 'bot');
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-  }, delay);
-}
-
-function appendMessage(text, sender) {
-  const now = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-  const div = document.createElement('div');
-  div.className = `chat-msg ${sender}`;
-
-  if (sender === 'bot') {
-    div.innerHTML = `
-      <img src="Elena.jpg" alt="Elena" class="msg-avatar" />
-      <div class="msg-bubble">
-        <p>${escapeHtml(text)}</p>
-        <span class="msg-time">${now}</span>
-      </div>`;
-  } else {
-    div.innerHTML = `
-      <div class="msg-bubble">
-        <p>${escapeHtml(text)}</p>
-        <span class="msg-time">${now}</span>
-      </div>`;
-  }
-
-  chatMessages.appendChild(div);
-  chatMessages.scrollTop = chatMessages.scrollHeight;
-  return div;
-}
-
-function appendTyping() {
-  const div = document.createElement('div');
-  div.className = 'chat-msg bot typing-indicator';
-  div.innerHTML = `
-    <img src="Elena.jpg" alt="Elena" class="msg-avatar" />
-    <div class="msg-bubble">
-      <span class="typing-dot"></span>
-      <span class="typing-dot"></span>
-      <span class="typing-dot"></span>
-    </div>`;
-  chatMessages.appendChild(div);
-  chatMessages.scrollTop = chatMessages.scrollHeight;
-  return div;
-}
-
-function escapeHtml(str) {
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
-}
-
-// ── Virtual Elena Knowledge Base ─────────────────────────
-const knowledge = [
-  {
-    patterns: [/phd|doctorat|doctorad|doctor europeus|education|educaci[oó]n|formaci[oó]n|degree|qualif|harvard|complutense|\brcc\b/i],
-    responseKeys: ["education.phd.title", "education.phd.detail", "exp.job12.desc"],
-  },
-  {
-    patterns: [/microsoft|azure|mcaps|solution engineer|technical sales|where.*work|current.*position|d[oó]nde.*trabaj|puesto actual/i],
-    responseKeys: ["exp.job1.title", "exp.job1.desc"],
-  },
-  {
-    patterns: [/clibrain|clibráin|lince|hugging\s*face/i],
-    responseKeys: ["exp.job6.desc", "chat.models"],
-  },
-  {
-    patterns: [/coverwallet|\baon\b/i],
-    responseKeys: ["exp.job8.desc"],
-  },
-  {
-    patterns: [/\bewi\b|empowering women|board|consej/i],
-    responseKeys: ["chat.ewi"],
-  },
-  {
-    patterns: [/award|honou?r|premio|prize|medal|olympiad|olimpiada|top.?100|female leader|mujeres l[ií]deres/i],
-    responseKeys: ["chat.honors"],
-  },
-  {
-    patterns: [/mwc|fintech.*summit|semana del seguro|inese|shift|salesforce|slack|\baida\b|\bicea\b|keynote|conference|conferencia|ponencia|charla|speaking/i],
-    responseKeys: ["speaking.mwc.title", "speaking.mwc.venue", "speaking.inese2026.title", "speaking.inese2026.venue", "speaking.salesforce.title", "speaking.salesforce.venue", "speaking.aida.title", "speaking.aida.venue", "speaking.inese2019.title", "speaking.inese2019.venue", "speaking.icea.title", "speaking.icea.venue"],
-  },
-  {
-    patterns: [/techcrunch/i],
-    responseKeys: ["chat.techcrunch"],
-  },
-  {
-    patterns: [/hello|hi|hey|hola|greetings|buenos|ciao/i],
-    responses: [
-      "Hello! I'm Elena's virtual assistant. I'm here to tell you about her research in Digital Humanities, AI, and computational poetry analysis. What would you like to know?",
-      "Hi there! I'm Virtual Elena — happy to chat about my work in NLP, Digital Humanities, or anything else you're curious about!",
-    ]
-  },
-  {
-    patterns: [/your name|who are you|what are you/i],
-    responses: [
-      "I'm a virtual representation of Elena González-Blanco García — an AI-powered chat assistant trained on her research, career, and expertise. Ask me anything!",
-    ]
-  },
-  {
-    patterns: [/research|work on|study|field/i],
-    responses: [
-      "My research sits at the intersection of Artificial Intelligence, Natural Language Processing, and Digital Humanities. I'm particularly passionate about using computational methods to analyze poetry — from medieval Spanish verse to modern multilingual corpora. I also work on Linked Open Data and ontological models for cultural heritage.",
-      "At IE University, I research how AI and NLP can unlock insights in literary and historical texts. My work on poetry analysis uses transformers, language models, and computational metrics to study versification, metrical patterns, and stylistic features across centuries of literature.",
-    ]
-  },
-  {
-    patterns: [/postdata|erc|linked.open.data|ontolog/i],
-    responses: [
-      "POSTDATA was my European Research Council (ERC) Starting Grant project — one of the highlights of my career! The goal was to standardize the concepts used to describe European poetry and publish those rich datasets as Linked Open Data on the Semantic Web. We built a network of ontologies connecting poetry traditions from Spanish, Italian, French, Portuguese, to German and beyond. It was a landmark project in Digital Humanities.",
-    ]
-  },
-  {
-    patterns: [/rantanplan|scansion|syllabif|metric/i],
-    responses: [
-      "Rantanplan is a tool I co-developed for the automatic syllabification and metrical scansion of Spanish poetry. It's one of the most accurate tools of its kind. We later built Alberti — a multilingual domain-specific language model based on BERT/Transformers — specifically fine-tuned for poetry analysis Tasks. These tools let us analyze thousands of poems at scale!",
-    ]
-  },
-  {
-    patterns: [/alberti|language model|bert|transformer|llm/i],
-    responses: [
-      "Alberti is a domain-specific language model I helped develop for poetry analysis. It's built on transformer architectures (similar to BERT) and fine-tuned on a multilingual poetry corpus. It can predict metrical patterns, classify stanza types, and understand poetic structure with much higher accuracy than general-purpose models. Named after Rafael Alberti, the Spanish poet!",
-    ]
-  },
-  {
-    patterns: [/disco|sonnet|diachronic|corpus/i],
-    responses: [
-      "The DISCO (Diachronic Spanish Sonnet Corpus) is a project I was deeply involved in. It's a large TEI-encoded collection of Spanish sonnets spanning from the 15th to the 19th century, enriched with metrical annotations and Linked Open Data. We used it to study how the sonnet form evolved over centuries — tracking changes in metrical patterns, rhyme schemes, and enjambment.",
-    ]
-  },
-  {
-    patterns: [/linhd|lab|uned|innovation|humanities lab/i],
-    responses: [
-      "I founded LINHD — the Laboratorio de Innovación en Humanidades Digitales — at UNED (Spain's national distance university). It was one of Spain's first dedicated Digital Humanities research labs. We worked on digital editions, medieval text corpora, computational linguistics, and AI applications in cultural heritage. A truly exciting chapter of my career!",
-    ]
-  },
-  {
-    patterns: [/remetca|medieval metric|medieval spanish|cuaderna/i],
-    responses: [
-      "ReMetCa (Repertorio Digital de Métrica Medieval Castellana) was the first online digital repertoire of Medieval Spanish metrics and poetry. I built it integrating TEI-XML encoding with relational databases. My early research focused on medieval Spanish verse forms like the cuaderna vía, which I studied in a pan-Romance European context — looking at connections with Old French, Italian, and Latin poetry.",
-    ]
-  },
-  {
-    patterns: [/ie university|ie school|where.*work|current.*position|professor/i],
-    responses: [
-      "I'm currently an Associate Professor at IE University in Madrid — specifically at the IE Human Language and Technology School and the Business School. IE is a wonderful place that truly values interdisciplinarity. I teach and research at the intersection of AI, language sciences, and the humanities.",
-    ]
-  },
-  {
-    patterns: [/education|degree|phd|doctorate|study|background|qualif/i],
-    responses: [
-      "I hold a PhD in Philology (Comparative Linguistics) from Universidad Complutense de Madrid (2008), with the \"Doctor Europeus\" distinction and the Extraordinary Prize. I completed it with 2 years as Visiting Scholar at Harvard University; Harvard did not award my PhD. I also hold a Master in Digital Libraries and Information Systems (2014), a Degree in Spanish Philology (2004), and a Degree in Classics (2005).",
-    ]
-  },
-  {
-    patterns: [/digital humanities|dh|humanities.digital/i],
-    responses: [
-      "Digital Humanities is the field that brings computational methods to humanistic inquiry. It's about using AI, data analysis, Linked Open Data, and text technologies to study literature, history, culture, and language in new ways. I've been one of the pioneers of Digital Humanities in Spain — I founded LINHD, served as President of the Spanish DH Association (HDH), and helped establish the CLARIN infrastructure in Spain.",
-    ]
-  },
-  {
-    patterns: [/nlp|natural language|text mining|computational linguistics/i],
-    responses: [
-      "Natural Language Processing is central to my work. I use NLP techniques — named entity recognition, metrical analysis, sequence labeling, language modeling — on literary and historical texts. One particularly interesting challenge is applying NLP to medieval Spanish, which has very different linguistic features from modern text. My group developed specialized NER tools for 12th–15th century Spanish.",
-    ]
-  },
-  {
-    patterns: [/citation|publication|paper|author|publi/i],
-    responses: [
-      "I have 58+ publications and over 1,629 citations on Google Scholar. My most cited work includes surveys on computational poetry analysis, transformer-based metrical prediction, and the DISCO sonnet corpus. I publish in venues like Digital Scholarship in the Humanities, IEEE Access, Neural Computing and Applications, and ACL proceedings.",
-    ]
-  },
-  {
-    patterns: [/award|grant|erc|prize|fund/i],
-    responses: [
-      "The biggest research award I've received was the ERC Starting Grant for the POSTDATA project — this was a European Research Council grant, which is one of the most prestigious and competitive research grants in Europe. It funded our work on standardizing and publishing European poetry as Linked Open Data.",
-    ]
-  },
-  {
-    patterns: [/eadh|adho|clarin|hdh|committee|president|secretary/i],
-    responses: [
-      "I've been deeply involved in international Digital Humanities governance! I'm on the Executive Committee of EADH (European Association for Digital Humanities) and Centernet, a member of the CLARIN Scientific Advisory Board, former Secretary of ADHO (Alliance of Digital Humanities Organizations), and former President of HDH — the Spanish Association for Digital Humanities. These roles have been important for shaping the field internationally.",
-    ]
-  },
-  {
-    patterns: [/poetry|poem|verse|stanza|rhyme|metric/i],
-    responses: [
-      "Poetry is my lifelong passion! From my early research on medieval verse forms to my current work on AI-powered poetry analysis, I've always been drawn to the musicality of language. I find it fascinating how computational methods can reveal patterns in poetry that human readers might miss — like statistical regularities in metrical choices across centuries, or how enjambment evolved over time.",
-    ]
-  },
-  {
-    patterns: [/ai|artificial intelligence|machine learning|deep learning/i],
-    responses: [
-      "AI is transforming what's possible in humanities research. In my work, I use language models, transformers, and machine learning to analyze literary texts at scale. The exciting challenge is adapting AI tools — typically trained on modern text — to handle the peculiarities of historical language, poetic form, and multilingual corpora. My research helps bridge these two worlds.",
-    ]
-  },
-  {
-    patterns: [/contact|email|reach|collaborate/i],
-    responses: [
-      "I'd love to collaborate! You can reach me through IE University: elena.gonzalez@faculty.ie.edu, or connect with me on LinkedIn at linkedin.com/in/elena-gonzalez-blanco/. I'm always interested in interdisciplinary collaborations at the intersection of AI, language, and culture.",
-    ]
-  },
-  {
-    patterns: [/madrid|spain|spanish|españa/i],
-    responses: [
-      "Madrid is my home and base! I've spent most of my academic career here — at UNED and now at IE University. Spain has a rich tradition in medieval literature that deeply informs my research, and the Spanish Digital Humanities community I helped build has become a vibrant international hub.",
-    ]
-  },
-  {
-    patterns: [/teach|course|class|student|lecture/i],
-    responses: [
-      "Teaching is one of the things I love most. At IE University I teach courses on Digital Humanities, Natural Language Processing, and Language Technologies. I love helping students from business, tech, and humanities backgrounds discover how AI can transform how we understand language and culture. The interdisciplinary mix at IE makes every class a new adventure!",
-    ]
-  },
-  {
-    patterns: [/language model|llm|gpt|chatgpt|generative/i],
-    responses: [
-      "Large language models like GPT are fascinating from my perspective! As someone who has built domain-specific language models for poetry (like Alberti), I'm very aware of both the potential and limitations. General LLMs are impressive but can struggle with specialized domains like medieval verse or poetic meter — that's exactly why domain-specific fine-tuning matters so much in my research.",
-    ]
-  },
-  {
-    patterns: [/interview|talk|speaker|keynote|conference/i],
-    responses: [
-      "I've spoken at numerous international conferences in Digital Humanities (DH), computational linguistics (ACL, CLARIN Annual Conference), and AI. I enjoy sharing my interdisciplinary perspective — showing AI researchers the richness of literary data, and showing humanities scholars the power of computational approaches. If you're interested in having me speak, please get in touch!",
-    ]
-  },
-  {
-    patterns: [/future|next|plan|upcoming/i],
-    responses: [
-      "I'm very excited about the future! I'm exploring how generative AI can assist with the analysis and preservation of endangered poetic traditions, and how LLMs can be made to genuinely understand — not just pattern-match — literary language. I'm also deepening my work on the intersection of AI ethics and cultural heritage.",
-    ]
-  },
-  {
-    patterns: [/fun|hobby|free time|interest|outside/i],
-    responses: [
-      "Outside of research? I'm still passionate about poetry — reading it, not just analyzing it computationally! I love traveling, exploring different literary traditions across cultures, and cooking. And yes, I do sometimes find myself thinking about metrical patterns in the songs I listen to!",
-    ]
-  },
-  {
-    patterns: [/thank|thanks|gracias|merci|grazie/i],
-    responses: [
-      "You're very welcome! It's always a pleasure to share about my work and research. Feel free to ask anything else!",
-      "De nada! Happy to help. Is there anything else you'd like to know about Digital Humanities, poetry analysis, or my research?",
-    ]
-  },
-  {
-    patterns: [/bye|goodbye|hasta luego|ciao|see you/i],
-    responses: [
-      "Goodbye! It was lovely chatting. Don't hesitate to reach out if you'd like to know more about my research or collaborate. ¡Hasta pronto!",
-    ]
-  },
-];
-
-const fallbackResponses = [
-  "That's an interesting question! My research spans Digital Humanities, NLP, and computational poetry. Could you rephrase, or ask something more specific? I love talking about my work!",
-  "I'm not sure I have a perfect answer for that, but I'd love to discuss my work on AI-powered poetry analysis, the POSTDATA project, or Digital Humanities in Spain. What are you most curious about?",
-  "Hmm, I'm not certain about that specific topic. But feel free to ask me about my publications, the ERC POSTDATA project, computational poetry tools like Rantanplan or Alberti, or my work at IE University!",
-  "Great question! While I may not have all the details handy, the best way to reach me is via LinkedIn or email. I'd love to continue the conversation!",
-];
-
-function getReply(text) {
-  const lower = text.toLowerCase();
-  for (const item of knowledge) {
-    for (const pattern of item.patterns) {
-      if (pattern.test(lower)) {
-        if (item.responseKeys) {
-          const decoder = document.createElement('textarea');
-          decoder.innerHTML = item.responseKeys.map(key => translations[currentLang][key]).join(' ');
-          return decoder.value;
-        }
-        const arr = item.responses;
-        return arr[Math.floor(Math.random() * arr.length)];
-      }
-    }
-  }
-  return fallbackResponses[Math.floor(Math.random() * fallbackResponses.length)];
-}
-
-// ── Smooth scroll for anchor links ───────────────────────
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      const offset = target.getBoundingClientRect().top + window.scrollY - (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 68);
-      window.scrollTo({ top: offset, behavior: 'smooth' });
-    }
-  });
-});
-
-// ── Init ─────────────────────────────────────────────────
-updateActiveNavLink();
+setupFilter('[data-talk-filter]', 'data-talk-filter', '.talk', (el, v) => el.dataset.type === v);
+setupFilter('.filters-pub .filter', 'data-filter', '.pub', (el, v) => (el.dataset.cat || '').split(' ').includes(v));
 
 // ── Internationalisation (EN / ES) ───────────────────────
 const translations = {
@@ -447,10 +97,6 @@ const translations = {
     "speaking.inese2019.venue": "Global Summit for Insurance Innovation (INESE), Madrid — June 13, 2019",
     "speaking.icea.title": "Speaker",
     "speaking.icea.venue": "ICEA conference on home multi-risk insurance — May 2019",
-    "chat.models": "Hugging Face — ClibrAIn open models: https://huggingface.co/clibrain",
-    "chat.ewi": "Board Member — EWI (Empowering Women in Insurance), 2020 — Present.",
-    "chat.honors": "Top 100 Female Leaders in Spain (2017, 2018, 2019). Gold Medal, National Physics Olympiad (Spain), 1999. Other honors include the Julián Marías Prize (2017), Choiseul #1 (2018) and #3 (2019), and the WIDS Prize (2021).",
-    "chat.techcrunch": "TechCrunch — Clibrain & LINCE LLM, July 12, 2023: https://techcrunch.com/2023/07/12/lince-llm/",
 
     'nav.about':        'About',
     'nav.experience':   'Experience',
@@ -552,16 +198,83 @@ const translations = {
 
     'footer.tagline': 'Elena González-Blanco García<br />Head of AI · Microsoft EMEA · Serial Entrepreneur · Keynote Speaker',
 
-    'chat.intro':  'Hello! I\'m Elena\'s virtual assistant — trained on her research, career, and interests. Ask me anything about Digital Humanities, AI, poetry analysis, or my academic journey!',
-    'chat.chip1':  'What is your research about?',
-    'chat.chip2':  'About POSTDATA',
-    'chat.chip3':  'What is Digital Humanities?',
-    'chat.chip4':  'Where do you work?',
-    'chat.placeholder': 'Ask Elena anything…',
 
-    'avatar.btn': 'Chat with my Avatar',
+
+    "hero.claim": "AI at scale.",
+    "hero.stat4": "Annual Azure revenue target",
+    "logos.label": "Career across",
+    "about.expertise": "Expertise",
+    "speaking.sub": "Keynote speaker at the world's leading AI, tech and innovation events.",
+    "speaking.youtube": "Watch talks on YouTube",
+    "speaking.archive": "All talks, publications & media",
+    "speaking.orcid": "Full Publication List (ORCID)",
+    "filter.all": "All",
+    "filter.keynote": "Keynotes",
+    "filter.pub": "Publications",
+    "filter.media": "Media",
+    "type.keynote": "Keynote",
+    "type.pub": "Publication",
+    "type.media": "Media",
+    "link.read": "Read",
+    "link.view": "View",
+    "link.techcrunch": "Read in TechCrunch",
+    "link.wired": "Read in Wired",
+    "pub.sub": "58 scientific publications · keynote speaker at AWS, Salesforce, Databricks, Wired & more",
+    "pub.viewAll": "View full list",
+    "pub.more": "View All 58+ Publications",
+    "pub.citations": "citations",
+    "pubf.all": "All",
+    "pubf.nlp": "NLP & AI",
+    "pubf.poetry": "Computational Poetry",
+    "pubf.dh": "Digital Humanities",
+    "pubf.medieval": "Medieval Studies",
+    "pubtype.journal": "Journal",
+    "pubtype.preprint": "Preprint",
+    "pubtype.conference": "Conference",
+    "pubtype.chapter": "Book Chapter",
+    "pubtype.book": "Book",
+    "contact.sub": "Speaking invitations, board and advisory roles, media inquiries and research collaborations.",
+    "footer.rights": "© 2026 Elena González-Blanco García. All rights reserved.",
+    "footer.top": "Back to top",
   },
   es: {
+    "hero.claim": "IA a escala.",
+    "hero.stat4": "Objetivo anual de ingresos en Azure",
+    "logos.label": "Trayectoria en",
+    "about.expertise": "Especialidades",
+    "speaking.sub": "Ponente en los principales eventos de IA, tecnología e innovación.",
+    "speaking.youtube": "Ver conferencias en YouTube",
+    "speaking.archive": "Conferencias, publicaciones y medios",
+    "speaking.orcid": "Lista completa de publicaciones (ORCID)",
+    "filter.all": "Todo",
+    "filter.keynote": "Conferencias",
+    "filter.pub": "Publicaciones",
+    "filter.media": "Medios",
+    "type.keynote": "Conferencia",
+    "type.pub": "Publicación",
+    "type.media": "Medios",
+    "link.read": "Leer",
+    "link.view": "Ver",
+    "link.techcrunch": "Leer en TechCrunch",
+    "link.wired": "Leer en Wired",
+    "pub.sub": "58 publicaciones científicas · ponente en AWS, Salesforce, Databricks, Wired y más",
+    "pub.viewAll": "Ver lista completa",
+    "pub.more": "Ver las más de 58 publicaciones",
+    "pub.citations": "citas",
+    "pubf.all": "Todas",
+    "pubf.nlp": "PLN e IA",
+    "pubf.poetry": "Poesía computacional",
+    "pubf.dh": "Humanidades digitales",
+    "pubf.medieval": "Estudios medievales",
+    "pubtype.journal": "Revista",
+    "pubtype.preprint": "Preprint",
+    "pubtype.conference": "Congreso",
+    "pubtype.chapter": "Capítulo de libro",
+    "pubtype.book": "Libro",
+    "contact.sub": "Invitaciones como ponente, consejos y asesoría, consultas de medios y colaboraciones de investigación.",
+    "footer.rights": "© 2026 Elena González-Blanco García. Todos los derechos reservados.",
+    "footer.top": "Volver arriba",
+
     "education.title": "Educación y formación",
     "education.phd.title": "Doctorado en Filología (Lingüística Comparada) — \"Doctor Europeus\" · Premio Extraordinario",
     "education.phd.detail": "— Universidad Complutense de Madrid. Completado con una estancia de 2 años como Visiting Scholar en Harvard University.",
@@ -581,10 +294,6 @@ const translations = {
     "speaking.inese2019.venue": "Global Summit for Insurance Innovation (INESE), Madrid — 13 de junio de 2019",
     "speaking.icea.title": "Ponente",
     "speaking.icea.venue": "Jornada de ICEA sobre el seguro multirriesgo del hogar — mayo de 2019",
-    "chat.models": "Hugging Face — Modelos abiertos de ClibrAIn: https://huggingface.co/clibrain",
-    "chat.ewi": "Miembro del Consejo — EWI (Empowering Women in Insurance), 2020 — Actualidad.",
-    "chat.honors": "Top 100 mujeres líderes de España (2017, 2018, 2019). Medalla de Oro, Olimpiada Nacional de Física (España), 1999. Otras distinciones incluyen el Premio Julián Marías (2017), Choiseul nº 1 (2018) y nº 3 (2019), y el Premio WIDS (2021).",
-    "chat.techcrunch": "TechCrunch — Clibrain y LINCE LLM, 12 de julio de 2023: https://techcrunch.com/2023/07/12/lince-llm/",
 
     'nav.about':        'Sobre mí',
     'nav.experience':   'Experiencia',
@@ -686,102 +395,55 @@ const translations = {
 
     'footer.tagline': 'Elena González-Blanco García<br />Directora de IA · Microsoft EMEA · Emprendedora en serie · Conferenciante',
 
-    'chat.intro':  '¡Hola! Soy el asistente virtual de Elena, entrenado con su investigación, carrera e intereses. ¡Pregúntame lo que quieras sobre Humanidades Digitales, IA, análisis computacional de poesía o su trayectoria académica!',
-    'chat.chip1':  '¿En qué investiga?',
-    'chat.chip2':  'El proyecto POSTDATA',
-    'chat.chip3':  '¿Qué son las Humanidades Digitales?',
-    'chat.chip4':  '¿Dónde trabaja?',
-    'chat.placeholder': 'Pregunta a Elena lo que quieras…',
 
-    'avatar.btn': 'Chatea con mi Avatar',
   }
 };
 
 let currentLang = localStorage.getItem('egb-lang') || 'en';
+const decoder = document.createElement('textarea');
+
+function decodeEntities(str) {
+  decoder.innerHTML = str;
+  return decoder.value;
+}
 
 function applyTranslations(lang) {
   const t = translations[lang];
   if (!t) return;
 
-  // Plain text elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (t[key] !== undefined) el.textContent = t[key];
+    if (t[key] !== undefined) el.textContent = decodeEntities(t[key]);
   });
 
-  // HTML content elements
   document.querySelectorAll('[data-i18n-html]').forEach(el => {
     const key = el.getAttribute('data-i18n-html');
     if (t[key] !== undefined) el.innerHTML = t[key];
   });
 
-  // Placeholder attributes
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const key = el.getAttribute('data-i18n-placeholder');
-    if (t[key] !== undefined) el.setAttribute('placeholder', t[key]);
-  });
-
-  // Select option text
-  document.querySelectorAll('option[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (t[key] !== undefined) el.textContent = t[key];
+    if (t[key] !== undefined) el.setAttribute('placeholder', decodeEntities(t[key]));
   });
 
   document.querySelectorAll('[data-i18n-label]').forEach(el => {
     const key = el.getAttribute('data-i18n-label');
     if (t[key] !== undefined) {
-      el.setAttribute('aria-label', t[key]);
-      el.setAttribute('title', t[key]);
+      el.setAttribute('aria-label', decodeEntities(t[key]));
+      el.setAttribute('title', decodeEntities(t[key]));
     }
   });
 
-  // Update <html lang>
   document.documentElement.lang = lang;
+  document.getElementById('langLabel').textContent = lang === 'en' ? 'ES' : 'EN';
+  document.getElementById('langToggle').setAttribute('aria-label', lang === 'en' ? 'Cambiar a español' : 'Switch to English');
 }
 
-function toggleLanguage() {
+document.getElementById('langToggle').addEventListener('click', () => {
   currentLang = currentLang === 'en' ? 'es' : 'en';
   localStorage.setItem('egb-lang', currentLang);
-  document.getElementById('langLabel').textContent = currentLang === 'en' ? 'ES' : 'EN';
   applyTranslations(currentLang);
-}
+});
 
-document.getElementById('langToggle').addEventListener('click', toggleLanguage);
-
-// Apply saved language on load
-document.getElementById('langLabel').textContent = currentLang === 'en' ? 'ES' : 'EN';
 applyTranslations(currentLang);
-
-// ── Twinfluence Avatar Widget ─────────────────────────────
-(function () {
-  const widget    = document.getElementById('avatar-widget');
-  const toggleBtn = document.getElementById('avatar-toggle');
-  const frameWrap = document.getElementById('avatar-frame-wrap');
-  const closeBtn  = document.getElementById('avatar-close');
-  const iframe    = document.getElementById('avatar-iframe');
-
-  if (!widget || !toggleBtn || !frameWrap || !closeBtn) return;
-
-  // Lazy-load the iframe src only when first opened
-  const realSrc = iframe.getAttribute('src');
-  iframe.removeAttribute('src');
-
-  function openAvatar() {
-    if (!iframe.src || iframe.src === window.location.href) {
-      iframe.src = realSrc;
-    }
-    frameWrap.classList.add('open');
-    toggleBtn.setAttribute('aria-expanded', 'true');
-  }
-
-  function closeAvatar() {
-    frameWrap.classList.remove('open');
-    toggleBtn.setAttribute('aria-expanded', 'false');
-  }
-
-  toggleBtn.addEventListener('click', () => {
-    frameWrap.classList.contains('open') ? closeAvatar() : openAvatar();
-  });
-
-  closeBtn.addEventListener('click', closeAvatar);
-})();
+onScroll();
