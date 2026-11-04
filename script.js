@@ -187,6 +187,38 @@ function escapeHtml(str) {
 // ── Virtual Elena Knowledge Base ─────────────────────────
 const knowledge = [
   {
+    patterns: [/phd|doctorat|doctorad|doctor europeus|education|educaci[oó]n|formaci[oó]n|degree|qualif|harvard|complutense|\brcc\b/i],
+    responseKeys: ["education.phd.title", "education.phd.detail", "exp.job12.desc"],
+  },
+  {
+    patterns: [/microsoft|azure|mcaps|solution engineer|technical sales|where.*work|current.*position|d[oó]nde.*trabaj|puesto actual/i],
+    responseKeys: ["exp.job1.title", "exp.job1.desc"],
+  },
+  {
+    patterns: [/clibrain|clibráin|lince|hugging\s*face/i],
+    responseKeys: ["exp.job6.desc", "chat.models"],
+  },
+  {
+    patterns: [/coverwallet|\baon\b/i],
+    responseKeys: ["exp.job8.desc"],
+  },
+  {
+    patterns: [/\bewi\b|empowering women|board|consej/i],
+    responseKeys: ["chat.ewi"],
+  },
+  {
+    patterns: [/award|honou?r|premio|prize|medal|olympiad|olimpiada|top.?100|female leader|mujeres l[ií]deres/i],
+    responseKeys: ["chat.honors"],
+  },
+  {
+    patterns: [/mwc|fintech.*summit|semana del seguro|inese|shift|salesforce|slack|\baida\b|\bicea\b|keynote|conference|conferencia|ponencia|charla|speaking/i],
+    responseKeys: ["speaking.mwc.title", "speaking.mwc.venue", "speaking.inese2026.title", "speaking.inese2026.venue", "speaking.salesforce.title", "speaking.salesforce.venue", "speaking.aida.title", "speaking.aida.venue", "speaking.inese2019.title", "speaking.inese2019.venue", "speaking.icea.title", "speaking.icea.venue"],
+  },
+  {
+    patterns: [/techcrunch/i],
+    responseKeys: ["chat.techcrunch"],
+  },
+  {
     patterns: [/hello|hi|hey|hola|greetings|buenos|ciao/i],
     responses: [
       "Hello! I'm Elena's virtual assistant. I'm here to tell you about her research in Digital Humanities, AI, and computational poetry analysis. What would you like to know?",
@@ -251,7 +283,7 @@ const knowledge = [
   {
     patterns: [/education|degree|phd|doctorate|study|background|qualif/i],
     responses: [
-      "My educational background is wonderfully eclectic! I hold a PhD in Spanish Literature (2008), a Master in Digital Libraries and Information Systems (2014), a Degree in Spanish Philology (2004), and a Degree in Classics (2005) — all from Madrid universities. That combination of literary scholarship, information science, and classical languages is really what drives my interdisciplinary research.",
+      "I hold a PhD in Philology (Comparative Linguistics) from Universidad Complutense de Madrid (2008), with the \"Doctor Europeus\" distinction and the Extraordinary Prize. I completed it with 2 years as Visiting Scholar at Harvard University; Harvard did not award my PhD. I also hold a Master in Digital Libraries and Information Systems (2014), a Degree in Spanish Philology (2004), and a Degree in Classics (2005).",
     ]
   },
   {
@@ -365,6 +397,11 @@ function getReply(text) {
   for (const item of knowledge) {
     for (const pattern of item.patterns) {
       if (pattern.test(lower)) {
+        if (item.responseKeys) {
+          const decoder = document.createElement('textarea');
+          decoder.innerHTML = item.responseKeys.map(key => translations[currentLang][key]).join(' ');
+          return decoder.value;
+        }
         const arr = item.responses;
         return arr[Math.floor(Math.random() * arr.length)];
       }
@@ -391,6 +428,30 @@ updateActiveNavLink();
 // ── Internationalisation (EN / ES) ───────────────────────
 const translations = {
   en: {
+    "education.title": "Education & Training",
+    "education.phd.title": "PhD in Philology (Comparative Linguistics) — \"Doctor Europeus\" · Extraordinary Prize",
+    "education.phd.detail": "— Universidad Complutense de Madrid. Completed with 2 years as Visiting Scholar at Harvard University.",
+    "exp.ewi.title": "Board Member",
+    "exp.ewi.date": "2020 — Present",
+    "social.huggingface": "Hugging Face — ClibrAIn open models",
+    "speaking.session": "View session",
+    "speaking.mwc.title": "Panelist — The Transformative Power of AI in Fintech",
+    "speaking.mwc.venue": "Fintech and Commerce Summit, MWC Barcelona — March 3, 2026 · with CaixaBank, Mastercard, bolttech and Huawei",
+    "speaking.inese2026.title": "From fraud detection to intelligent agents: 10 years changing how insurance decides",
+    "speaking.inese2026.venue": "Semana del Seguro (INESE), IFEMA Madrid — February 18, 2026 · Session by Shift Technology with Microsoft and AXA, presenting a Microsoft–Shift AI agent for claims and fraud detection",
+    "speaking.salesforce.title": "Generative AI and productivity",
+    "speaking.salesforce.venue": "Salesforce World Tour Madrid, with Slack",
+    "speaking.aida.title": "Keynote and international panel",
+    "speaking.aida.venue": "AIDA Europe Conference, Lisbon",
+    "speaking.inese2019.title": "CoverWallet: success case in the US",
+    "speaking.inese2019.venue": "Global Summit for Insurance Innovation (INESE), Madrid — June 13, 2019",
+    "speaking.icea.title": "Speaker",
+    "speaking.icea.venue": "ICEA conference on home multi-risk insurance — May 2019",
+    "chat.models": "Hugging Face — ClibrAIn open models: https://huggingface.co/clibrain",
+    "chat.ewi": "Board Member — EWI (Empowering Women in Insurance), 2020 — Present.",
+    "chat.honors": "Top 100 Female Leaders in Spain (2017, 2018, 2019). Gold Medal, National Physics Olympiad (Spain), 1999. Other honors include the Julián Marías Prize (2017), Choiseul #1 (2018) and #3 (2019), and the WIDS Prize (2021).",
+    "chat.techcrunch": "TechCrunch — Clibrain & LINCE LLM, July 12, 2023: https://techcrunch.com/2023/07/12/lince-llm/",
+
     'nav.about':        'About',
     'nav.experience':   'Experience',
     'nav.speaking':     'Speaking',
@@ -412,14 +473,14 @@ const translations = {
 
     'about.label': '01 / About',
     'about.title': 'AI. Business. Impact.<br /><em>At Scale.</em>',
-    'about.bio': '<p>Elena González-Blanco is the Head of Artificial Intelligence &amp; Data for Digital Natives (Startups &amp; Unicorns) at Microsoft for EMEA. Previously, she was the Co-Founder and CEO of Clibrain, a generative AI startup specializing in the creation of large language models tailored to the Spanish-speaking community. She is also an Independent Board Member at Traxion and formerly served as an Independent Board Member and Chair of the Audit Committee at LLYC, as well as a member of the Advisory Board to the CEO of Astara, part of the M&amp;A fund Albia Capital.</p><p>Earlier in her career, Elena was Global Head of Digital for Wealth Management and Insurance at Banco Santander (EVP), General Manager for Europe at CoverWallet — an insurtech startup acquired by Aon in January 2020 — and a member of the Aon Iberia Executive Committee. Prior to that, she led Artificial Intelligence Product Development at Minsait (Indra).</p><p>Elena is an expert in Artificial Intelligence and Digital Innovation, with a special focus on language technologies and international interdisciplinary projects. She holds a PhD from Universidad Complutense, a Master\'s in Digital Information Systems from UC3M, and has completed executive programs at LSE London, MIT, and ESADE. A renowned international researcher, she has worked at Harvard University, King\'s College London, UNAM, Bonn, and UNED. She is currently an Associate Professor of Artificial Intelligence Applied to Business at IE Business School and also teaches at ICAI and AFI.</p><p>Fluent in English, French, German, and Italian, Elena has been recognized as one of the Top 100 Female Leaders in Spain (2016, 2017, 2018) and was awarded the Julián Marías Prize in 2017 for researchers under 40. She ranked #1 and #3 in the Choiseul "100 Economic Leaders for the Future of Spain" (2018, 2019), was named among the #40under40 Insurance Leaders in Spain (2020), and received the 2021 WIDS Prize for Women in Machine Learning and Data Science. She is the mother of four children.</p>',
+    'about.bio': '<p>Elena González-Blanco is the Head of Artificial Intelligence &amp; Data for Digital Natives (Startups &amp; Unicorns) at Microsoft for EMEA. Previously, she was the Co-Founder and CEO of Clibrain, a generative AI startup specializing in the creation of large language models tailored to the Spanish-speaking community. She is also an Independent Board Member at Traxion and a Board Member at EWI (Empowering Women in Insurance) since 2020, and formerly served as an Independent Board Member and Chair of the Audit Committee at LLYC, as well as a member of the Advisory Board to the CEO of Astara, part of the M&amp;A fund Albia Capital.</p><p>Earlier in her career, Elena was Global Head of Digital for Wealth Management and Insurance at Banco Santander (EVP), General Manager for Europe at CoverWallet — an insurtech startup acquired by Aon in January 2020 — and a member of the Aon Iberia Executive Committee. Prior to that, she led Artificial Intelligence Product Development at Minsait (Indra).</p><p>Elena is an expert in Artificial Intelligence and Digital Innovation, with a special focus on language technologies and international interdisciplinary projects. She holds a PhD in Philology (Comparative Linguistics) from Universidad Complutense de Madrid, completed with 2 years as Visiting Scholar at Harvard University, a Master\'s in Digital Information Systems from UC3M, and has completed executive programs at LSE London, MIT, and ESADE. A renowned international researcher, she has worked at Harvard University, King\'s College London, UNAM, Bonn, and UNED. She is currently an Associate Professor of Artificial Intelligence Applied to Business at IE Business School and also teaches at ICAI and AFI.</p><p>Fluent in English, French, German, and Italian, Elena has been recognized as one of the Top 100 Female Leaders in Spain (2017, 2018, 2019) and was awarded the Julián Marías Prize in 2017 for researchers under 40. She ranked #1 and #3 in the Choiseul "100 Economic Leaders for the Future of Spain" (2018, 2019), was named among the #40under40 Insurance Leaders in Spain (2020), and received the 2021 WIDS Prize for Women in Machine Learning and Data Science. Her honors also include: Gold Medal, National Physics Olympiad (Spain), 1999. She is the mother of four children.</p>',
 
     'exp.label': '02 / Experience',
     'exp.title': 'Career <em>Timeline</em>',
 
     'exp.job1.title': 'Head of Artificial Intelligence &amp; Data for Digital Natives (Unicorns &amp; Startups) — EMEA',
     'exp.job1.date':  'Feb 2024 — Present',
-    'exp.job1.desc':  'Leader of the Technical Sales Specialists team across France, Germany, Switzerland, and CEMA within the sales organization (MCAPs). Driving AI and Data adoption for the fastest-growing tech companies in Europe. Sales target +€100M/yr with 80% YoY growth.',
+    'exp.job1.desc':  'Leader of the Technical Sales Specialists and Solution Engineers teams for all Azure solution plays (Infrastructure, Applications & Modernization, AI & Data) within the sales organization (MCAPS), covering the whole EMEA region, from the Nordics to South Africa. Driving AI and Data adoption for the fastest-growing tech companies in Europe. Annual target of $200M+ in Azure Consumed Revenue, with 80% YoY growth.',
 
     'exp.job2.title': 'Independent Board Member',
     'exp.job2.date':  '2024 — Present',
@@ -439,7 +500,7 @@ const translations = {
 
     'exp.job6.title': 'Cofounder &amp; CEO',
     'exp.job6.date':  '2023 — Jan 2024',
-    'exp.job6.desc':  'Co-founded ClibrAIn, a Generative AI startup building language models and operational intelligence solutions for Spanish-speaking companies. Developed LINCE — a Spanish LLM ecosystem of 40+ models generating $100k+ ARR. Hired 20+ top AI researchers from AWS, Google, Oracle, and Meta. Key customer: UNIR (20% improvement in student retention via Call Center analytics).',
+    'exp.job6.desc':  'Co-founded ClibrAIn, a Generative AI startup building language models and operational intelligence solutions for Spanish-speaking companies. Developed LINCE — a Spanish LLM ecosystem of 40+ models generating $100k+ ARR. Built and led a team of 50+, including a 10-person sales team and a 30-person engineering and LLM research team. Hired 20+ top AI talent from AWS, Google, Oracle and Meta.',
 
     'exp.job7.title': 'Global Head of Digital — Wealth Management &amp; Insurance',
     'exp.job7.date':  '2021 — 2022',
@@ -447,7 +508,7 @@ const translations = {
 
     'exp.job8.title': 'General Manager Europe · Member of ExCo Aon Iberia',
     'exp.job8.date':  '2018 — 2021',
-    'exp.job8.desc':  'GM of Europe at CoverWallet (400+ employees, backed by Union Square, Index, Highland Capital &amp; Two Sigma; acquired by Aon for $330M). Led EU expansion managing Operations, Sales, Marketing, and Product with 20+ direct reports. P&amp;L of Switzerland, Spain, France, and UK generating €5M+ revenue. Sealed partnership deals with Zurich and Chubb in EMEA. 15% improvement in Lead conversion and 50% increase in cross-selling. Member of ExCo of Aon Iberia post-acquisition (2020–2021).',
+    'exp.job8.desc':  'GM of Europe at CoverWallet (400+ employees, backed by Union Square, Index, Highland Capital &amp; Two Sigma; acquired by Aon for $330M). Led the EU expansion, with a team of 60+, including a 40-person sales organization across four countries through country sales directors, plus Operations, Product, Marketing and HR. P&amp;L of Switzerland, Spain, France, and UK generating €5M+ revenue. Sealed partnership deals with Zurich and Chubb in EMEA. 15% improvement in Lead conversion and 50% increase in cross-selling. Member of ExCo of Aon Iberia post-acquisition (2020–2021).',
 
     'exp.job9.title': 'Head of Artificial Intelligence Product Development',
     'exp.job9.date':  '2017 — 2018',
@@ -463,7 +524,7 @@ const translations = {
 
     'exp.job12.title': 'Visiting Fellow &amp; Teaching Assistant',
     'exp.job12.date':  '2006 — 2008',
-    'exp.job12.desc':  'Visiting Fellow and Teaching Assistant at the Radcliffe Center for Advanced Study (RCC) at Harvard University, supported by a MAE-AECI grant. Research focused on Medieval Spanish metrics and comparative Romance versification — the foundation of her PhD awarded with the "Doctor Europeus" distinction and the Extraordinary Prize.',
+    'exp.job12.desc':  'Visiting Fellow and Teaching Assistant at the Real Colegio Complutense (RCC) at Harvard University, supported by a MAE-AECI grant. Research focused on Medieval Spanish metrics and comparative Romance versification — the foundation of her PhD in Philology (Comparative Linguistics), awarded by Universidad Complutense de Madrid with the "Doctor Europeus" distinction and the Extraordinary Prize.',
 
     'speaking.label': '03 / Speaking',
     'speaking.title': 'Selected Keynotes &amp; <em>Publications</em>',
@@ -501,6 +562,30 @@ const translations = {
     'avatar.btn': 'Chat with my Avatar',
   },
   es: {
+    "education.title": "Educación y formación",
+    "education.phd.title": "Doctorado en Filología (Lingüística Comparada) — \"Doctor Europeus\" · Premio Extraordinario",
+    "education.phd.detail": "— Universidad Complutense de Madrid. Completado con una estancia de 2 años como Visiting Scholar en Harvard University.",
+    "exp.ewi.title": "Miembro del Consejo",
+    "exp.ewi.date": "2020 — Actualidad",
+    "social.huggingface": "Hugging Face — Modelos abiertos de ClibrAIn",
+    "speaking.session": "Ver sesión",
+    "speaking.mwc.title": "Panelista — El poder transformador de la IA en fintech",
+    "speaking.mwc.venue": "Fintech and Commerce Summit, MWC Barcelona — 3 de marzo de 2026 · con CaixaBank, Mastercard, bolttech y Huawei",
+    "speaking.inese2026.title": "De la detección del fraude a los agentes inteligentes: 10 años cambiando cómo decide el seguro",
+    "speaking.inese2026.venue": "Semana del Seguro (INESE), IFEMA Madrid — 18 de febrero de 2026 · Sesión de Shift Technology con Microsoft y AXA, presentando un agente de IA de Microsoft–Shift para siniestros y detección de fraude",
+    "speaking.salesforce.title": "IA generativa y productividad",
+    "speaking.salesforce.venue": "Salesforce World Tour Madrid, con Slack",
+    "speaking.aida.title": "Ponencia principal y panel internacional",
+    "speaking.aida.venue": "AIDA Europe Conference, Lisboa",
+    "speaking.inese2019.title": "CoverWallet: caso de éxito en Estados Unidos",
+    "speaking.inese2019.venue": "Global Summit for Insurance Innovation (INESE), Madrid — 13 de junio de 2019",
+    "speaking.icea.title": "Ponente",
+    "speaking.icea.venue": "Jornada de ICEA sobre el seguro multirriesgo del hogar — mayo de 2019",
+    "chat.models": "Hugging Face — Modelos abiertos de ClibrAIn: https://huggingface.co/clibrain",
+    "chat.ewi": "Miembro del Consejo — EWI (Empowering Women in Insurance), 2020 — Actualidad.",
+    "chat.honors": "Top 100 mujeres líderes de España (2017, 2018, 2019). Medalla de Oro, Olimpiada Nacional de Física (España), 1999. Otras distinciones incluyen el Premio Julián Marías (2017), Choiseul nº 1 (2018) y nº 3 (2019), y el Premio WIDS (2021).",
+    "chat.techcrunch": "TechCrunch — Clibrain y LINCE LLM, 12 de julio de 2023: https://techcrunch.com/2023/07/12/lince-llm/",
+
     'nav.about':        'Sobre mí',
     'nav.experience':   'Experiencia',
     'nav.speaking':     'Conferencias',
@@ -522,14 +607,14 @@ const translations = {
 
     'about.label': '01 / Sobre mí',
     'about.title': 'IA. Empresa. Impacto.<br /><em>A Escala.</em>',
-    'about.bio': '<p>Elena González-Blanco es la Head of Artificial Intelligence and Data for Digital Natives (Unicorns &amp; Startups) para EMEA en Microsoft. Anteriormente fue Cofundadora y CEO de Clibrain, una startup de IA generativa para el desarrollo de LLMs en el ámbito hispanohablante. Es además Consejera Independiente de Traxion y ha sido Consejera Independiente y Presidenta de la Comisión de Auditoría de LLYC y miembro del Advisory Board del CEO de Astara.</p><p>Previamente, fue Global Head of Digital for Wealth Management and Insurance en Banco Santander (EVP), y antes la General Manager de Europa en la startup de insurtech CoverWallet, adquirida por AON en enero de 2020, donde además fue miembro del Comité Ejecutivo de AON Iberia. Anteriormente, fue la Responsable de Desarrollo de Producto en Inteligencia Artificial en Minsait-Indra.</p><p>Experta en Inteligencia Artificial y Transformación Digital, es especialista en el ámbito de la tecnología lingüística. Es Doctora en Filología Hispánica por la Universidad Complutense de Madrid y Máster en Sistemas de Información por la UC3M, ha cursado programas de formación ejecutiva en LSE Londres, MIT y ESADE. Ha sido docente e investigadora en Harvard University y actualmente es profesora en el IE Business School de Inteligencia Artificial aplicada a negocio, además de impartir clases en ICAI y en AFI. Investigadora de reconocido prestigio internacional, lidera POSTDATA, proyecto de investigación europeo de excelencia ERC sobre procesamiento del lenguaje y web semántica (+1M€), seguido por LYRAICS, que se enfocó en la recomendación musical utilizando IA para el análisis de las letras de canciones en español.</p><p>Elegida número #1 en 2018 y #3 en 2019 del Ranking Choiseul "Líderes Económicos del futuro de España", ha sido seleccionada como una de las Top 100 mujeres de España en las ediciones de 2016, 2017 y 2018, y galardonada con el premio de investigación Julián Marías 2017 en la categoría de menores de 40 años, el premio WIDS 2021 para Mujeres en Machine Learning y Ciencia de Datos. Habla inglés, francés, alemán e italiano y es madre de 4 hijos.</p>',
+    'about.bio': '<p>Elena González-Blanco es la Head of Artificial Intelligence and Data for Digital Natives (Unicorns &amp; Startups) para EMEA en Microsoft. Anteriormente fue Cofundadora y CEO de Clibrain, una startup de IA generativa para el desarrollo de LLMs en el ámbito hispanohablante. Es además Consejera Independiente de Traxion y miembro del Consejo de EWI (Empowering Women in Insurance) desde 2020, y ha sido Consejera Independiente y Presidenta de la Comisión de Auditoría de LLYC y miembro del Advisory Board del CEO de Astara.</p><p>Previamente, fue Global Head of Digital for Wealth Management and Insurance en Banco Santander (EVP), y antes la General Manager de Europa en la startup de insurtech CoverWallet, adquirida por AON en enero de 2020, donde además fue miembro del Comité Ejecutivo de AON Iberia. Anteriormente, fue la Responsable de Desarrollo de Producto en Inteligencia Artificial en Minsait-Indra.</p><p>Experta en Inteligencia Artificial y Transformación Digital, es especialista en el ámbito de la tecnología lingüística. Es Doctora en Filología (Lingüística Comparada) por la Universidad Complutense de Madrid, con una estancia de 2 años como Visiting Scholar en Harvard University, y Máster en Sistemas de Información por la UC3M, ha cursado programas de formación ejecutiva en LSE Londres, MIT y ESADE. Ha sido docente e investigadora en Harvard University y actualmente es profesora en el IE Business School de Inteligencia Artificial aplicada a negocio, además de impartir clases en ICAI y en AFI. Investigadora de reconocido prestigio internacional, lidera POSTDATA, proyecto de investigación europeo de excelencia ERC sobre procesamiento del lenguaje y web semántica (+1M€), seguido por LYRAICS, que se enfocó en la recomendación musical utilizando IA para el análisis de las letras de canciones en español.</p><p>Elegida número #1 en 2018 y #3 en 2019 del Ranking Choiseul "Líderes Económicos del futuro de España", ha sido seleccionada como una de las Top 100 mujeres de España en las ediciones de 2017, 2018 y 2019, y galardonada con el premio de investigación Julián Marías 2017 en la categoría de menores de 40 años, el premio WIDS 2021 para Mujeres en Machine Learning y Ciencia de Datos. Entre sus distinciones figura también la Medalla de Oro en la Olimpiada Nacional de Física (España), 1999. Habla inglés, francés, alemán e italiano y es madre de 4 hijos.</p>',
 
     'exp.label': '02 / Experiencia',
     'exp.title': 'Trayectoria <em>Profesional</em>',
 
     'exp.job1.title': 'Responsable de Inteligencia Artificial y Datos para Digital Natives (Unicornios y Startups) — EMEA',
     'exp.job1.date':  'Feb 2024 — Actualidad',
-    'exp.job1.desc':  'Líder del equipo de Technical Sales Specialists en Francia, Alemania, Suiza y CEMA dentro de la organización de ventas (MCAPs). Impulsando la adopción de IA y Datos en las empresas tecnológicas de mayor crecimiento en Europa. Objetivo de ventas +100M€/año con un crecimiento del 80% interanual.',
+    'exp.job1.desc':  'Líder de los equipos de Technical Sales Specialists y Solution Engineers para todas las áreas de soluciones de Azure (Infraestructura, Aplicaciones y Modernización, IA y Datos) dentro de la organización de ventas (MCAPS), cubriendo toda la región EMEA, desde los países nórdicos hasta Sudáfrica. Impulsando la adopción de IA y Datos en las empresas tecnológicas de mayor crecimiento en Europa. Objetivo anual de más de 200 millones de USD en Azure Consumed Revenue, con un crecimiento del 80% interanual.',
 
     'exp.job2.title': 'Consejera Independiente',
     'exp.job2.date':  '2024 — Actualidad',
@@ -549,7 +634,7 @@ const translations = {
 
     'exp.job6.title': 'Cofundadora y CEO',
     'exp.job6.date':  '2023 — Ene 2024',
-    'exp.job6.desc':  'Cofundó ClibrAIn, una startup de IA Generativa para el desarrollo de modelos de lenguaje e inteligencia operacional para empresas hispanohablantes. Desarrolló LINCE, un ecosistema de LLMs en español con más de 40 modelos y más de 100.000 USD de ARR. Contrató a más de 20 investigadores de primer nivel procedentes de AWS, Google, Oracle y Meta. Cliente clave: UNIR (mejora del 20% en retención de alumnos mediante analítica de Call Center).',
+    'exp.job6.desc':  'Cofundó ClibrAIn, una startup de IA Generativa para el desarrollo de modelos de lenguaje e inteligencia operacional para empresas hispanohablantes. Desarrolló LINCE, un ecosistema de LLMs en español con más de 40 modelos y más de 100.000 USD de ARR. Creó y dirigió un equipo de más de 50 personas, incluidos un equipo comercial de 10 personas y un equipo de ingeniería e investigación en LLMs de 30 personas. Contrató a más de 20 profesionales de IA de primer nivel procedentes de AWS, Google, Oracle y Meta.',
 
     'exp.job7.title': 'Global Head of Digital — Banca Privada y Seguros',
     'exp.job7.date':  '2021 — 2022',
@@ -557,7 +642,7 @@ const translations = {
 
     'exp.job8.title': 'Directora General Europa · Miembro del ComEx Aon Iberia',
     'exp.job8.date':  '2018 — 2021',
-    'exp.job8.desc':  'Directora General de Europa en CoverWallet (más de 400 empleados, respaldada por Union Square, Index, Highland Capital y Two Sigma; adquirida por Aon por 330M$). Lideró la expansión europea gestionando Operaciones, Ventas, Marketing y Producto con más de 20 reportes directos. P&L en Suiza, España, Francia y Reino Unido con más de 5M€ de ingresos. Cerró acuerdos de partnership con Zurich y Chubb en EMEA. Mejora del 15% en conversión de leads y del 50% en cross-selling. Miembro del ComEx de Aon Iberia tras la adquisición (2020–2021).',
+    'exp.job8.desc':  'Directora General de Europa en CoverWallet (más de 400 empleados, respaldada por Union Square, Index, Highland Capital y Two Sigma; adquirida por Aon por 330M$). Lideró la expansión europea con un equipo de más de 60 personas, incluida una organización comercial de 40 personas en cuatro países a través de directores comerciales de país, además de Operaciones, Producto, Marketing y Recursos Humanos. P&L en Suiza, España, Francia y Reino Unido con más de 5M€ de ingresos. Cerró acuerdos de partnership con Zurich y Chubb en EMEA. Mejora del 15% en conversión de leads y del 50% en cross-selling. Miembro del ComEx de Aon Iberia tras la adquisición (2020–2021).',
 
     'exp.job9.title': 'Responsable de Desarrollo de Producto en Inteligencia Artificial',
     'exp.job9.date':  '2017 — 2018',
@@ -573,7 +658,7 @@ const translations = {
 
     'exp.job12.title': 'Visiting Fellow y Teaching Assistant',
     'exp.job12.date':  '2006 — 2008',
-    'exp.job12.desc':  'Visiting Fellow y Profesora Ayudante en el Radcliffe Center for Advanced Study (RCC) de la Universidad de Harvard, con una beca MAE-AECI. La investigación se centró en la métrica medieval española y la versificación románica comparada, base de su tesis doctoral, galardonada con la distinción "Doctor Europeus" y el Premio Extraordinario.',
+    'exp.job12.desc':  'Visiting Fellow y Profesora Ayudante en el Real Colegio Complutense (RCC) de la Universidad de Harvard, con una beca MAE-AECI. La investigación se centró en la métrica medieval española y la versificación románica comparada, base de su doctorado en Filología (Lingüística Comparada) por la Universidad Complutense de Madrid, galardonado con la distinción "Doctor Europeus" y el Premio Extraordinario.',
 
     'speaking.label': '03 / Conferencias',
     'speaking.title': 'Keynotes &amp; <em>Publicaciones seleccionadas</em>',
@@ -640,6 +725,14 @@ function applyTranslations(lang) {
   document.querySelectorAll('option[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (t[key] !== undefined) el.textContent = t[key];
+  });
+
+  document.querySelectorAll('[data-i18n-label]').forEach(el => {
+    const key = el.getAttribute('data-i18n-label');
+    if (t[key] !== undefined) {
+      el.setAttribute('aria-label', t[key]);
+      el.setAttribute('title', t[key]);
+    }
   });
 
   // Update <html lang>
