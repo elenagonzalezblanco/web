@@ -1,0 +1,4133 @@
+[
+ {
+  "id": "cegid-2026",
+  "date": "2026-10-20",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "How AI is redefining the rules of business competition",
+   "es": "Cómo la IA está redefiniendo las reglas de la competencia empresarial"
+  },
+  "sub": {
+   "en": "Cegid Business Connections",
+   "es": "Cegid Business Connections"
+  },
+  "place": {
+   "en": "Barcelona",
+   "es": "Barcelona"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7518648693030498304/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "cegid-2026",
+  "featured": true
+ },
+ {
+  "id": "personio-hug-2026",
+  "date": "2026-10-15",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Personio HUG Madrid 2026",
+   "es": "Personio HUG Madrid 2026"
+  },
+  "sub": {
+   "en": "AI and the human side of organisations",
+   "es": "La IA y el lado humano de las organizaciones"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7517955557568393216/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "personio-hug-2026",
+  "featured": true
+ },
+ {
+  "id": "embat-2026",
+  "date": "2026-10-15",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Delegating without losing control: agentic AI in finance and banking",
+   "es": "Delegar sin perder el control: IA agéntica en finanzas y banca"
+  },
+  "sub": {
+   "en": "Embat — Espacio Zenith",
+   "es": "Embat — Espacio Zenith"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Juanjo Prieto (Santander) and other finance leaders",
+   "es": "Con Juanjo Prieto (Santander) y otros líderes financieros"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:share:7513988078961598464/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "embat-2026"
+ },
+ {
+  "id": "bellas-artes-autoria-2026",
+  "date": "2026-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "From cuaderna vía to artificial intelligence: eight centuries of language, culture and innovation",
+   "es": "De la cuaderna vía a la inteligencia artificial: ocho siglos de lengua, cultura e innovación"
+  },
+  "sub": {
+   "en": "Presentation of AutorIA. La Rioja, tierra del español — Real Academia de Bellas Artes de San Fernando",
+   "es": "Presentación de AutorIA. La Rioja, tierra del español — Real Academia de Bellas Artes de San Fernando"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Gonzalo Capellán, President of La Rioja, and Pedro J. Ramírez, EL ESPAÑOL",
+   "es": "Con Gonzalo Capellán, presidente de La Rioja, y Pedro J. Ramírez, EL ESPAÑOL"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7520430178469224449/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "bellas-artes-autoria-2026",
+  "featured": true
+ },
+ {
+  "id": "tiempo-mujeres-2026",
+  "date": "2026-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "The technological and AI revolution",
+   "es": "La revolución tecnológica y de la IA"
+  },
+  "sub": {
+   "en": "El Tiempo de las Mujeres 2026 — El Mundo & Yo Dona",
+   "es": "El Tiempo de las Mujeres 2026 — El Mundo & Yo Dona"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Adecco, Renault Group and Telefónica; moderated by Silvia Nieto",
+   "es": "Con Adecco, Renault Group y Telefónica; modera Silvia Nieto"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7521133943572582400/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "tiempo-mujeres-2026"
+ },
+ {
+  "id": "dapple-paris-2026",
+  "date": "2026-09",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Fireside chat",
+   "es": "Fireside chat"
+  },
+  "title": {
+   "en": "AI infrastructure at scale: fireside chat with Dapple",
+   "es": "Infraestructura para la IA a escala: fireside chat con Dapple"
+  },
+  "sub": {
+   "en": "Digital Natives Scaling event — Microsoft France",
+   "es": "Evento Digital Natives Scaling — Microsoft Francia"
+  },
+  "place": {
+   "en": "Paris",
+   "es": "París"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7506264525508263937/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "dapple-paris-2026"
+ },
+ {
+  "id": "bbva-able-2026",
+  "date": "2026-07",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Jury",
+   "es": "Jurado"
+  },
+  "title": {
+   "en": "_able Challenge — BBVA",
+   "es": "_able Challenge — BBVA"
+  },
+  "sub": {
+   "en": "Jury member of BBVA’s innovation hackathon",
+   "es": "Miembro del jurado del hackathon de innovación de BBVA"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7480899216622530561/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "bbva-able-2026"
+ },
+ {
+  "id": "south-summit-aiforum-2026",
+  "date": "2026-07",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "AI Forum: AI in Action for Business Leaders",
+   "es": "AI Forum: AI in Action for Business Leaders"
+  },
+  "sub": {
+   "en": "South Summit 26",
+   "es": "South Summit 26"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "How to build AI-native organisations, with Jorge Lana (Modulor) and Jaïr Halevi (Miro)",
+   "es": "Cómo construir organizaciones AI-native, con Jorge Lana (Modulor) y Jaïr Halevi (Miro)"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7483820927731032064/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "south-summit-aiforum-2026"
+ },
+ {
+  "id": "erp-summit-2026",
+  "date": "2026-06-09",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "How AI is transforming businesses today",
+   "es": "Cómo la IA está transformando hoy las empresas"
+  },
+  "sub": {
+   "en": "ERP Summit España 2026 — 1,000+ registered attendees",
+   "es": "ERP Summit España 2026 — más de 1.000 inscritos"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7470750435616866304/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "erp-summit-2026",
+  "featured": true
+ },
+ {
+  "id": "murcia-diploma-2026",
+  "date": "2026-06-09",
+  "approx": false,
+  "type": "award",
+  "role": {
+   "en": "Award",
+   "es": "Premio"
+  },
+  "title": {
+   "en": "Diploma of Distinguished Services to the Region of Murcia",
+   "es": "Diploma de Servicios Distinguidos de la Comunidad Autónoma de la Región de Murcia"
+  },
+  "sub": {
+   "en": "Government of the Region of Murcia, for her career in artificial intelligence",
+   "es": "Gobierno de la Región de Murcia, por su trayectoria en inteligencia artificial"
+  },
+  "place": {
+   "en": "Murcia",
+   "es": "Murcia"
+  },
+  "links": [
+   {
+    "href": "https://www.la7tv.es/articulo/actualidad/gobierno-regional-concede-medallas-region-2026-reconoce-german-perez-guardia-civil-fallecido/20260602140121069251.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:share:7470142260488110080/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "murcia-diploma-2026"
+ },
+ {
+  "id": "erpcast-2026",
+  "date": "2026-06",
+  "approx": true,
+  "type": "media",
+  "role": {
+   "en": "Podcast",
+   "es": "Podcast"
+  },
+  "title": {
+   "en": "ERPCast — conversation with Ana Soria and Luciano Itamar",
+   "es": "ERPCast — conversación con Ana Soria y Luciano Itamar"
+  },
+  "sub": {
+   "en": "ERP Summit España",
+   "es": "ERP Summit España"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7475967026839207937/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "south-summit-2026-keynote",
+  "date": "2026-06",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "The AI-Native Startup: From Productivity Tools to Business Transformation",
+   "es": "The AI-Native Startup: From Productivity Tools to Business Transformation"
+  },
+  "sub": {
+   "en": "South Summit 2026",
+   "es": "South Summit 2026"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "From generative AI to the agentic era",
+   "es": "De la IA generativa a la era agéntica"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7469663261664264192/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "south-summit-2026_k"
+ },
+ {
+  "id": "south-summit-2026-fireside",
+  "date": "2026-06",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Fireside chat",
+   "es": "Fireside chat"
+  },
+  "title": {
+   "en": "AI adoption in Europe: where are we now?",
+   "es": "AI adoption in Europe: where are we now?"
+  },
+  "sub": {
+   "en": "South Summit 2026 — IE University",
+   "es": "South Summit 2026 — IE University"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Julián Revorio (IE MBA)",
+   "es": "Con Julián Revorio (IE MBA)"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7469663261664264192/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "south-summit-2026"
+ },
+ {
+  "id": "holded-2026",
+  "date": "2026-05-28",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Entrepreneurial intelligence: talent and vision in the AI era",
+   "es": "Inteligencia emprendedora: talento y visión en la era de la IA"
+  },
+  "sub": {
+   "en": "Holded × Tengo un Plan Podcast",
+   "es": "Holded × Tengo un Plan Podcast"
+  },
+  "place": {
+   "en": "Barcelona",
+   "es": "Barcelona"
+  },
+  "note": {
+   "en": "With Laia Grassi and Carlos Santana (DotCSV)",
+   "es": "Con Laia Grassi y Carlos Santana (DotCSV)"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7467488968696086528/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "video": {
+   "id": "qCQ_B1cFfN8"
+  },
+  "image": "holded-2026"
+ },
+ {
+  "id": "lseg-insight-2026",
+  "date": "2026-05-21",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Fireside chat",
+   "es": "Fireside chat"
+  },
+  "title": {
+   "en": "AI in financial services, with Emily Prince (LSEG)",
+   "es": "La IA en los servicios financieros, con Emily Prince (LSEG)"
+  },
+  "sub": {
+   "en": "LSEG Insight Series Madrid — Club Financiero Génova",
+   "es": "LSEG Insight Series Madrid — Club Financiero Génova"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7464952264705847296/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "lseg-insight-2026",
+  "featured": true
+ },
+ {
+  "id": "ecosistema-tech-2026",
+  "date": "2026-05-20",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Closing keynote",
+   "es": "Keynote de clausura"
+  },
+  "title": {
+   "en": "From copilot to agent: how AI is redefining what a high-performance team does",
+   "es": "Del copiloto al agente: cómo la IA está redefiniendo lo que hace un equipo de alto rendimiento"
+  },
+  "sub": {
+   "en": "Ecosistema Tech: Smart Growth — Dost, PayFit, Pleo, Alan, Personio, Embat and Uber for Business",
+   "es": "Ecosistema Tech: Smart Growth — Dost, PayFit, Pleo, Alan, Personio, Embat y Uber for Business"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://luma.com/19y55hq7",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7464587218184044545/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "ecosistema-tech-2026",
+  "featured": true
+ },
+ {
+  "id": "frdp-podcast-2026",
+  "date": "2026-05-14",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Podcast",
+   "es": "Podcast"
+  },
+  "title": {
+   "en": "“Protagonistas. Con voz propia” — episode 4",
+   "es": "«Protagonistas. Con voz propia» — episodio 4"
+  },
+  "sub": {
+   "en": "Fundación Rafael del Pino",
+   "es": "Fundación Rafael del Pino"
+  },
+  "links": [
+   {
+    "href": "https://frdelpino.es/canalfrp/podcast-frdelpino/elena-gonzalez-blanco-microsoft/",
+    "label": {
+     "en": "Listen",
+     "es": "Escuchar"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7460633530533027840/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dealroom-2026",
+  "date": "2026-05",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Report presentation",
+   "es": "Presentación de informe"
+  },
+  "title": {
+   "en": "The Spanish Tech Ecosystem Report 2026",
+   "es": "The Spanish Tech Ecosystem Report 2026"
+  },
+  "sub": {
+   "en": "Dealroom.co with Kfund, Wayra, SpainCap, Endeavor Spain, GoHub Ventures, BBVA Spark and Enisa",
+   "es": "Dealroom.co con Kfund, Wayra, SpainCap, Endeavor Spain, GoHub Ventures, BBVA Spark y Enisa"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7462419327565320193/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "dealroom-2026"
+ },
+ {
+  "id": "leroy-merlin-2026",
+  "date": "2026-04-27",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "The era of the agentic organisation",
+   "es": "La era de la organización agéntica"
+  },
+  "sub": {
+   "en": "Leroy Merlin Spain annual event — 1,000+ attendees; agentic AI and robotics in retail",
+   "es": "Evento anual de Leroy Merlin España — más de 1.000 asistentes; IA agéntica y robótica en retail"
+  },
+  "place": {
+   "en": "Roig Arena, Valencia",
+   "es": "Roig Arena, Valencia"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7454446751773769728/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "leroy-merlin-2026",
+  "featured": true
+ },
+ {
+  "id": "fff-interview-2026",
+  "date": "2026-04-23",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "“AI does not replace human beings: it demands more judgement, more training and more critical thinking”",
+   "es": "«La inteligencia artificial no sustituye al ser humano: exige más criterio, más formación y más pensamiento crítico»"
+  },
+  "sub": {
+   "en": "Fundación Formación y Futuro",
+   "es": "Fundación Formación y Futuro"
+  },
+  "links": [
+   {
+    "href": "https://fundacionff.com/inteligencia-artific/elena-gonzalez-blanco-microsoft-la-inteligencia-artificial-no-sustituye-al-ser-humano-exige-mas-criterio-mas-formacion-y-mas-pensamiento-critico/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:share:7450871356893786112/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "fff-interview-2026"
+ },
+ {
+  "id": "top100-2026",
+  "date": "2026-03-16",
+  "approx": false,
+  "type": "award",
+  "role": {
+   "en": "Recognition",
+   "es": "Reconocimiento"
+  },
+  "title": {
+   "en": "Las Top 100 Mujeres Líderes — permanent honorary member",
+   "es": "Las Top 100 Mujeres Líderes — miembro honoraria permanente"
+  },
+  "sub": {
+   "en": "EL ESPAÑOL / Magas — Teatro Real; selected three consecutive years",
+   "es": "EL ESPAÑOL / Magas — Teatro Real; seleccionada tres años consecutivos"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7439237802166272001/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "top100-2026"
+ },
+ {
+  "id": "rootedcon-2026",
+  "date": "2026-03-06",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "When the elephant learns to dance: how corporates, hyperscalers and funds also innovate",
+   "es": "Cuando el elefante aprende a bailar: cómo corporates, hyperscalers y fondos también innovan"
+  },
+  "sub": {
+   "en": "RootedCON 2026 — Entrepreneurship track",
+   "es": "RootedCON 2026 — Track de Emprendimiento"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Hyperion Fund and HWK",
+   "es": "Con Hyperion Fund y HWK"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7437063459999043584/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "rootedcon-2026"
+ },
+ {
+  "id": "talent-arena-sedia-2026",
+  "date": "2026-03-04",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "LLMs, generative AI, language, culture and bias",
+   "es": "LLMs, IA generativa, lengua, cultura y sesgos"
+  },
+  "sub": {
+   "en": "Talent Arena 2026 (MWC) — roundtable by Spain’s Secretary of State for Digitalisation and AI",
+   "es": "Talent Arena 2026 (MWC) — mesa de la Secretaría de Estado de Digitalización e Inteligencia Artificial"
+  },
+  "place": {
+   "en": "Barcelona",
+   "es": "Barcelona"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7435610332137488384/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "talent-arena-sedia-2026"
+ },
+ {
+  "id": "talent-arena-holistic-2026",
+  "date": "2026-03-03",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Conversation",
+   "es": "Conversación"
+  },
+  "title": {
+   "en": "A Holistic View of Artificial Intelligence",
+   "es": "A Holistic View of Artificial Intelligence"
+  },
+  "sub": {
+   "en": "Talent Arena 2026 (MWC) — Fundación Formación y Futuro",
+   "es": "Talent Arena 2026 (MWC) — Fundación Formación y Futuro"
+  },
+  "place": {
+   "en": "Barcelona",
+   "es": "Barcelona"
+  },
+  "note": {
+   "en": "With Antonio Serrano Acitores",
+   "es": "Con Antonio Serrano Acitores"
+  },
+  "links": [
+   {
+    "href": "https://fundacionff.com/prensa/inteligencia-artificial-educacion-y-talento-claves-del-debate-impulsado-por-la-fundacion-formacion-y-futuro-en-talent-arena/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7435290813825388545/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "talent-arena-holistic-2026",
+  "featured": true
+ },
+ {
+  "id": "mwc-fintech-2026",
+  "date": "2026-03-03",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "The Transformative Power of AI in Fintech",
+   "es": "El poder transformador de la IA en fintech"
+  },
+  "sub": {
+   "en": "Fintech and Commerce Summit — MWC Barcelona",
+   "es": "Fintech and Commerce Summit — MWC Barcelona"
+  },
+  "place": {
+   "en": "Barcelona",
+   "es": "Barcelona"
+  },
+  "note": {
+   "en": "With CaixaBank, Mastercard, bolttech and Huawei",
+   "es": "Con CaixaBank, Mastercard, bolttech y Huawei"
+  },
+  "links": [
+   {
+    "href": "https://www.mwcbarcelona.com/agenda/sessions/5984-fintech-and-commerce-summit-the-transformative-power-of-ai-in-fintech",
+    "label": {
+     "en": "View session",
+     "es": "Ver sesión"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7434979332747522048/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "mwc-fintech-2026",
+  "featured": true
+ },
+ {
+  "id": "shift-inese-2026",
+  "date": "2026-03",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Agentic AI: the new operating model for insurance",
+   "es": "La IA agéntica: el nuevo modelo operativo del seguro"
+  },
+  "sub": {
+   "en": "Shift Technology session",
+   "es": "Jornada de Shift Technology"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Fernando León de Santos (AXA Spain)",
+   "es": "Con Fernando León de Santos (AXA España)"
+  },
+  "links": [
+   {
+    "href": "https://actualidadaseguradora.inese.es/revista/articulo/p-jornada-shift-nbsp-la-ia-ag-eacute-ntica-el-nuevo-modelo-operativo-del-seguro-p/3342",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:share:7437539046010019840/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "insurance-week-2026",
+  "date": "2026-02-18",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "From fraud detection to intelligent agents: 10 years changing how insurance decides",
+   "es": "De la detección del fraude a los agentes inteligentes: 10 años cambiando cómo decide el seguro"
+  },
+  "sub": {
+   "en": "Semana del Seguro (INESE), IFEMA — a Microsoft–Shift AI agent for claims and fraud detection",
+   "es": "Semana del Seguro (INESE), IFEMA — un agente de IA de Microsoft y Shift para siniestros y fraude"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "Session with Shift Technology and AXA",
+   "es": "Sesión con Shift Technology y AXA"
+  },
+  "links": [
+   {
+    "href": "https://semanadelseguro.inese.es/2026/jornada-shift-2026/",
+    "label": {
+     "en": "View session",
+     "es": "Ver sesión"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7429884045192421377/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "insurance-week-2026"
+ },
+ {
+  "id": "elpais-2026",
+  "date": "2026-02-11",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "Talent and the challenges of artificial intelligence",
+   "es": "El talento y los retos de la inteligencia artificial"
+  },
+  "sub": {
+   "en": "El País — article by Nacho Meneses",
+   "es": "El País — artículo de Nacho Meneses"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7427297858774806529/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "shift-lisbon-2026",
+  "date": "2026-02-04",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "From Generative to Agentic AI: The Next Frontier in Insurtech",
+   "es": "From Generative to Agentic AI: The Next Frontier in Insurtech"
+  },
+  "sub": {
+   "en": "Shift Technology — keynote and live demo of an AI agent",
+   "es": "Shift Technology — keynote y demo en directo de un agente de IA"
+  },
+  "place": {
+   "en": "Lisbon",
+   "es": "Lisboa"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7425198097032540160/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "shift-lisbon-2026",
+  "featured": true
+ },
+ {
+  "id": "airfrance-klm-2026",
+  "date": "2026-02",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "Air France–KLM Iberia Executive Session",
+   "es": "Air France–KLM Iberia Executive Session"
+  },
+  "sub": {
+   "en": "Keynote on generative and agentic AI for all employees in Spain and Portugal",
+   "es": "Keynote sobre IA generativa y agéntica para toda la plantilla de España y Portugal"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7434530562100498432/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "airfrance-klm-2026",
+  "featured": true
+ },
+ {
+  "id": "investingtalks-2026",
+  "date": "2026-02",
+  "approx": true,
+  "type": "media",
+  "role": {
+   "en": "Podcast",
+   "es": "Podcast"
+  },
+  "title": {
+   "en": "#InvestingTalks: is the wealth business disappearing with AI?",
+   "es": "#InvestingTalks: ¿desaparece el negocio wealth con la IA?"
+  },
+  "sub": {
+   "en": "LSEG & Capital Radio",
+   "es": "LSEG & Capital Radio"
+  },
+  "video": {
+   "id": "Om1Q5ptqQwU"
+  }
+ },
+ {
+  "id": "caminos-2026",
+  "date": "2026-01-27",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "The AI powering the data centres of the future",
+   "es": "La inteligencia artificial que impulsa los centros de datos del futuro"
+  },
+  "sub": {
+   "en": "Café entre Caminos — CaminosUPM, data centre special",
+   "es": "Café entre Caminos — CaminosUPM, especial centros de datos"
+  },
+  "video": {
+   "id": "cE7Pk4pM3jU"
+  }
+ },
+ {
+  "id": "bloom-2026",
+  "date": "2026-01-13",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Podcast",
+   "es": "Podcast"
+  },
+  "title": {
+   "en": "AI and the future of work — #Alfas, episode 4",
+   "es": "La inteligencia artificial y el trabajo del futuro — #Alfas, episodio 4"
+  },
+  "sub": {
+   "en": "Bloom podcast — Endeavor Spain",
+   "es": "Podcast Bloom — Endeavor Spain"
+  },
+  "links": [
+   {
+    "href": "https://open.spotify.com/episode/3pwkgjQ9TlXjeMQZ8Vfy0h",
+    "label": {
+     "en": "Spotify",
+     "es": "Spotify"
+    }
+   }
+  ],
+  "video": {
+   "id": "rvMIE6xg9iI"
+  }
+ },
+ {
+  "id": "expansion-2025",
+  "date": "2025-12",
+  "approx": true,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "How Spain’s tech ecosystem will take shape in 2026",
+   "es": "Así se definirá el ecosistema tecnológico en 2026"
+  },
+  "sub": {
+   "en": "Expansión — by María José Gómez-Serranillos",
+   "es": "Expansión — por María José Gómez-Serranillos"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7411438996347731968/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "businesswomen-cover-2025",
+  "date": "2025-12",
+  "approx": true,
+  "type": "media",
+  "role": {
+   "en": "Magazine cover",
+   "es": "Portada"
+  },
+  "title": {
+   "en": "Women of success in the Region of Murcia",
+   "es": "Mujeres de éxito en la Región de Murcia"
+  },
+  "sub": {
+   "en": "Business Women RM",
+   "es": "Business Women RM"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7406260506556043264/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "businesswomen-cover-2025"
+ },
+ {
+  "id": "elespanol-column-2025",
+  "date": "2025-12",
+  "approx": true,
+  "type": "publication",
+  "role": {
+   "en": "Column",
+   "es": "Columna"
+  },
+  "title": {
+   "en": "The economic impact of artificial intelligence",
+   "es": "El impacto económico de la inteligencia artificial"
+  },
+  "sub": {
+   "en": "EL ESPAÑOL",
+   "es": "EL ESPAÑOL"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7404814774103851008/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "kornferry-2025",
+  "date": "2025-12",
+  "approx": true,
+  "type": "publication",
+  "role": {
+   "en": "Featured profile",
+   "es": "Perfil destacado"
+  },
+  "title": {
+   "en": "Los Nuevos Consejeros 2025 — yearbook interview",
+   "es": "Los Nuevos Consejeros 2025 — entrevista en el anuario"
+  },
+  "sub": {
+   "en": "Korn Ferry",
+   "es": "Korn Ferry"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7404082489994051584/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "kornferry-2025"
+ },
+ {
+  "id": "raiic-2025",
+  "date": "2025-12",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Moderator",
+   "es": "Moderadora"
+  },
+  "title": {
+   "en": "Roundtable at Microsoft’s Responsible AI Innovation Center",
+   "es": "Mesa redonda en el Responsible AI Innovation Center de Microsoft"
+  },
+  "sub": {
+   "en": "Microsoft RAIIC",
+   "es": "Microsoft RAIIC"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Saturno Labs, EY, Wayra and Aena",
+   "es": "Con Saturno Labs, EY, Wayra y Aena"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:share:7401325306906652672/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "raiic-2025"
+ },
+ {
+  "id": "visa-2025",
+  "date": "2025-11-25",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "From Generative to Agentic AI: The Next Frontier in Fintech",
+   "es": "From Generative to Agentic AI: The Next Frontier in Fintech"
+  },
+  "sub": {
+   "en": "Visa Innovation Program Europe Summit — Spain & Portugal Edition",
+   "es": "Visa Innovation Program Europe Summit — Spain & Portugal Edition"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7399748873075810304/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "visa-2025",
+  "featured": true
+ },
+ {
+  "id": "dircom-2025",
+  "date": "2025-11-25",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Clear language for transparent communication — presentation of the Anuario de la Comunicación 2025",
+   "es": "Lenguaje claro para una comunicación transparente — presentación del Anuario de la Comunicación 2025"
+  },
+  "sub": {
+   "en": "Dircom — Universidad CEU San Pablo",
+   "es": "Dircom — Universidad CEU San Pablo"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://anuario2025.dircom.org/",
+    "label": {
+     "en": "Yearbook",
+     "es": "Anuario"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7399420416534052864/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "dircom-2025",
+  "featured": true
+ },
+ {
+  "id": "ms-insurtech-2025",
+  "date": "2025-11-21",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Host & speaker",
+   "es": "Anfitriona y ponente"
+  },
+  "title": {
+   "en": "Insurtech & AI: how generative AI, agents and data are transforming insurance",
+   "es": "Insurtech e IA: cómo la IA generativa, los agentes y los datos están transformando el seguro"
+  },
+  "sub": {
+   "en": "Microsoft Madrid, with Shift Technology",
+   "es": "Microsoft Madrid, con Shift Technology"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7399130095359082496/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "ms-insurtech-2025"
+ },
+ {
+  "id": "cervantes-lisboa-2025",
+  "date": "2025-11-04",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Conversation",
+   "es": "Conversación"
+  },
+  "title": {
+   "en": "Cross-border dialogues: artificial intelligence",
+   "es": "Diálogos transfronterizos: inteligencia artificial"
+  },
+  "sub": {
+   "en": "Instituto Cervantes de Lisboa",
+   "es": "Instituto Cervantes de Lisboa"
+  },
+  "place": {
+   "en": "Lisbon",
+   "es": "Lisboa"
+  },
+  "note": {
+   "en": "With António Branco (ULisboa)",
+   "es": "Con António Branco (ULisboa)"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7393939312578428928/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "cervantes-lisboa-2025"
+ },
+ {
+  "id": "arbitraje-2025",
+  "date": "2025-11-03",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Spanish in arbitration: its growing importance in the international legal space",
+   "es": "El español en el arbitraje: su importancia creciente en el espacio jurídico internacional"
+  },
+  "sub": {
+   "en": "Ministry of Foreign Affairs, CIAM-CIAR, Club Español e Iberoamericano del Arbitraje and Instituto Cervantes",
+   "es": "Ministerio de Asuntos Exteriores, CIAM-CIAR, Club Español e Iberoamericano del Arbitraje e Instituto Cervantes"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7391209414864637952/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "arbitraje-2025"
+ },
+ {
+  "id": "mastercard-2025",
+  "date": "2025-11",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Moderator",
+   "es": "Moderadora"
+  },
+  "title": {
+   "en": "Beyond the Hype: Real AI Use Cases Backed by VCs",
+   "es": "Beyond the Hype: Real AI Use Cases Backed by VCs"
+  },
+  "sub": {
+   "en": "Mastercard For Fintechs 2025 — EMEA startup final",
+   "es": "Mastercard For Fintechs 2025 — final EMEA de startups"
+  },
+  "note": {
+   "en": "Panel moderator and jury member",
+   "es": "Moderadora del panel y miembro del jurado"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7401556995213963265/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "mastercard-2025",
+  "featured": true
+ },
+ {
+  "id": "french-innovation-night-2025",
+  "date": "2025-10-30",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "How large corporations use AI",
+   "es": "El uso de la IA por las grandes corporaciones"
+  },
+  "sub": {
+   "en": "French Innovation Night — Business France & French Embassy; 150+ attendees",
+   "es": "French Innovation Night — Business France y Embajada de Francia; más de 150 asistentes"
+  },
+  "place": {
+   "en": "Residence of the French Ambassador, Madrid",
+   "es": "Residencia de la Embajadora de Francia, Madrid"
+  },
+  "note": {
+   "en": "With Carrefour and Iberdrola",
+   "es": "Con Carrefour e Iberdrola"
+  }
+ },
+ {
+  "id": "cervantes-anuario-2025",
+  "date": "2025-10-28",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker & author",
+   "es": "Ponente y autora"
+  },
+  "title": {
+   "en": "Artificial intelligence and the Spanish language",
+   "es": "Inteligencia artificial y lengua española"
+  },
+  "sub": {
+   "en": "Presentation of the yearbook “El español en el mundo 2025” — Instituto Cervantes",
+   "es": "Presentación del anuario «El español en el mundo 2025» — Instituto Cervantes"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://cvc.cervantes.es/lengua/anuario/anuario_25/default.htm",
+    "label": {
+     "en": "Read chapter",
+     "es": "Leer capítulo"
+    }
+   }
+  ],
+  "video": {
+   "id": "lqZeqh4F_ws"
+  }
+ },
+ {
+  "id": "iawards-2025",
+  "date": "2025-10-28",
+  "approx": false,
+  "type": "award",
+  "role": {
+   "en": "Award",
+   "es": "Premio"
+  },
+  "title": {
+   "en": "iAwards Spain 2025 — Leadership in AI Education and Training",
+   "es": "iAwards España 2025 — Liderazgo en Educación y Capacitación en IA"
+  },
+  "sub": {
+   "en": "Finnovating",
+   "es": "Finnovating"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://finnovating.com/",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   }
+  ],
+  "image": "iawards-2025"
+ },
+ {
+  "id": "genai-unconference-2025",
+  "date": "2025-10-27",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "GenAI Unconference Madrid 2025",
+   "es": "GenAI Unconference Madrid 2025"
+  },
+  "sub": {
+   "en": "Finnovating — 100+ AI leaders and experts",
+   "es": "Finnovating — más de 100 líderes y expertos en IA"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.eventbrite.es/e/1217557460139",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7382003285211250689/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "genai-unconference-2025"
+ },
+ {
+  "id": "tiempo-mujeres-2025",
+  "date": "2025-10-27",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Artificial intelligence roundtable",
+   "es": "Mesa redonda sobre inteligencia artificial"
+  },
+  "sub": {
+   "en": "El Tiempo de las Mujeres — El Mundo & Yo Dona",
+   "es": "El Tiempo de las Mujeres — El Mundo & Yo Dona"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Telefónica, Renault Group and Moeve",
+   "es": "Con Telefónica, Renault Group y Moeve"
+  },
+  "links": [
+   {
+    "href": "https://www.elmundo.es/yodona/actualidad/2025/10/25/68fbe81fe4d4d8985e8b45a0.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7388503492509712385/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "tiempo-mujeres-2025"
+ },
+ {
+  "id": "legal-forum-2025",
+  "date": "2025-10-24",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Lightning talk",
+   "es": "Lightning talk"
+  },
+  "title": {
+   "en": "AI agents and data: the bridge to a transformed legal practice",
+   "es": "Agentes de IA y datos: el puente hacia una práctica legal transformada"
+  },
+  "sub": {
+   "en": "Legal Management Forum 2025 “Think AI, Rethink Law” — Fundación Aranzadi LA LEY & Inkietos",
+   "es": "Legal Management Forum 2025 «Think AI, Rethink Law» — Fundación Aranzadi LA LEY e Inkietos"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://inkietos.org/",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7387397547176136704/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "legal-forum-2025",
+  "featured": true
+ },
+ {
+  "id": "ica-conference-2025",
+  "date": "2025-10-23",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "AI and boards of directors",
+   "es": "La IA y los consejos de administración"
+  },
+  "sub": {
+   "en": "XXII Annual Conference — Instituto de Consejeros-Administradores (IC-A)",
+   "es": "XXII Conferencia Anual — Instituto de Consejeros-Administradores (IC-A)"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With IOSCO and the European Commission",
+   "es": "Con IOSCO y la Comisión Europea"
+  },
+  "links": [
+   {
+    "href": "http://www.iconsejeros.com/",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:share:7386380143096909824/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "ica-conference-2025"
+ },
+ {
+  "id": "afi-graduation-2025",
+  "date": "2025-10-13",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Graduation speech",
+   "es": "Discurso de graduación"
+  },
+  "title": {
+   "en": "The economic impact of AI — honorary patron of the 2024/25 class",
+   "es": "El impacto económico de la IA — madrina de la promoción 2024/25"
+  },
+  "sub": {
+   "en": "Afi Global Education",
+   "es": "Afi Global Education"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7394305460780212224/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "afi-graduation-2025"
+ },
+ {
+  "id": "edtech-2025",
+  "date": "2025-10-08",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Generative AI in the global education landscape",
+   "es": "La IA generativa en el panorama educativo global"
+  },
+  "sub": {
+   "en": "EdTech Talents Summit 2025 — with Microsoft Spain",
+   "es": "EdTech Talents Summit 2025 — con Microsoft España"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7381624670732623873/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "edtech-2025"
+ },
+ {
+  "id": "businesswomen-award-2025",
+  "date": "2025-10",
+  "approx": true,
+  "type": "award",
+  "role": {
+   "en": "Award",
+   "es": "Premio"
+  },
+  "title": {
+   "en": "Business Women RM award and roundtable on women leaders",
+   "es": "Premio Business Women RM y mesa redonda de mujeres líderes"
+  },
+  "sub": {
+   "en": "Business Women RM",
+   "es": "Business Women RM"
+  },
+  "place": {
+   "en": "Cartagena",
+   "es": "Cartagena"
+  },
+  "note": {
+   "en": "With Encarna Piñero (Grupo Piñero) and Anabel Díaz (Uber)",
+   "es": "Con Encarna Piñero (Grupo Piñero) y Anabel Díaz (Uber)"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7383842379549569024/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "businesswomen-award-2025"
+ },
+ {
+  "id": "digit-2025",
+  "date": "2025-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "AI in fintech",
+   "es": "La IA en fintech"
+  },
+  "sub": {
+   "en": "Digit Institute",
+   "es": "Digit Institute"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7383642110232604673/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hispano-noruega-2025",
+  "date": "2025-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "From LLMs to the era of agents",
+   "es": "De los LLM a la era de los agentes"
+  },
+  "sub": {
+   "en": "Spanish-Norwegian Chamber of Commerce — business lunch",
+   "es": "Cámara de Comercio Hispano-Noruega — almuerzo empresarial"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7382373958253182977/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "hispano-noruega-2025"
+ },
+ {
+  "id": "prodware-2025",
+  "date": "2025-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Dinner talk",
+   "es": "Cena-coloquio"
+  },
+  "title": {
+   "en": "Artificial intelligence dinner talk",
+   "es": "Cena-coloquio sobre inteligencia artificial"
+  },
+  "sub": {
+   "en": "Prodware — Hotel Orfila",
+   "es": "Prodware — Hotel Orfila"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7379459826717777921/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "iebs-2025",
+  "date": "2025-09",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Webinar",
+   "es": "Webinar"
+  },
+  "title": {
+   "en": "AI, the agentic era, data models and decision-making",
+   "es": "IA, era agéntica, modelos de datos y toma de decisiones"
+  },
+  "sub": {
+   "en": "IEBS Business School — The Future of Data",
+   "es": "IEBS Business School — The Future of Data"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7378703927548129280/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ica-program-2025",
+  "date": "2025-07-16",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "AI in the boardroom — Board Director Training Program",
+   "es": "La IA en el consejo — Programa de Formación de Consejeros"
+  },
+  "sub": {
+   "en": "Instituto de Consejeros-Administradores (IC-A)",
+   "es": "Instituto de Consejeros-Administradores (IC-A)"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7351524824147542016/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "ica-program-2025"
+ },
+ {
+  "id": "afi-panel-2025",
+  "date": "2025-06-18",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Digitalisation and competitiveness",
+   "es": "Digitalización y competitividad"
+  },
+  "sub": {
+   "en": "“El momento de España en Europa y en el mundo” — Afi, CSIC",
+   "es": "«El momento de España en Europa y en el mundo» — Afi, CSIC"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Javier Ponce and Francisco Velázquez de Cuéllar; moderated by Diego Vizcaíno",
+   "es": "Con Javier Ponce y Francisco Velázquez de Cuéllar; modera Diego Vizcaíno"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7341377981254152192/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "video": {
+   "id": "eniKU75KPSU",
+   "start": 2121
+  }
+ },
+ {
+  "id": "south-summit-2025",
+  "date": "2025-06-04",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Workshop",
+   "es": "Workshop"
+  },
+  "title": {
+   "en": "Product-led workshop: AI and agents for startups",
+   "es": "Workshop: IA y agentes para startups"
+  },
+  "sub": {
+   "en": "South Summit 2025 — with Adrián González (Microsoft)",
+   "es": "South Summit 2025 — con Adrián González (Microsoft)"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7338482655635660801/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "south-summit-2025"
+ },
+ {
+  "id": "luxury-2025",
+  "date": "2025-06",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Luxury, technology and AI",
+   "es": "Lujo, tecnología e IA"
+  },
+  "sub": {
+   "en": "“España, cuna del lujo consciente” — interdisciplinary debate",
+   "es": "«España, cuna del lujo consciente» — debate interdisciplinar"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7340411025311084545/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "luxury-2025b"
+ },
+ {
+  "id": "arbitraje-club-2025",
+  "date": "2025-06",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "AI, language and data in the legal sector",
+   "es": "IA, lenguaje y datos en el sector legal"
+  },
+  "sub": {
+   "en": "Club Español e Iberoamericano del Arbitraje",
+   "es": "Club Español e Iberoamericano del Arbitraje"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:share:7335247702407929857/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "women-leaders-ie-2025",
+  "date": "2025-05-20",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "“Women Leaders” series — from linguistics to AI",
+   "es": "Serie «Women Leaders» — de la lingüística a la IA"
+  },
+  "sub": {
+   "en": "IE University",
+   "es": "IE University"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7329193031729872896/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "kbs-paper-2025",
+  "date": "2025-05-02",
+  "approx": false,
+  "type": "publication",
+  "role": {
+   "en": "Research paper",
+   "es": "Artículo científico"
+  },
+  "title": {
+   "en": "Semantic similarity in Spanish song lyrics",
+   "es": "Similitud semántica en letras de canciones en español"
+  },
+  "sub": {
+   "en": "Knowledge-Based Systems (Elsevier) — ERC POSTDATA project",
+   "es": "Knowledge-Based Systems (Elsevier) — proyecto ERC POSTDATA"
+  },
+  "links": [
+   {
+    "href": "https://doi.org/10.1016/j.knosys.2025.113549",
+    "label": {
+     "en": "Read paper",
+     "es": "Leer artículo"
+    }
+   }
+  ]
+ },
+ {
+  "id": "icai-ethics-2025",
+  "date": "2025-05",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Ethical challenges of new technologies and AI",
+   "es": "Retos éticos de las nuevas tecnologías y la IA"
+  },
+  "sub": {
+   "en": "Engineering & Ethics cycle — Ingenieros ICAI, Cátedra Iberdrola and Comillas ICAI",
+   "es": "Ciclo Ingeniería y Ética — Ingenieros ICAI, Cátedra Iberdrola y Comillas ICAI"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "Moderated by Isabel Reija",
+   "es": "Modera Isabel Reija"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7332722373864878080/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "icai-ethics-2025"
+ },
+ {
+  "id": "bros-2025",
+  "date": "2025-05",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Integrating and developing AI in organisations",
+   "es": "Integración y desarrollo de la IA en las organizaciones"
+  },
+  "sub": {
+   "en": "Bros&Breakfast — Bros Group, breakfast with HR leaders",
+   "es": "Bros&Breakfast — Bros Group, desayuno con directivos de RR. HH."
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "intereconomia-2025",
+  "date": "2025-04-23",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Radio",
+   "es": "Radio"
+  },
+  "title": {
+   "en": "AI adoption across industries",
+   "es": "La adopción de la IA en todos los sectores"
+  },
+  "sub": {
+   "en": "Capital — Radio Intereconomía, with Susana Criado",
+   "es": "Capital — Radio Intereconomía, con Susana Criado"
+  },
+  "links": [
+   {
+    "href": "https://www.youtube.com/watch?v=i2PZsW-H-VQ&t=10489s",
+    "label": {
+     "en": "Listen",
+     "es": "Escuchar"
+    }
+   }
+  ]
+ },
+ {
+  "id": "logipharma-2025",
+  "date": "2025-04-09",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Case study",
+   "es": "Caso de estudio"
+  },
+  "title": {
+   "en": "How to bring AI securely to the pharma supply chain",
+   "es": "How to bring AI securely to the pharma supply chain"
+  },
+  "sub": {
+   "en": "LogiPharma 2025 — with SkyCell, MSD and CEVA Logistics",
+   "es": "LogiPharma 2025 — con SkyCell, MSD y CEVA Logistics"
+  },
+  "place": {
+   "en": "Lyon, France",
+   "es": "Lyon, Francia"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7316007147534790660/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "logipharma-2025"
+ },
+ {
+  "id": "hdbr-2025",
+  "date": "2025-04-02",
+  "approx": false,
+  "type": "publication",
+  "role": {
+   "en": "Featured profile",
+   "es": "Perfil destacado"
+  },
+  "title": {
+   "en": "“The art of pivoting”",
+   "es": "«El arte de pivotar»"
+  },
+  "sub": {
+   "en": "Harvard Deusto Business Review",
+   "es": "Harvard Deusto Business Review"
+  },
+  "links": [
+   {
+    "href": "https://www.harvard-deusto.com/el-arte-de-pivotar-guia-para-la-reinvencion-profesional",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ]
+ },
+ {
+  "id": "nordic-capital-2025",
+  "date": "2025-04",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Opening keynote",
+   "es": "Keynote de apertura"
+  },
+  "title": {
+   "en": "The state of artificial intelligence",
+   "es": "El estado de la inteligencia artificial"
+  },
+  "sub": {
+   "en": "Nordic Capital annual retreat — Microsoft Barcelona",
+   "es": "Retiro anual de Nordic Capital — Microsoft Barcelona"
+  },
+  "place": {
+   "en": "Barcelona",
+   "es": "Barcelona"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7321084244531789824/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "nordic-capital-2025",
+  "featured": true
+ },
+ {
+  "id": "juno-house-2025",
+  "date": "2025-03-27",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Masterclass",
+   "es": "Clase magistral"
+  },
+  "title": {
+   "en": "Women, Money & Power",
+   "es": "Women, Money & Power"
+  },
+  "sub": {
+   "en": "Juno House pop-up Madrid — sponsored by Andbank",
+   "es": "Juno House pop-up Madrid — patrocinado por Andbank"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7310714446719410177/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "juno-house-2025"
+ },
+ {
+  "id": "iwf-2025",
+  "date": "2025-03-18",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Artificial intelligence and LLMs",
+   "es": "Inteligencia artificial y LLMs"
+  },
+  "sub": {
+   "en": "IWF Spain AI Congress — Palacio Real de La Granja de San Ildefonso",
+   "es": "Congreso de IA de IWF Spain — Palacio Real de La Granja de San Ildefonso"
+  },
+  "place": {
+   "en": "La Granja, Segovia",
+   "es": "La Granja, Segovia"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7308057221517512704/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "iwf-2025",
+  "featured": true
+ },
+ {
+  "id": "mwc-mckinsey-2025",
+  "date": "2025-03-04",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Bias and artificial intelligence",
+   "es": "Sesgos e inteligencia artificial"
+  },
+  "sub": {
+   "en": "MWC Barcelona 2025 — Women’s Breakfast by McKinsey & Company and Russell Reynolds",
+   "es": "MWC Barcelona 2025 — Women’s Breakfast de McKinsey & Company y Russell Reynolds"
+  },
+  "place": {
+   "en": "Barcelona",
+   "es": "Barcelona"
+  },
+  "links": [
+   {
+    "href": "https://mck.co/4gQOwtd",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7303011633537118208/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ]
+ },
+ {
+  "id": "murcia-forum-2025",
+  "date": "2025-03",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "The present of AI: women and startups",
+   "es": "Presente de la IA: mujeres y startups"
+  },
+  "sub": {
+   "en": "Universidad de Murcia — Cátedra de Mujer Empresaria y Directiva & Murcia Inteligencia Artificial",
+   "es": "Universidad de Murcia — Cátedra de Mujer Empresaria y Directiva y Murcia Inteligencia Artificial"
+  },
+  "place": {
+   "en": "Murcia",
+   "es": "Murcia"
+  },
+  "links": [
+   {
+    "href": "https://www.elitemurcia.es/las-mujeres-toman-protagonismo-en-el-debate-sobre-la-inteligencia-artificial-en-la-universidad-de-murcia/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ]
+ },
+ {
+  "id": "capitanes-ia-2025",
+  "date": "2025-02-27",
+  "approx": false,
+  "type": "award",
+  "role": {
+   "en": "Recognition",
+   "es": "Reconocimiento"
+  },
+  "title": {
+   "en": "#1 in Funds Society’s “AI Captains” ranking",
+   "es": "N.º 1 en el ranking «Capitanes de la IA» de Funds Society"
+  },
+  "sub": {
+   "en": "AI influencers to follow in Spain in 2025",
+   "es": "Influencers de IA a seguir en España en 2025"
+  },
+  "links": [
+   {
+    "href": "https://www.fundssociety.com/es/opinion/capitanes-de-la-ia-influencers-a-seguir-en-2025/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ]
+ },
+ {
+  "id": "redewi-2025",
+  "date": "2025-02",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "AI and bias — RedEWI session",
+   "es": "IA y sesgos — sesión RedEWI"
+  },
+  "sub": {
+   "en": "Semana del Seguro 2025 (INESE)",
+   "es": "Semana del Seguro 2025 (INESE)"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Beatriz Sanz Saiz and Tomás Martínez Buero",
+   "es": "Con Beatriz Sanz Saiz y Tomás Martínez Buero"
+  }
+ },
+ {
+  "id": "csai-2025",
+  "date": "2025-02",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Debate on AI and boards",
+   "es": "Debate sobre IA y consejos"
+  },
+  "sub": {
+   "en": "CS@I — Club Financiero Génova",
+   "es": "CS@I — Club Financiero Génova"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:share:7294449751712792577/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "csai-2025"
+ },
+ {
+  "id": "orm-2025",
+  "date": "2025-01-22",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Radio",
+   "es": "Radio"
+  },
+  "title": {
+   "en": "El Mirador — Can machines think?",
+   "es": "El Mirador — ¿Pueden pensar las máquinas?"
+  },
+  "sub": {
+   "en": "Onda Regional de Murcia",
+   "es": "Onda Regional de Murcia"
+  },
+  "links": [
+   {
+    "href": "https://www.orm.es/eorm/reaccionencadena/pueden-pensar-las-maquinas/",
+    "label": {
+     "en": "Listen",
+     "es": "Escuchar"
+    }
+   }
+  ]
+ },
+ {
+  "id": "endeavor-sa-2025",
+  "date": "2025-01-21",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Unlocking growth as a digital native within Microsoft’s ecosystem",
+   "es": "Unlocking growth as a digital native within Microsoft’s ecosystem"
+  },
+  "sub": {
+   "en": "Endeavor South Africa × Microsoft — “Exploring the Future of Innovation”",
+   "es": "Endeavor South Africa × Microsoft — «Exploring the Future of Innovation»"
+  },
+  "place": {
+   "en": "Johannesburg, South Africa",
+   "es": "Johannesburgo, Sudáfrica"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7287755943717588992/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "endeavor-sa-2025"
+ },
+ {
+  "id": "laurel-2025",
+  "date": "2025-01-15",
+  "approx": false,
+  "type": "award",
+  "role": {
+   "en": "Award",
+   "es": "Premio"
+  },
+  "title": {
+   "en": "Laurel Award — Economy and Business",
+   "es": "Premio Laurel — Economía y Empresa"
+  },
+  "sub": {
+   "en": "The oldest award in the Region of Murcia",
+   "es": "El premio más antiguo de la Región de Murcia"
+  },
+  "place": {
+   "en": "Murcia",
+   "es": "Murcia"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7285585330190045184/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "laurel-2025"
+ },
+ {
+  "id": "anaya-chapter-2025",
+  "date": "2025",
+  "approx": false,
+  "type": "publication",
+  "role": {
+   "en": "Book chapter",
+   "es": "Capítulo de libro"
+  },
+  "title": {
+   "en": "Artificial Intelligence and Language Technologies",
+   "es": "Inteligencia Artificial y Tecnologías del Lenguaje"
+  },
+  "sub": {
+   "en": "In “Inteligencia Artificial. Guía definitiva desde los orígenes a la IA Generativa” — Anaya",
+   "es": "En «Inteligencia Artificial. Guía definitiva desde los orígenes a la IA Generativa» — Anaya"
+  },
+  "image": "anaya-chapter-2025"
+ },
+ {
+  "id": "impact-2024",
+  "date": "2024-12-15",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "How AI will transform business",
+   "es": "Cómo la IA transformará los negocios"
+  },
+  "sub": {
+   "en": "Impact Social Cup",
+   "es": "Impact Social Cup"
+  },
+  "video": {
+   "id": "tDjOv5jcRm0"
+  }
+ },
+ {
+  "id": "ecija-ie-2024",
+  "date": "2024-12-13",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Moderator",
+   "es": "Moderadora"
+  },
+  "title": {
+   "en": "AI governance and regulatory compliance — report presentation",
+   "es": "Gobernanza y cumplimiento normativo en la era de la IA — presentación del informe"
+  },
+  "sub": {
+   "en": "IE Law School Digital Law Observatory & ECIJA",
+   "es": "Observatorio de Derecho Digital de IE Law School y ECIJA"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Mahou San Miguel, Banesco and Iberdrola",
+   "es": "Con Mahou San Miguel, Banesco e Iberdrola"
+  },
+  "links": [
+   {
+    "href": "https://www.ie.edu/odigitallaw/wp-content/uploads/sites/599/2024/12/ECIJA_Observatorio-Derecho-digital-IE_05.pdf",
+    "label": {
+     "en": "Read report",
+     "es": "Leer informe"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7273004819391406080/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "ecija-ie-2024"
+ },
+ {
+  "id": "endeavor-mentor-2024",
+  "date": "2024-12",
+  "approx": true,
+  "type": "award",
+  "role": {
+   "en": "Recognition",
+   "es": "Reconocimiento"
+  },
+  "title": {
+   "en": "Joined the Endeavor Spain mentor network",
+   "es": "Incorporación a la red de mentores de Endeavor Spain"
+  },
+  "sub": {
+   "en": "Endeavor Spain",
+   "es": "Endeavor Spain"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7274703637203865600/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "endeavor-mentor-2024"
+ },
+ {
+  "id": "samaipata-2024",
+  "date": "2024-12",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Moderator",
+   "es": "Moderadora"
+  },
+  "title": {
+   "en": "Panel with Moeve, Embat and Iberia",
+   "es": "Panel con Moeve, Embat e Iberia"
+  },
+  "sub": {
+   "en": "Samaipata",
+   "es": "Samaipata"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7272546913680306176/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "samaipata-2024"
+ },
+ {
+  "id": "insead-2024",
+  "date": "2024-11-27",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Dinner talk",
+   "es": "Cena-coloquio"
+  },
+  "title": {
+   "en": "Artificial intelligence dinner talk",
+   "es": "Cena-coloquio sobre inteligencia artificial"
+  },
+  "sub": {
+   "en": "INSEAD Alumni Club Madrid",
+   "es": "INSEAD Alumni Club Madrid"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7267502359021248512/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "insead-2024"
+ },
+ {
+  "id": "observatorio-2024",
+  "date": "2024-11-11",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Institutional launch of the Global Observatory of Spanish",
+   "es": "Presentación institucional del Observatorio Global del Español"
+  },
+  "sub": {
+   "en": "Instituto Cervantes",
+   "es": "Instituto Cervantes"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "Opened by minister José Manuel Albares and Luis García Montero",
+   "es": "Inaugurada por el ministro José Manuel Albares y Luis García Montero"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7261857988007641088/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "video": {
+   "id": "n_WS7N1AS7c",
+   "start": 3719
+  }
+ },
+ {
+  "id": "wandelbots-2024",
+  "date": "2024-11-05",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "On stage",
+   "es": "En el escenario"
+  },
+  "title": {
+   "en": "Launch of Wandelbots NOVA",
+   "es": "Lanzamiento de Wandelbots NOVA"
+  },
+  "sub": {
+   "en": "A universal robot-programming platform, with Wandelscript built with Microsoft",
+   "es": "Una plataforma universal para programar robots, con Wandelscript desarrollado con Microsoft"
+  },
+  "image": "wandelbots-2024",
+  "featured": true
+ },
+ {
+  "id": "databricks-2024",
+  "date": "2024-11",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Women in Data + AI",
+   "es": "Women in Data + AI"
+  },
+  "sub": {
+   "en": "Databricks Data + AI World Tour Madrid 2024 — 700+ attendees",
+   "es": "Databricks Data + AI World Tour Madrid 2024 — más de 700 asistentes"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7262396351370448896/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "databricks-2024"
+ },
+ {
+  "id": "stanford-2024",
+  "date": "2024-11",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "AI and LLMs: trends and challenges of generative AI",
+   "es": "Inteligencia artificial y LLMs: tendencias y retos de la IA generativa"
+  },
+  "sub": {
+   "en": "Stanford Alumni Spain",
+   "es": "Stanford Alumni Spain"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "image": "stanford-2024"
+ },
+ {
+  "id": "ecija-partners-2024",
+  "date": "2024-11",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "The state of AI in Spain and Latin America and its impact on the legal sector",
+   "es": "El estado de la IA en España y Latinoamérica y su impacto en el sector jurídico"
+  },
+  "sub": {
+   "en": "ECIJA VI Global Partners Meeting + AI Hackathon",
+   "es": "VI Reunión Global de Socios de ECIJA + AI Hackathon"
+  }
+ },
+ {
+  "id": "frenchfounders-2024",
+  "date": "2024-10-16",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Women’s mentoring programme",
+   "es": "Programa de mentoría femenina"
+  },
+  "sub": {
+   "en": "Frenchfounders Iberia",
+   "es": "Frenchfounders Iberia"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "endeavor-workshop-2024",
+  "date": "2024-10-11",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Host & speaker",
+   "es": "Anfitriona y ponente"
+  },
+  "title": {
+   "en": "Exploration workshop on AI and future trends",
+   "es": "Workshop de exploración sobre IA y tendencias de futuro"
+  },
+  "sub": {
+   "en": "Endeavor × Microsoft",
+   "es": "Endeavor × Microsoft"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "fundspeople-2024",
+  "date": "2024-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "FundsPeople fund selectors event",
+   "es": "Evento de selectores de FundsPeople"
+  },
+  "sub": {
+   "en": "With Invesco EMEA",
+   "es": "De la mano de Invesco EMEA"
+  }
+ },
+ {
+  "id": "actualidad-economica-2024",
+  "date": "2024-09-11",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "Interview in Actualidad Económica",
+   "es": "Entrevista en Actualidad Económica"
+  },
+  "sub": {
+   "en": "EL MUNDO",
+   "es": "EL MUNDO"
+  },
+  "links": [
+   {
+    "href": "https://www.elmundo.es/economia/empresas/2024/09/11/66d9873321efa0665b8b4599.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ]
+ },
+ {
+  "id": "msr-india-2024",
+  "date": "2024-09-04",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Linguistic challenges of LLMs, with a focus on Spanish poetry and music",
+   "es": "Retos lingüísticos de los LLM, con foco en la poesía y la música en español"
+  },
+  "sub": {
+   "en": "Microsoft Research India — Lab Sabha talks",
+   "es": "Microsoft Research India — Lab Sabha talks"
+  },
+  "place": {
+   "en": "Bengaluru, India",
+   "es": "Bengaluru, India"
+  }
+ },
+ {
+  "id": "unia-2024",
+  "date": "2024-09",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "The impact of language models on the digital humanities — summer course",
+   "es": "El impacto de los modelos del lenguaje en las humanidades digitales — curso de verano"
+  },
+  "sub": {
+   "en": "Universidad Internacional de Andalucía",
+   "es": "Universidad Internacional de Andalucía"
+  },
+  "place": {
+   "en": "Baeza (Jaén)",
+   "es": "Baeza (Jaén)"
+  },
+  "note": {
+   "en": "With Manuel Palomar, Senén Barro, German Rigau and Maite Martín",
+   "es": "Con Manuel Palomar, Senén Barro, German Rigau y Maite Martín"
+  }
+ },
+ {
+  "id": "gasol-2024",
+  "date": "2024-07",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Renewal of the Grupo IFA – Gasol Foundation alliance",
+   "es": "Renovación de la alianza Grupo IFA – Gasol Foundation"
+  },
+  "note": {
+   "en": "Moderated by Amaya Valdemoro, with Pau Gasol and Forética",
+   "es": "Mesa dirigida por Amaya Valdemoro, con Pau Gasol y Forética"
+  }
+ },
+ {
+  "id": "envision-2024",
+  "date": "2024-06-27",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "How AI improved products like Factorial, Doctoralia and Luzia",
+   "es": "Cómo la IA ha mejorado productos como Factorial, Doctoralia y Luzia"
+  },
+  "sub": {
+   "en": "Tertulia de Itnig — Microsoft Envision Spain",
+   "es": "Tertulia de Itnig — Microsoft Envision España"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "video": {
+   "id": "L6xzRG7sUhI"
+  }
+ },
+ {
+  "id": "mil-2024",
+  "date": "2024-06-26",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Deep Tech Talks — AI III: generative AI and language",
+   "es": "Deep Tech Talks — IA III: IA generativa y lenguaje"
+  },
+  "sub": {
+   "en": "Madrid Innovation Lab",
+   "es": "Madrid Innovation Lab"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://milmadrid.es/event/deep-tech-talks-ia-iii/",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   }
+  ]
+ },
+ {
+  "id": "albia-2024",
+  "date": "2024-06-25",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "Artificial intelligence applied to our industry",
+   "es": "La inteligencia artificial aplicada a nuestra industria"
+  },
+  "sub": {
+   "en": "ALBIA IMAP + BSK Legal & Fiscal — Tabakalera",
+   "es": "ALBIA IMAP + BSK Legal & Fiscal — Tabakalera"
+  },
+  "place": {
+   "en": "San Sebastián",
+   "es": "San Sebastián"
+  }
+ },
+ {
+  "id": "csic-2024",
+  "date": "2024-06-03",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Documentary",
+   "es": "Documental"
+  },
+  "title": {
+   "en": "“Las vidas del CSIC: Elena González-Blanco” — short film premiere",
+   "es": "«Las vidas del CSIC: Elena González-Blanco» — estreno del cortometraje"
+  },
+  "sub": {
+   "en": "CSIC — Real Jardín Botánico",
+   "es": "CSIC — Real Jardín Botánico"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "video": {
+   "id": "p1w2WlkhiAQ"
+  }
+ },
+ {
+  "id": "mapfre-2024",
+  "date": "2024-06",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "AI, insurtech and the future of insurance",
+   "es": "IA, insurtech y el futuro del seguro"
+  },
+  "sub": {
+   "en": "Mapfre annual summit",
+   "es": "Cumbre anual de Mapfre"
+  }
+ },
+ {
+  "id": "lafinca-2024",
+  "date": "2024-05-16",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Exploring the horizons of artificial intelligence",
+   "es": "Explorando los horizontes de la inteligencia artificial"
+  },
+  "sub": {
+   "en": "LaFinca Ventures Camp",
+   "es": "LaFinca Ventures Camp"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.eventbrite.com/e/891590440007",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   }
+  ]
+ },
+ {
+  "id": "augac-2024",
+  "date": "2024-05-10",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "AI applied to institutional communication",
+   "es": "IA aplicada a la comunicación institucional"
+  },
+  "sub": {
+   "en": "AUGAC conference — Ciudad Financiera Santander",
+   "es": "Jornadas AUGAC — Ciudad Financiera del Banco Santander"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://augac-ia.usal.es/ponentes",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ramon-areces-2024",
+  "date": "2024-05",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Workshop on the social impact of artificial intelligence",
+   "es": "Workshop sobre el impacto social de la inteligencia artificial"
+  },
+  "sub": {
+   "en": "Fundación Ramón Areces",
+   "es": "Fundación Ramón Areces"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Ramón López de Mántaras; invited by Senén Barro",
+   "es": "Con Ramón López de Mántaras; invitada por Senén Barro"
+  },
+  "links": [
+   {
+    "href": "https://iafiable.es/index.php/events/iii-congreso-sociedad-de-la-innovacion-y-de-la-inteligencia-artificial-848/",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   }
+  ]
+ },
+ {
+  "id": "frdp-intec-2024",
+  "date": "2024-04-15",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Deep tech, deep science and AI: challenges for Spain",
+   "es": "Deep tech, deep science e IA: retos para España"
+  },
+  "sub": {
+   "en": "Fundación Rafael del Pino — INTEC 2024 report",
+   "es": "Fundación Rafael del Pino — Informe INTEC 2024"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With PLD Space and BeAble Capital",
+   "es": "Con PLD Space y BeAble Capital"
+  },
+  "links": [
+   {
+    "href": "https://frdelpino.es/conferencia/innovacion-con-futuro-en-espana/",
+    "label": {
+     "en": "Event page",
+     "es": "Web del evento"
+    }
+   }
+  ],
+  "video": {
+   "id": "AcwfTx_xnSY"
+  }
+ },
+ {
+  "id": "qubic-2024",
+  "date": "2024-04-11",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Exploring the Future of AI with Qubic",
+   "es": "Exploring the Future of AI with Qubic"
+  },
+  "sub": {
+   "en": "Qubic AI Meetup — Wayra Madrid",
+   "es": "Qubic AI Meetup — Wayra Madrid"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "video": {
+   "id": "Srh_0k8w__g"
+  }
+ },
+ {
+  "id": "ea-2024",
+  "date": "2024-04-11",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Talk for the AI, innovation and data team",
+   "es": "Charla para el equipo de IA, innovación y datos"
+  },
+  "sub": {
+   "en": "Electronic Arts (EA)",
+   "es": "Electronic Arts (EA)"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "laverdad-2024",
+  "date": "2024-03-09",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Featured profile",
+   "es": "Perfil destacado"
+  },
+  "title": {
+   "en": "“Talento Femenino” special",
+   "es": "Especial «Talento Femenino»"
+  },
+  "sub": {
+   "en": "La Verdad",
+   "es": "La Verdad"
+  },
+  "place": {
+   "en": "Murcia",
+   "es": "Murcia"
+  },
+  "links": [
+   {
+    "href": "https://www.laverdad.es/murcia/verdad-entrega-manana-revista-talento-femenino-20240307004447-nt.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ]
+ },
+ {
+  "id": "somosnlp-2024",
+  "date": "2024-03",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Opening keynote",
+   "es": "Keynote de apertura"
+  },
+  "title": {
+   "en": "LLMs and opportunities in Spanish: SLMs, RAG and vector databases",
+   "es": "LLMs y oportunidades en español: SLMs, RAG y bases de datos vectoriales"
+  },
+  "sub": {
+   "en": "Somos NLP Hackathon",
+   "es": "Somos NLP Hackathon"
+  }
+ },
+ {
+  "id": "abc-2024",
+  "date": "2024-01-12",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "AI adoption in 2024",
+   "es": "La adopción de la IA en 2024"
+  },
+  "sub": {
+   "en": "ABC — article by Rodrigo Alonso",
+   "es": "ABC — artículo de Rodrigo Alonso"
+  }
+ },
+ {
+  "id": "legal-world-2024",
+  "date": "2024-01",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Masterclass",
+   "es": "Clase magistral"
+  },
+  "title": {
+   "en": "AI masterclass — Legal Leadership Development Executive Program",
+   "es": "Clase magistral sobre IA — Legal Leadership Development Executive Program"
+  },
+  "sub": {
+   "en": "Women in a Legal World & Harvard University — Meta, Madrid",
+   "es": "Women in a Legal World y Harvard University — sede de Meta, Madrid"
+  }
+ },
+ {
+  "id": "bestinver-2024",
+  "date": "2024-01",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "AI trends in asset management and fintech",
+   "es": "Tendencias de IA en asset management y fintech"
+  },
+  "sub": {
+   "en": "Bestinver / ACCIONA",
+   "es": "Bestinver / ACCIONA"
+  }
+ },
+ {
+  "id": "databricks-2023",
+  "date": "2023-11-28",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Moderator",
+   "es": "Moderadora"
+  },
+  "title": {
+   "en": "GenAI roundtable",
+   "es": "Mesa redonda sobre IA generativa"
+  },
+  "sub": {
+   "en": "Databricks Data + AI World Tour",
+   "es": "Databricks Data + AI World Tour"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "salesforce-innovation-2023",
+  "date": "2023-10-27",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "Plenary talk",
+   "es": "Ponencia plenaria"
+  },
+  "sub": {
+   "en": "Salesforce Innovation Days",
+   "es": "Salesforce Innovation Days"
+  },
+  "place": {
+   "en": "La Granja, Segovia",
+   "es": "La Granja, Segovia"
+  }
+ },
+ {
+  "id": "paradigma-2023",
+  "date": "2023-10-21",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "“Status and Future of GenAI”",
+   "es": "“Status and Future of GenAI”"
+  },
+  "sub": {
+   "en": "Paradigma Open Space",
+   "es": "Paradigma Open Space"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "aon-2023",
+  "date": "2023-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "The impact of generative AI on business",
+   "es": "El impacto de la IA generativa en los negocios"
+  },
+  "sub": {
+   "en": "Aon — Connected for Innovation Network",
+   "es": "Aon — Connected for Innovation Network"
+  },
+  "place": {
+   "en": "Monteverdi Arts Club",
+   "es": "Monteverdi Arts Club"
+  }
+ },
+ {
+  "id": "hr-summit-2023",
+  "date": "2023-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "The evolution of Spanish startups",
+   "es": "La evolución de las startups españolas"
+  },
+  "sub": {
+   "en": "HR Innovation Summit — RRHHDigital & AEDRH",
+   "es": "HR Innovation Summit — RRHHDigital & AEDRH"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "video": {
+   "id": "dcYOwwZc1wY"
+  }
+ },
+ {
+  "id": "uber-2023",
+  "date": "2023-09-14",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "Uber 10th Anniversary — “Ciudades en Movimiento”",
+   "es": "Uber 10th Anniversary — “Ciudades en Movimiento”"
+  },
+  "place": {
+   "en": "Mexico City",
+   "es": "Ciudad de México"
+  }
+ },
+ {
+  "id": "techcrunch-2023",
+  "date": "2023-07-12",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "Clibrain joins the generative AI race with Lince, an LLM optimized for Spanish",
+   "es": "Clibrain joins the generative AI race with Lince, an LLM optimized for Spanish"
+  },
+  "sub": {
+   "en": "TechCrunch",
+   "es": "TechCrunch"
+  },
+  "links": [
+   {
+    "href": "https://techcrunch.com/2023/07/12/lince-llm/",
+    "label": {
+     "en": "Read in TechCrunch",
+     "es": "Leer en TechCrunch"
+    }
+   }
+  ]
+ },
+ {
+  "id": "altman-2023",
+  "date": "2023-05-23",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Fireside chat",
+   "es": "Fireside chat"
+  },
+  "title": {
+   "en": "Fireside Chat with Sam Altman",
+   "es": "Fireside Chat with Sam Altman"
+  },
+  "sub": {
+   "en": "IE University",
+   "es": "IE University"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "hora-inversor-2023",
+  "date": "2023-05",
+  "approx": true,
+  "type": "media",
+  "role": {
+   "en": "Radio",
+   "es": "Radio"
+  },
+  "title": {
+   "en": "Presenting Clibrain and Clichat",
+   "es": "Presentando Clibrain y Clichat"
+  },
+  "sub": {
+   "en": "“La hora del Inversor” — Radio Intereconomía",
+   "es": "«La hora del Inversor» — Radio Intereconomía"
+  },
+  "video": {
+   "id": "hlWbXhi4-vw"
+  }
+ },
+ {
+  "id": "gran-pregunta-2023",
+  "date": "2023-04-22",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "TV",
+   "es": "TV"
+  },
+  "title": {
+   "en": "The impact of AI today",
+   "es": "El impacto de la inteligencia artificial hoy"
+  },
+  "sub": {
+   "en": "“La Gran Pregunta” — TRECE TV, with Jesús Avezuela and Antonio Pau",
+   "es": "«La Gran Pregunta» — TRECE TV, con Jesús Avezuela y Antonio Pau"
+  },
+  "video": {
+   "id": "2dUlMhWNDds"
+  }
+ },
+ {
+  "id": "bienal-2023",
+  "date": "2023-02",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Opening of the Biennial “Ciudad y Ciencia” on artificial intelligence",
+   "es": "Acto inaugural de la Bienal Ciudad y Ciencia sobre inteligencia artificial"
+  },
+  "sub": {
+   "en": "Círculo de Bellas Artes",
+   "es": "Círculo de Bellas Artes"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With José Manuel Sánchez Ron; hosted by Luis Quevedo (FECYT)",
+   "es": "Con José Manuel Sánchez Ron; conduce Luis Quevedo (FECYT)"
+  },
+  "video": {
+   "id": "zrSA4BrwiWo"
+  }
+ },
+ {
+  "id": "santalucia-2023",
+  "date": "2023",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Talk at Santalucía Asset Management",
+   "es": "Conferencia en Santalucía Asset Management"
+  },
+  "sub": {
+   "en": "Santalucía Asset Management",
+   "es": "Santalucía Asset Management"
+  },
+  "video": {
+   "id": "P9gMWqZBqS0"
+  }
+ },
+ {
+  "id": "telemadrid-2023",
+  "date": "2023",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "TV",
+   "es": "TV"
+  },
+  "title": {
+   "en": "Clibrain on Telemadrid",
+   "es": "Clibrain en Telemadrid"
+  },
+  "sub": {
+   "en": "Telemadrid",
+   "es": "Telemadrid"
+  },
+  "video": {
+   "id": "4dXfLOh14Ss"
+  }
+ },
+ {
+  "id": "france24-2023",
+  "date": "2023",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "TV",
+   "es": "TV"
+  },
+  "title": {
+   "en": "Clibrain on France 24",
+   "es": "Clibrain en France 24"
+  },
+  "sub": {
+   "en": "France 24",
+   "es": "France 24"
+  },
+  "video": {
+   "id": "yYRuqnIwUO0"
+  }
+ },
+ {
+  "id": "wired-2023",
+  "date": "2023",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "Plenary talk — Wired Summit",
+   "es": "Ponencia plenaria — Wired Summit"
+  },
+  "sub": {
+   "en": "Wired 2023 Summit — “Elena González-Blanco, la impulsora de la IA en español”",
+   "es": "Wired 2023 Summit — «Elena González-Blanco, la impulsora de la IA en español»"
+  },
+  "place": {
+   "en": "Mexico City",
+   "es": "Ciudad de México"
+  },
+  "links": [
+   {
+    "href": "https://es.wired.com/articulos/elena-gonzalez-blanco-la-impulsora-de-la-inteligencia-artificial-en-espanol",
+    "label": {
+     "en": "Read in Wired",
+     "es": "Leer en Wired"
+    }
+   }
+  ]
+ },
+ {
+  "id": "salesforce-worldtour-2023",
+  "date": "2023",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "Generative AI and productivity",
+   "es": "IA generativa y productividad"
+  },
+  "sub": {
+   "en": "Salesforce World Tour Madrid, with Slack",
+   "es": "Salesforce World Tour Madrid, con Slack"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "casa-america-2022",
+  "date": "2022-05-11",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Conversatorios Casa de América RTVE — AI special",
+   "es": "Conversatorios Casa de América RTVE — Especial Inteligencia Artificial"
+  },
+  "sub": {
+   "en": "Casa de América & RTVE",
+   "es": "Casa de América & RTVE"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "expansion-2022",
+  "date": "2022",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "“¿A qué empresas puede ayudar la IA?”",
+   "es": "“¿A qué empresas puede ayudar la IA?”"
+  },
+  "sub": {
+   "en": "Expansión — inspiring conversations between executives and entrepreneurs",
+   "es": "Expansión — conversaciones inspiradoras entre ejecutivas y emprendedoras"
+  }
+ },
+ {
+  "id": "iese-2021",
+  "date": "2021-06",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Women’s integration and contribution to business",
+   "es": "Integración y contribución de la mujer en el mundo empresarial"
+  },
+  "sub": {
+   "en": "Panel moderated by Nuria Chinchilla (IESE), with Adriana Domínguez and Cristina del Campo",
+   "es": "Panel moderado por Nuria Chinchilla (IESE), con Adriana Domínguez y Cristina del Campo"
+  },
+  "video": {
+   "id": "cs3JTEXVBM8"
+  }
+ },
+ {
+  "id": "ser-2021",
+  "date": "2021-03-08",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Radio",
+   "es": "Radio"
+  },
+  "title": {
+   "en": "Women in Science",
+   "es": "Mujeres en la Ciencia"
+  },
+  "sub": {
+   "en": "Cadena SER — La Ventana de Madrid",
+   "es": "Cadena SER — La Ventana de Madrid"
+  },
+  "video": {
+   "id": "sQYGjj6nsxE"
+  }
+ },
+ {
+  "id": "inese-2019",
+  "date": "2019-06-13",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "CoverWallet: success case in the US",
+   "es": "CoverWallet: caso de éxito en Estados Unidos"
+  },
+  "sub": {
+   "en": "Global Summit for Insurance Innovation (INESE)",
+   "es": "Global Summit for Insurance Innovation (INESE)"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "aws-2019",
+  "date": "2019-05-07",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "CEO keynote guest speaker",
+   "es": "Invitada a la keynote del CEO"
+  },
+  "sub": {
+   "en": "Amazon Web Services Summit",
+   "es": "Amazon Web Services Summit"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "icea-2019",
+  "date": "2019-05",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Home multi-risk insurance conference",
+   "es": "Jornada sobre el seguro multirriesgo del hogar"
+  },
+  "sub": {
+   "en": "ICEA",
+   "es": "ICEA"
+  }
+ },
+ {
+  "id": "mit-club-2019",
+  "date": "2019-01-21",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "“Artificial Intelligence: Opportunities and Challenges”",
+   "es": "«Inteligencia artificial: oportunidades y retos»"
+  },
+  "sub": {
+   "en": "American Institute of Madrid & MIT Club of Spain",
+   "es": "American Institute of Madrid y MIT Club of Spain"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ },
+ {
+  "id": "telos-2019",
+  "date": "2019",
+  "approx": false,
+  "type": "publication",
+  "role": {
+   "en": "Article",
+   "es": "Artículo"
+  },
+  "title": {
+   "en": "“En el corazón de la encrucijada. IA y tecnologías del lenguaje”",
+   "es": "“En el corazón de la encrucijada. IA y tecnologías del lenguaje”"
+  },
+  "sub": {
+   "en": "Telos 111",
+   "es": "Telos 111"
+  }
+ },
+ {
+  "id": "aida-2019",
+  "date": "2019",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "Keynote and international panel",
+   "es": "Ponencia principal y panel internacional"
+  },
+  "sub": {
+   "en": "AIDA Europe Conference",
+   "es": "AIDA Europe Conference"
+  },
+  "place": {
+   "en": "Lisbon",
+   "es": "Lisboa"
+  }
+ },
+ {
+  "id": "icai-2018",
+  "date": "2018-04-05",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "“Inteligencia Artificial: La Humanidad Digital”",
+   "es": "“Inteligencia Artificial: La Humanidad Digital”"
+  },
+  "sub": {
+   "en": "“AI, impact on people and society” — Cátedra de Industria Conectada, ICAI (Comillas)",
+   "es": "«Inteligencia artificial, impacto en el ser humano y en la sociedad» — Cátedra de Industria Conectada, ICAI (Comillas)"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "video": {
+   "id": "VI85CRkg1Cw"
+  }
+ },
+ {
+  "id": "harvard-club-2018",
+  "date": "2018-02-27",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "“Challenges and opportunities of AI today”",
+   "es": "«Retos y oportunidades de la IA hoy»"
+  },
+  "sub": {
+   "en": "Harvard Club of Spain & IE School of International Relations",
+   "es": "Harvard Club of Spain e IE School of International Relations"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  }
+ }
+]
