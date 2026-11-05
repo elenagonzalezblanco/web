@@ -21,6 +21,7 @@ To add an item, append an entry to `data/events.json` (bilingual `en`/`es` texts
 - `video`: `{"id": "<YouTube id>", "start": seconds}`; the thumbnail goes in `assets/media/yt/<id>.jpg` and `<id>-sm.jpg`. Video cards are shown larger and get a "Watch on YouTube" link.
 - `industries` (talks): list of industry keys used by the filters — `financial`, `insurance`, `hr`, `retail`, `industry`, `legal`, `tech`, `startups`, `boards`, `language`, `education`, `women`, `general` (labels in `INDUSTRIES` in `tools/build_events.py`).
 - `featured: true` (talks with a video) to show it in the "Featured talks on video" carousel.
-- `highlight: true` (publications) to list it first.
+- `highlight: true`: for talks, a selected talk from the CV (shown first in the carousel, with a ★ badge and its own filter); for publications, listed first.
+- `focus`: CSS `object-position` for the image crop, e.g. `"85% 35%"`.
 
-Education logos are in `assets/img/logos/`.
+Education logos are in `assets/img/logos/`; research project logos are in `assets/img/projects/` (the Projects section is edited directly in `index.html`).

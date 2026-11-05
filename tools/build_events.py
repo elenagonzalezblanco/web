@@ -13,8 +13,9 @@ Each event in data/events.json may define:
   id, date (YYYY, YYYY-MM or YYYY-MM-DD), approx (show month only), type (talk|media|publication|award),
   role/title/sub/place/note as {"en": ..., "es": ...}, links [{href, label{en,es}}],
   image (file name without extension, in assets/media/events or a sub-folder such as "press/x"; an "-sm" variant is used for cards),
-  video {id, start} (YouTube), featured (talks with video shown in the carousel),
-  industries (talks: keys of INDUSTRIES below) and highlight (publications shown first).
+  video {id, start} (YouTube), featured (talks with video shown in the carousel), focus (CSS object-position for the image),
+  industries (talks: keys of INDUSTRIES below) and highlight (talks: selected talks from the CV, shown first in the
+  carousel with a badge and their own filter; publications: listed first).
 """
 import html
 import json
@@ -104,10 +105,10 @@ def media_attrs(ev):
 
 def thumb(ev, size='sm'):
     suffix = '-sm' if size == 'sm' else ''
-    if ev.get('video'):
-        return f'assets/media/yt/{ev["video"]["id"]}{suffix}.jpg'
     if ev.get('image'):
         return image_path(ev, suffix)
+    if ev.get('video'):
+        return f'assets/media/yt/{ev["video"]["id"]}{suffix}.jpg'
     return None
 
 
@@ -137,9 +138,10 @@ def media_button(ev, size, cls):
     label_en = ('Play video: ' if is_video else 'Open image: ') + ev['title']['en']
     label_es = ('Reproducir vídeo: ' if is_video else 'Abrir imagen: ') + ev['title']['es']
     play = '<span class="play" aria-hidden="true"></span>' if is_video else ''
+    focus = f' style="object-position: {esc(ev["focus"])}"' if ev.get('focus') and ev.get('image') else ''
     return (f'<button type="button" class="{cls}" data-lightbox {attrs} aria-label="{esc(label_en)}" '
             f'data-label-en="{esc(label_en)}" data-label-es="{esc(label_es)}">'
-            f'<img src="{src}" alt="" loading="lazy" decoding="async" />{play}</button>')
+            f'<img src="{src}" alt="" loading="lazy" decoding="async"{focus} />{play}</button>')
 
 
 def tags_html(ev):
@@ -159,17 +161,25 @@ def details(ev, inline_place=False):
     return sub + place + note
 
 
+def star(ev):
+    if ev['type'] != 'talk' or not ev.get('highlight'):
+        return ''
+    return f'<span class="ev-star">★ {bi_raw("Selected talk", "Charla destacada")}</span>'
+
+
 def card(ev):
     is_video = bool(ev.get('video'))
     classes = ['ev', f'ev--{ev["type"]}', 'has-media']
     if is_video:
         classes.append('ev--video')
+    if ev.get('highlight'):
+        classes.append('ev--star')
     links = links_html(ev)
     links = f'<div class="ev-links">{links}</div>' if links else ''
     tags = ' '.join(ev.get('industries') or [])
     return (f'<article class="{" ".join(classes)}" data-type="{ev["type"]}" data-video="{1 if is_video else 0}" '
-            f'data-tags="{tags}" id="ev-{esc(ev["id"])}">{media_button(ev, "sm", "ev-media")}'
-            f'<div class="ev-body"><div class="ev-meta">{date_html(ev)}<span class="ev-role">{bi(ev["role"])}</span></div>'
+            f'data-tags="{tags}" data-star="{1 if ev.get("highlight") else 0}" id="ev-{esc(ev["id"])}">{media_button(ev, "sm", "ev-media")}'
+            f'<div class="ev-body"><div class="ev-meta">{date_html(ev)}<span class="ev-role">{bi(ev["role"])}</span>{star(ev)}</div>'
             f'<h4>{bi(ev["title"])}</h4>{details(ev)}{tags_html(ev)}{links}</div></article>')
 
 
@@ -179,8 +189,9 @@ def row(ev):
     links = links_html(ev)
     links = f'<div class="ev-links">{links}</div>' if links else ''
     tags = ' '.join(ev.get('industries') or [])
-    return (f'<li class="ev ev-row ev--{ev["type"]}" data-type="{ev["type"]}" data-video="0" data-tags="{tags}" id="ev-{esc(ev["id"])}">'
-            f'<div class="ev-meta">{date_html(ev)}<span class="ev-role">{bi(ev["role"])}</span>{place}</div>'
+    star_cls = ' ev--star' if ev.get('highlight') else ''
+    return (f'<li class="ev ev-row ev--{ev["type"]}{star_cls}" data-type="{ev["type"]}" data-video="0" data-tags="{tags}" data-star="{1 if ev.get("highlight") else 0}" id="ev-{esc(ev["id"])}">'
+            f'<div class="ev-meta">{date_html(ev)}<span class="ev-role">{bi(ev["role"])}</span>{star(ev)}{place}</div>'
             f'<div class="ev-row-main"><h4>{bi(ev["title"])}</h4>{sub}</div>{tags_html(ev)}{links}</li>')
 
 
@@ -192,8 +203,8 @@ def slide(ev):
                f'<span aria-hidden="true">▶</span> {bi_raw("Watch video", "Ver vídeo")}</button>'
                f'<a class="btn btn-glass btn-sm" href="{esc(youtube_url(ev))}" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a>'
                f'</div>')
-    return (f'<article class="slide" data-type="{ev["type"]}">{media_button(ev, "lg", "slide-media")}'
-            f'<div class="slide-caption"><div class="ev-meta">{date_html(ev)}<span class="ev-role">{bi(ev["role"])}</span></div>'
+    return (f'<article class="slide{" slide--star" if ev.get("highlight") else ""}" data-type="{ev["type"]}">{media_button(ev, "lg", "slide-media")}'
+            f'<div class="slide-caption"><div class="ev-meta">{date_html(ev)}<span class="ev-role">{bi(ev["role"])}</span>{star(ev)}</div>'
             f'<h3>{bi(ev["title"])}</h3>{sub}{actions}</div></article>')
 
 
@@ -226,7 +237,9 @@ def build_talks(events):
     stats_html = ''.join(f'<li><b>{n}</b>{bi_raw(en, es)}</li>' for n, en, es in stats)
     stats_html += f'<li><b>{years[0]}–{years[-1]}</b>{bi_raw("on stage", "en el escenario")}</li>'
 
-    slides = ''.join(slide(e) for e in talks if e.get('featured') and e.get('video'))
+    featured = [e for e in talks if e.get('featured') and e.get('video')]
+    featured.sort(key=lambda e: not e.get('highlight'))
+    slides = ''.join(slide(e) for e in featured)
 
     by_year = OrderedDict()
     for e in talks:
@@ -239,12 +252,13 @@ def build_talks(events):
             f'<span class="ev-count">{len(items)}</span></header>'
             f'<div class="ev-year-body">{year_body(items)}</div></section>')
 
-    filters = [('all', 'All', 'Todas', len(talks)), ('video', 'With video', 'Con vídeo', len(videos))]
+    stars = [e for e in talks if e.get('highlight')]
+    filters = [('all', 'All', 'Todas', len(talks)), ('star', 'Selected', 'Destacadas', len(stars)), ('video', 'With video', 'Con vídeo', len(videos))]
     for key, (en, es) in sorted(INDUSTRIES.items(), key=lambda kv: (kv[0] == 'general', -tag_counts[kv[0]])):
         if tag_counts[key]:
             filters.append((key, en, es, tag_counts[key]))
     filters_html = ''.join(
-        f'<button class="filter{" active" if k == "all" else ""}{" filter-video" if k == "video" else ""}" data-ev-filter="{k}" '
+        f'<button class="filter{" active" if k == "all" else ""}{" filter-video" if k == "video" else ""}{" filter-star" if k == "star" else ""}" data-ev-filter="{k}" '
         f'aria-pressed="{"true" if k == "all" else "false"}">{bi_raw(esc(en), esc(es))}<span class="filter-n">{n}</span></button>'
         for k, en, es, n in filters)
 

@@ -2421,8 +2421,8 @@
    "es": "Artículo científico"
   },
   "title": {
-   "en": "Semantic similarity in Spanish song lyrics",
-   "es": "Similitud semántica en letras de canciones en español"
+   "en": "Test-driving information theory-based compositional distributional semantics: a case study on Spanish song lyrics",
+   "es": "Test-driving information theory-based compositional distributional semantics: a case study on Spanish song lyrics"
   },
   "sub": {
    "en": "Knowledge-Based Systems (Elsevier) — ERC POSTDATA project",
@@ -3954,7 +3954,8 @@
   },
   "industries": [
    "tech"
-  ]
+  ],
+  "highlight": true
  },
  {
   "id": "salesforce-innovation-2023",
@@ -3979,7 +3980,8 @@
   },
   "industries": [
    "tech"
-  ]
+  ],
+  "highlight": true
  },
  {
   "id": "paradigma-2023",
@@ -4107,7 +4109,8 @@
   },
   "industries": [
    "general"
-  ]
+  ],
+  "highlight": true
  },
  {
   "id": "techcrunch-2023",
@@ -4147,20 +4150,28 @@
    "es": "Fireside chat"
   },
   "title": {
-   "en": "Fireside Chat with Sam Altman",
-   "es": "Fireside Chat with Sam Altman"
+   "en": "A conversation with Sam Altman",
+   "es": "Conversación con Sam Altman"
   },
   "sub": {
-   "en": "IE University",
-   "es": "IE University"
+   "en": "IE University — with Mo Bavarian (OpenAI) and Joe Haslam (IE)",
+   "es": "IE University — con Mo Bavarian (OpenAI) y Joe Haslam (IE)"
   },
   "place": {
    "en": "Madrid",
    "es": "Madrid"
   },
   "industries": [
-   "tech"
-  ]
+   "tech",
+   "education"
+  ],
+  "video": {
+   "id": "n022rQJ68Yg"
+  },
+  "image": "altman-2023",
+  "featured": true,
+  "highlight": true,
+  "focus": "85% 35%"
  },
  {
   "id": "hora-inversor-2023",
@@ -4326,7 +4337,8 @@
   },
   "industries": [
    "tech"
-  ]
+  ],
+  "highlight": true
  },
  {
   "id": "salesforce-worldtour-2023",
@@ -4722,7 +4734,8 @@
   },
   "industries": [
    "tech"
-  ]
+  ],
+  "highlight": true
  },
  {
   "id": "icea-2019",
@@ -4797,7 +4810,8 @@
   },
   "industries": [
    "general"
-  ]
+  ],
+  "highlight": true
  },
  {
   "id": "aida-2019",
@@ -4914,7 +4928,8 @@
    "general",
    "education"
   ],
-  "featured": true
+  "featured": true,
+  "highlight": true
  },
  {
   "id": "harvard-club-2018",
@@ -4939,7 +4954,8 @@
   },
   "industries": [
    "general"
-  ]
+  ],
+  "highlight": true
  },
  {
   "id": "choiseul-2018",

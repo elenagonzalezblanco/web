@@ -84,6 +84,7 @@ let evFilter = 'all';
 function evMatches(card) {
   if (evFilter === 'all') return true;
   if (evFilter === 'video') return card.dataset.video === '1';
+  if (evFilter === 'star') return card.dataset.star === '1';
   return (card.dataset.tags || '').split(' ').includes(evFilter);
 }
 
@@ -128,6 +129,24 @@ document.addEventListener('click', e => {
 });
 if (evMore) evMore.addEventListener('click', () => { evExpanded = true; renderEvents(); });
 renderEvents();
+
+// ── Research projects: logo tiles reveal details ─────────
+const projLogos = [...document.querySelectorAll('.proj-logo')];
+projLogos.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') !== 'true';
+    projLogos.forEach(b => {
+      const on = open && b === btn;
+      b.setAttribute('aria-expanded', String(on));
+      document.getElementById(b.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (open) {
+      const panel = document.getElementById(btn.getAttribute('aria-controls'));
+      const r = panel.getBoundingClientRect();
+      if (r.bottom > window.innerHeight) panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
+});
 
 // ── Carousel ─────────────────────────────────────────────
 document.querySelectorAll('[data-carousel]').forEach(root => {
@@ -209,6 +228,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbo
 // ── Internationalisation (EN / ES) ───────────────────────
 const translations = {
   en: {
+    "projects.hint": "Click a logo to see each project and its links.",
     "pub.papers": "Research papers",
     "pub.books": "Books, chapters & articles",
     "awards.title": "Awards &amp; <em>Recognition</em>",
@@ -333,6 +353,7 @@ const translations = {
     "footer.top": "Back to top"
   },
   es: {
+    "projects.hint": "Haz clic en un logo para ver cada proyecto y sus enlaces.",
     "pub.papers": "Artículos de investigación",
     "pub.books": "Libros, capítulos y artículos",
     "awards.title": "Premios y <em>reconocimientos</em>",
