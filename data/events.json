@@ -574,7 +574,10 @@
   "image": "holded-2026",
   "industries": [
    "startups"
-  ]
+  ],
+  "featured": true,
+  "spotlight": 2,
+  "focus": "72% 50%"
  },
  {
   "id": "lseg-insight-2026",
@@ -4172,7 +4175,7 @@
   "featured": true,
   "highlight": true,
   "focus": "85% 35%",
-  "spotlight": true
+  "spotlight": 1
  },
  {
   "id": "hora-inversor-2023",

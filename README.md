@@ -22,7 +22,7 @@ To add an item, append an entry to `data/events.json` (bilingual `en`/`es` texts
 - `industries` (talks): list of industry keys used by the filters — `financial`, `insurance`, `hr`, `retail`, `industry`, `legal`, `tech`, `startups`, `boards`, `language`, `education`, `women`, `general` (labels in `INDUSTRIES` in `tools/build_events.py`).
 - `featured: true` (talks with a video) to show it in the "Featured talks on video" carousel.
 - `highlight: true`: for talks, a selected talk from the CV (★ badge and its own filter); for publications, listed first.
-- `spotlight: true` (talks): shown first in the carousel; the other featured talks follow from newest to oldest.
+- `spotlight: 1`, `2`… (talks): position at the start of the carousel; the other featured talks follow from newest to oldest.
 - `focus`: CSS `object-position` for the image crop, e.g. `"85% 35%"`.
 
 Education logos are in `assets/img/logos/`, company logos for the experience section in `assets/img/companies/`; research project logos are in `assets/img/projects/` (the Projects section is edited directly in `index.html`).
