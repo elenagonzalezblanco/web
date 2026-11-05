@@ -507,9 +507,9 @@ body.lb-open { overflow: hidden; }
   .hero-media { position: relative; left: 0; height: 58vh; min-height: 400px; }
   .hero-media img { object-position: 58% 18%; }
   .hero-media::after {
-    content: ""; position: absolute; inset: 0;
+    content: ""; position: absolute; inset: 0 0 -2px;
     background:
-      linear-gradient(0deg, var(--bg) 0%, rgba(10, 10, 11, 0) 38%),
+      linear-gradient(0deg, var(--bg) 0%, var(--bg) 9%, rgba(10, 10, 11, .82) 22%, rgba(10, 10, 11, 0) 48%),
       linear-gradient(180deg, rgba(10, 10, 11, .6) 0%, rgba(10, 10, 11, 0) 18%);
   }
   .hero::after { display: none; }
