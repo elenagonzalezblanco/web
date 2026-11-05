@@ -1553,7 +1553,10 @@
   "image": "cervantes-lisboa-2025",
   "industries": [
    "language"
-  ]
+  ],
+  "video": {
+   "id": "yZwfAZn1eDw"
+  }
  },
  {
   "id": "arbitraje-2025",
@@ -2207,7 +2210,11 @@
   ],
   "industries": [
    "education"
-  ]
+  ],
+  "video": {
+   "id": "zHiP-U2LgzY",
+   "start": 4375
+  }
  },
  {
   "id": "ica-program-2025",
@@ -2758,7 +2765,11 @@
   "industries": [
    "women",
    "startups"
-  ]
+  ],
+  "video": {
+   "id": "pmMOWAEYDag",
+   "start": 700
+  }
  },
  {
   "id": "capitanes-ia-2025",
@@ -2946,6 +2957,27 @@
    }
   ],
   "image": "laurel-2025"
+ },
+ {
+  "id": "womenvalue-2024",
+  "date": "2024-12-18",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Podcast",
+   "es": "Podcast"
+  },
+  "title": {
+   "en": "“We are educating AI to be more egalitarian”",
+   "es": "«Estamos educando a la IA para que sea más igualitaria»"
+  },
+  "sub": {
+   "en": "Womenvalue podcast — finanzas.com",
+   "es": "Podcast Womenvalue — finanzas.com"
+  },
+  "video": {
+   "id": "iWFsCahT280"
+  }
  },
  {
   "id": "impact-2024",
@@ -3816,6 +3848,36 @@
   ]
  },
  {
+  "id": "aeit-2024",
+  "date": "2024-03-15",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "The role of the telecommunications engineer in artificial intelligence",
+   "es": "El papel del ingeniero de telecomunicación en la inteligencia artificial"
+  },
+  "sub": {
+   "en": "AEIT Madrid — Association of Telecommunications Engineers",
+   "es": "AEIT Madrid — Asociación de Ingenieros de Telecomunicación"
+  },
+  "video": {
+   "id": "chRF3Zt7TRc",
+   "start": 110
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "industries": [
+   "tech",
+   "education"
+  ]
+ },
+ {
   "id": "laverdad-2024",
   "date": "2024-03-09",
   "approx": false,
@@ -4178,6 +4240,39 @@
   "spotlight": 1
  },
  {
+  "id": "afi-35-2023",
+  "date": "2023-05-04",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Third dialogue: artificial intelligence — towards a new economic and financial order?",
+   "es": "Tercer diálogo: inteligencia artificial. ¿Hacia un nuevo orden económico y financiero?"
+  },
+  "sub": {
+   "en": "Afi 35th anniversary — Afi Escuela",
+   "es": "35 aniversario de Afi — Afi Escuela"
+  },
+  "video": {
+   "id": "tQF1M91nbtg",
+   "start": 800
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "Moderated by Borja Foncillas, chairman of Afi",
+   "es": "Modera Borja Foncillas, presidente de Afi"
+  },
+  "industries": [
+   "financial"
+  ]
+ },
+ {
   "id": "hora-inversor-2023",
   "date": "2023-05",
   "approx": true,
@@ -4395,6 +4490,31 @@
   ]
  },
  {
+  "id": "italks-2022",
+  "date": "2022-01",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Artificial intelligence: challenges and opportunities in industry",
+   "es": "Inteligencia artificial: retos y oportunidades en la industria"
+  },
+  "sub": {
+   "en": "iTALKS — Industry Talks España",
+   "es": "iTALKS — Industry Talks España"
+  },
+  "video": {
+   "id": "ZvzHaZJyc_M"
+  },
+  "industries": [
+   "financial",
+   "general"
+  ]
+ },
+ {
   "id": "expansion-2022",
   "date": "2022",
   "approx": false,
@@ -4456,6 +4576,40 @@
    "tech"
   ],
   "featured": true
+ },
+ {
+  "id": "madrimasd-2021",
+  "date": "2021-11",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Knowledge and creativity in the face of major global challenges",
+   "es": "Encuentro en torno al conocimiento y la creatividad ante los grandes retos globales"
+  },
+  "sub": {
+   "en": "madri+d — Science and Innovation Week, Instituto Cervantes",
+   "es": "madri+d — Semana de la Ciencia y la Innovación, Instituto Cervantes"
+  },
+  "video": {
+   "id": "ZxuM9rcZhUE",
+   "start": 1150
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With researchers and entrepreneurs awarded by the Community of Madrid",
+   "es": "Con investigadores y emprendedores premiados por la Comunidad de Madrid"
+  },
+  "industries": [
+   "education",
+   "general"
+  ]
  },
  {
   "id": "south-summit-2021",
@@ -4543,6 +4697,65 @@
   },
   "industries": [
    "women"
+  ]
+ },
+ {
+  "id": "technovation-2021",
+  "date": "2021-06",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "Technology, humanities and the future: the sky is the limit",
+   "es": "Tecnología, humanidades y futuro: the sky is the limit"
+  },
+  "sub": {
+   "en": "Technovation Girls 2021 — Universidad Carlos III de Madrid",
+   "es": "Technovation Girls 2021 — Universidad Carlos III de Madrid"
+  },
+  "video": {
+   "id": "0xcf9xmesVA",
+   "start": 3660
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "industries": [
+   "education",
+   "women"
+  ]
+ },
+ {
+  "id": "afi-masterclass-2021",
+  "date": "2021-03-10",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Masterclass",
+   "es": "Masterclass"
+  },
+  "title": {
+   "en": "Artificial intelligence and insurtech: towards the digital transformation of insurance",
+   "es": "Inteligencia artificial e insurtech: hacia la transformación digital del seguro"
+  },
+  "sub": {
+   "en": "Afi Escuela de Finanzas",
+   "es": "Afi Escuela de Finanzas"
+  },
+  "video": {
+   "id": "Gkb-WXb0hOg"
+  },
+  "place": {
+   "en": "Online",
+   "es": "En línea"
+  },
+  "industries": [
+   "insurance",
+   "education"
   ]
  },
  {
@@ -4643,6 +4856,35 @@
   ]
  },
  {
+  "id": "aepd-2020",
+  "date": "2020-12",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Lecture",
+   "es": "Conferencia"
+  },
+  "title": {
+   "en": "How does artificial intelligence use data?",
+   "es": "¿Cómo utiliza los datos la inteligencia artificial?"
+  },
+  "sub": {
+   "en": "Spanish Data Protection Agency (AEPD) — “Innovation and data protection. Women and science” series",
+   "es": "Agencia Española de Protección de Datos (AEPD) — ciclo «Innovación y protección de datos. Mujer y ciencia»"
+  },
+  "video": {
+   "id": "LEro49_NYxw"
+  },
+  "place": {
+   "en": "Online",
+   "es": "En línea"
+  },
+  "industries": [
+   "legal",
+   "tech"
+  ]
+ },
+ {
   "id": "insurance-40under40-2020",
   "date": "2020",
   "type": "award",
@@ -4655,6 +4897,135 @@
    "es": "#40under40 líderes del sector asegurador en España"
   },
   "approx": false
+ },
+ {
+  "id": "cto-ai-summit-2019",
+  "date": "2019-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Disruption in insurtech: technology to transform the insurance sector",
+   "es": "La disrupción en insurtech: tecnología para transformar el sector seguros"
+  },
+  "sub": {
+   "en": "CTO AI Summit — GeeksHubs",
+   "es": "CTO AI Summit — GeeksHubs"
+  },
+  "video": {
+   "id": "DfmUpOKSNl0"
+  },
+  "industries": [
+   "insurance",
+   "tech"
+  ]
+ },
+ {
+  "id": "cto-ai-interview-2019",
+  "date": "2019-10",
+  "approx": true,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "Talking with Elena González-Blanco",
+   "es": "Conversación con Elena González-Blanco"
+  },
+  "sub": {
+   "en": "CTO AI Summit — GeeksHubs",
+   "es": "CTO AI Summit — GeeksHubs"
+  },
+  "video": {
+   "id": "f2OKAd6jekQ"
+  }
+ },
+ {
+  "id": "encuentromadrid-2019",
+  "date": "2019-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "The human factor of artificial intelligence",
+   "es": "El factor humano de la inteligencia artificial"
+  },
+  "sub": {
+   "en": "EncuentroMadrid 2019",
+   "es": "EncuentroMadrid 2019"
+  },
+  "video": {
+   "id": "rSSQ2LaUwLo"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With the European Commission",
+   "es": "Con la Comisión Europea"
+  },
+  "industries": [
+   "general"
+  ]
+ },
+ {
+  "id": "wsc-inspiring-2019",
+  "date": "2019-09-26",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "III Inspiring Women Leaders in the Digital Era",
+   "es": "III Inspiring Women Leaders in the Digital Era"
+  },
+  "sub": {
+   "en": "W Startup Community",
+   "es": "W Startup Community"
+  },
+  "video": {
+   "id": "ipQMeiwma38",
+   "start": 10080
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "industries": [
+   "women",
+   "startups"
+  ]
+ },
+ {
+  "id": "ftef-2019",
+  "date": "2019-09",
+  "approx": true,
+  "type": "media",
+  "role": {
+   "en": "Video interview",
+   "es": "Vídeo entrevista"
+  },
+  "title": {
+   "en": "Digital transformation — #CitasFTef",
+   "es": "Transformación digital — #CitasFTef"
+  },
+  "sub": {
+   "en": "Fundación Telefónica",
+   "es": "Fundación Telefónica"
+  },
+  "video": {
+   "id": "oxj0XfDt21s"
+  }
  },
  {
   "id": "telos-2019",
@@ -4713,6 +5084,36 @@
   },
   "industries": [
    "insurance"
+  ]
+ },
+ {
+  "id": "coverwallet-techtalk-2019",
+  "date": "2019-06",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "CoverWallet Tech Talk",
+   "es": "CoverWallet Tech Talk"
+  },
+  "sub": {
+   "en": "Madrid Dashboard",
+   "es": "Madrid Dashboard"
+  },
+  "video": {
+   "id": "zWCx27pZgeU"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "industries": [
+   "insurance",
+   "tech",
+   "startups"
   ]
  },
  {
@@ -4905,6 +5306,89 @@
   "approx": false
  },
  {
+  "id": "rtve-2018",
+  "date": "2018-12",
+  "approx": true,
+  "type": "media",
+  "role": {
+   "en": "TV interview",
+   "es": "Entrevista en televisión"
+  },
+  "title": {
+   "en": "Interview on RTVE",
+   "es": "Entrevista en RTVE"
+  },
+  "sub": {
+   "en": "RTVE — as General Manager Europe of CoverWallet and PI of the ERC POSTDATA project",
+   "es": "RTVE — como directora general para Europa de CoverWallet e investigadora principal del proyecto ERC POSTDATA"
+  },
+  "video": {
+   "id": "jsnWo2KYhJ0"
+  }
+ },
+ {
+  "id": "linhd-nlp-2018",
+  "date": "2018-09",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Lecture",
+   "es": "Conferencia"
+  },
+  "title": {
+   "en": "Applications and possibilities of natural language processing for research in the humanities",
+   "es": "Aplicaciones y posibilidades del procesamiento del lenguaje natural para la investigación en humanidades"
+  },
+  "sub": {
+   "en": "LINHD — UNED lecture series",
+   "es": "Ciclo de conferencias del LINHD — UNED"
+  },
+  "video": {
+   "id": "MiJSGNKWw6o"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "industries": [
+   "language",
+   "education"
+  ]
+ },
+ {
+  "id": "esic-ai-2018",
+  "date": "2018-06-19",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "Artificial intelligence in the insurtech world",
+   "es": "La inteligencia artificial en el mundo insurtech"
+  },
+  "sub": {
+   "en": "1st Artificial Intelligence Conference Madrid — ICEMD (ESIC)",
+   "es": "1st Artificial Intelligence Conference Madrid — ICEMD (ESIC)"
+  },
+  "video": {
+   "id": "Fk0lXmdygQU"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "Case study: applying AI at CoverWallet",
+   "es": "Caso práctico: la IA aplicada en CoverWallet"
+  },
+  "industries": [
+   "insurance",
+   "tech"
+  ]
+ },
+ {
   "id": "icai-2018",
   "date": "2018-04-05",
   "approx": false,
@@ -4988,10 +5472,13 @@
    "es": "Premio Julián Marías a investigadores menores de 40 años"
   },
   "sub": {
-   "en": "Community of Madrid",
-   "es": "Comunidad de Madrid"
+   "en": "Community of Madrid — award ceremony at the Royal Academy of Sciences",
+   "es": "Comunidad de Madrid — entrega en la Real Academia de Ciencias Exactas, Físicas y Naturales"
   },
-  "approx": false
+  "approx": false,
+  "video": {
+   "id": "Ll-z-MfCVBk"
+  }
  },
  {
   "id": "cuaderna-via-2010",
