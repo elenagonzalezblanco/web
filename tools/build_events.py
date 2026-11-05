@@ -14,8 +14,8 @@ Each event in data/events.json may define:
   role/title/sub/place/note as {"en": ..., "es": ...}, links [{href, label{en,es}}],
   image (file name without extension, in assets/media/events or a sub-folder such as "press/x"; an "-sm" variant is used for cards),
   video {id, start} (YouTube), featured (talks with video shown in the carousel), focus (CSS object-position for the image),
-  industries (talks: keys of INDUSTRIES below) and highlight (talks: selected talks from the CV, shown first in the
-  carousel with a badge and their own filter; publications: listed first).
+  industries (talks: keys of INDUSTRIES below), highlight (talks: selected talks from the CV, with a badge and their
+  own filter; publications: listed first) and spotlight (talk shown first in the carousel; the rest follow by date).
 """
 import html
 import json
@@ -238,7 +238,7 @@ def build_talks(events):
     stats_html += f'<li><b>{years[0]}–{years[-1]}</b>{bi_raw("on stage", "en el escenario")}</li>'
 
     featured = [e for e in talks if e.get('featured') and e.get('video')]
-    featured.sort(key=lambda e: not e.get('highlight'))
+    featured.sort(key=lambda e: not e.get('spotlight'))
     slides = ''.join(slide(e) for e in featured)
 
     by_year = OrderedDict()

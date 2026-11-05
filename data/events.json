@@ -4171,7 +4171,8 @@
   "image": "altman-2023",
   "featured": true,
   "highlight": true,
-  "focus": "85% 35%"
+  "focus": "85% 35%",
+  "spotlight": true
  },
  {
   "id": "hora-inversor-2023",
