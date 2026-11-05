@@ -1,5 +1,28 @@
 [
  {
+  "id": "elmundo-2026",
+  "date": "2026-10-24",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "Women and leaders of the present and the future",
+   "es": "Mujeres y líderes del presente y del futuro"
+  },
+  "sub": {
+   "en": "EL MUNDO (print edition, p. 46) — El Tiempo de las Mujeres, YO DONA",
+   "es": "EL MUNDO (edición impresa, p. 46) — El Tiempo de las Mujeres, YO DONA"
+  },
+  "note": {
+   "en": "“What matters is that we learn to ride the wave with training”",
+   "es": "«Lo importante es que sepamos surfear la ola con formación»"
+  },
+  "image": "press/elmundo-2026"
+ },
+ {
   "id": "cegid-2026",
   "date": "2026-10-20",
   "approx": false,
@@ -30,7 +53,10 @@
    }
   ],
   "image": "cegid-2026",
-  "featured": true
+  "industries": [
+   "general",
+   "tech"
+  ]
  },
  {
   "id": "personio-hug-2026",
@@ -63,7 +89,9 @@
    }
   ],
   "image": "personio-hug-2026",
-  "featured": true
+  "industries": [
+   "hr"
+  ]
  },
  {
   "id": "embat-2026",
@@ -99,7 +127,15 @@
     }
    }
   ],
-  "image": "embat-2026"
+  "image": "embat-2026",
+  "video": {
+   "id": "UQJTf6cqAeM",
+   "start": 1800
+  },
+  "industries": [
+   "financial"
+  ],
+  "featured": true
  },
  {
   "id": "bellas-artes-autoria-2026",
@@ -136,7 +172,9 @@
    }
   ],
   "image": "bellas-artes-autoria-2026",
-  "featured": true
+  "industries": [
+   "language"
+  ]
  },
  {
   "id": "tiempo-mujeres-2026",
@@ -172,7 +210,38 @@
     }
    }
   ],
-  "image": "tiempo-mujeres-2026"
+  "image": "tiempo-mujeres-2026",
+  "industries": [
+   "women"
+  ]
+ },
+ {
+  "id": "mypublicimpact-2026",
+  "date": "2026-09-03",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Profile",
+   "es": "Perfil"
+  },
+  "title": {
+   "en": "Elena González-Blanco, from medieval verse to artificial intelligence",
+   "es": "Elena González-Blanco, del verso medieval a la inteligencia artificial"
+  },
+  "sub": {
+   "en": "MyPublicImpact",
+   "es": "MyPublicImpact"
+  },
+  "links": [
+   {
+    "href": "https://mypublicimpact.com/2026/09/03/elena-gonzalez-blanco-del-verso-medieval-a-la-inteligencia-artificial/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/mypublicimpact-2026"
  },
  {
   "id": "dapple-paris-2026",
@@ -204,7 +273,11 @@
     }
    }
   ],
-  "image": "dapple-paris-2026"
+  "image": "dapple-paris-2026",
+  "industries": [
+   "startups",
+   "tech"
+  ]
  },
  {
   "id": "bbva-able-2026",
@@ -232,7 +305,11 @@
     }
    }
   ],
-  "image": "bbva-able-2026"
+  "image": "bbva-able-2026",
+  "industries": [
+   "financial",
+   "startups"
+  ]
  },
  {
   "id": "south-summit-aiforum-2026",
@@ -268,7 +345,11 @@
     }
    }
   ],
-  "image": "south-summit-aiforum-2026"
+  "image": "south-summit-aiforum-2026",
+  "industries": [
+   "startups",
+   "general"
+  ]
  },
  {
   "id": "erp-summit-2026",
@@ -301,7 +382,10 @@
    }
   ],
   "image": "erp-summit-2026",
-  "featured": true
+  "industries": [
+   "tech",
+   "general"
+  ]
  },
  {
   "id": "murcia-diploma-2026",
@@ -367,7 +451,10 @@
      "es": "Publicación en LinkedIn"
     }
    }
-  ]
+  ],
+  "video": {
+   "id": "LS4wZQJ8VbM"
+  }
  },
  {
   "id": "south-summit-2026-keynote",
@@ -403,7 +490,10 @@
     }
    }
   ],
-  "image": "south-summit-2026_k"
+  "image": "south-summit-2026_k",
+  "industries": [
+   "startups"
+  ]
  },
  {
   "id": "south-summit-2026-fireside",
@@ -439,7 +529,10 @@
     }
    }
   ],
-  "image": "south-summit-2026"
+  "image": "south-summit-2026",
+  "industries": [
+   "startups"
+  ]
  },
  {
   "id": "holded-2026",
@@ -478,7 +571,10 @@
   "video": {
    "id": "qCQ_B1cFfN8"
   },
-  "image": "holded-2026"
+  "image": "holded-2026",
+  "industries": [
+   "startups"
+  ]
  },
  {
   "id": "lseg-insight-2026",
@@ -511,7 +607,9 @@
    }
   ],
   "image": "lseg-insight-2026",
-  "featured": true
+  "industries": [
+   "financial"
+  ]
  },
  {
   "id": "ecosistema-tech-2026",
@@ -551,7 +649,10 @@
    }
   ],
   "image": "ecosistema-tech-2026",
-  "featured": true
+  "industries": [
+   "hr",
+   "startups"
+  ]
  },
  {
   "id": "frdp-podcast-2026",
@@ -585,7 +686,10 @@
      "es": "Publicación en LinkedIn"
     }
    }
-  ]
+  ],
+  "video": {
+   "id": "ODDpN0P0jIc"
+  }
  },
  {
   "id": "dealroom-2026",
@@ -617,7 +721,10 @@
     }
    }
   ],
-  "image": "dealroom-2026"
+  "image": "dealroom-2026",
+  "industries": [
+   "startups"
+  ]
  },
  {
   "id": "leroy-merlin-2026",
@@ -650,7 +757,9 @@
    }
   ],
   "image": "leroy-merlin-2026",
-  "featured": true
+  "industries": [
+   "retail"
+  ]
  },
  {
   "id": "fff-interview-2026",
@@ -753,7 +862,11 @@
     }
    }
   ],
-  "image": "rootedcon-2026"
+  "image": "rootedcon-2026",
+  "industries": [
+   "startups",
+   "tech"
+  ]
  },
  {
   "id": "talent-arena-sedia-2026",
@@ -785,7 +898,11 @@
     }
    }
   ],
-  "image": "talent-arena-sedia-2026"
+  "image": "talent-arena-sedia-2026",
+  "industries": [
+   "language",
+   "tech"
+  ]
  },
  {
   "id": "talent-arena-holistic-2026",
@@ -829,7 +946,10 @@
    }
   ],
   "image": "talent-arena-holistic-2026",
-  "featured": true
+  "industries": [
+   "hr",
+   "general"
+  ]
  },
  {
   "id": "mwc-fintech-2026",
@@ -858,13 +978,6 @@
   },
   "links": [
    {
-    "href": "https://www.mwcbarcelona.com/agenda/sessions/5984-fintech-and-commerce-summit-the-transformative-power-of-ai-in-fintech",
-    "label": {
-     "en": "View session",
-     "es": "Ver sesión"
-    }
-   },
-   {
     "href": "https://www.linkedin.com/feed/update/urn:li:activity:7434979332747522048/",
     "label": {
      "en": "LinkedIn post",
@@ -873,7 +986,9 @@
    }
   ],
   "image": "mwc-fintech-2026",
-  "featured": true
+  "industries": [
+   "financial"
+  ]
  },
  {
   "id": "shift-inese-2026",
@@ -915,6 +1030,9 @@
      "es": "Publicación en LinkedIn"
     }
    }
+  ],
+  "industries": [
+   "insurance"
   ]
  },
  {
@@ -958,33 +1076,9 @@
     }
    }
   ],
-  "image": "insurance-week-2026"
- },
- {
-  "id": "elpais-2026",
-  "date": "2026-02-11",
-  "approx": false,
-  "type": "media",
-  "role": {
-   "en": "Interview",
-   "es": "Entrevista"
-  },
-  "title": {
-   "en": "Talent and the challenges of artificial intelligence",
-   "es": "El talento y los retos de la inteligencia artificial"
-  },
-  "sub": {
-   "en": "El País — article by Nacho Meneses",
-   "es": "El País — artículo de Nacho Meneses"
-  },
-  "links": [
-   {
-    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7427297858774806529/",
-    "label": {
-     "en": "LinkedIn post",
-     "es": "Publicación en LinkedIn"
-    }
-   }
+  "image": "insurance-week-2026",
+  "industries": [
+   "insurance"
   ]
  },
  {
@@ -1018,7 +1112,9 @@
    }
   ],
   "image": "shift-lisbon-2026",
-  "featured": true
+  "industries": [
+   "insurance"
+  ]
  },
  {
   "id": "airfrance-klm-2026",
@@ -1047,7 +1143,10 @@
    }
   ],
   "image": "airfrance-klm-2026",
-  "featured": true
+  "industries": [
+   "industry",
+   "general"
+  ]
  },
  {
   "id": "investingtalks-2026",
@@ -1069,6 +1168,41 @@
   "video": {
    "id": "Om1Q5ptqQwU"
   }
+ },
+ {
+  "id": "elpais-2026",
+  "date": "2026-01-30",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "The invisible talents in the age of artificial intelligence",
+   "es": "Los talentos invisibles en la era de la inteligencia artificial"
+  },
+  "sub": {
+   "en": "EL PAÍS — article by Nacho Meneses",
+   "es": "EL PAÍS — artículo de Nacho Meneses"
+  },
+  "links": [
+   {
+    "href": "https://elpais.com/economia/formacion/2026-01-30/los-talento-invisibles-en-la-era-de-la-inteligencia-artificial.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   },
+   {
+    "href": "https://www.linkedin.com/feed/update/urn:li:activity:7427297858774806529/",
+    "label": {
+     "en": "LinkedIn post",
+     "es": "Publicación en LinkedIn"
+    }
+   }
+  ],
+  "image": "press/elpais-2026"
  },
  {
   "id": "caminos-2026",
@@ -1123,8 +1257,8 @@
  },
  {
   "id": "expansion-2025",
-  "date": "2025-12",
-  "approx": true,
+  "date": "2025-12-29",
+  "approx": false,
   "type": "media",
   "role": {
    "en": "Press",
@@ -1146,7 +1280,8 @@
      "es": "Publicación en LinkedIn"
     }
    }
-  ]
+  ],
+  "image": "press/expansion-2025"
  },
  {
   "id": "businesswomen-cover-2025",
@@ -1207,7 +1342,7 @@
   "id": "kornferry-2025",
   "date": "2025-12",
   "approx": true,
-  "type": "publication",
+  "type": "media",
   "role": {
    "en": "Featured profile",
    "es": "Perfil destacado"
@@ -1265,7 +1400,10 @@
     }
    }
   ],
-  "image": "raiic-2025"
+  "image": "raiic-2025",
+  "industries": [
+   "tech"
+  ]
  },
  {
   "id": "visa-2025",
@@ -1294,7 +1432,9 @@
    }
   ],
   "image": "visa-2025",
-  "featured": true
+  "industries": [
+   "financial"
+  ]
  },
  {
   "id": "dircom-2025",
@@ -1334,7 +1474,9 @@
    }
   ],
   "image": "dircom-2025",
-  "featured": true
+  "industries": [
+   "language"
+  ]
  },
  {
   "id": "ms-insurtech-2025",
@@ -1366,7 +1508,10 @@
     }
    }
   ],
-  "image": "ms-insurtech-2025"
+  "image": "ms-insurtech-2025",
+  "industries": [
+   "insurance"
+  ]
  },
  {
   "id": "cervantes-lisboa-2025",
@@ -1402,7 +1547,10 @@
     }
    }
   ],
-  "image": "cervantes-lisboa-2025"
+  "image": "cervantes-lisboa-2025",
+  "industries": [
+   "language"
+  ]
  },
  {
   "id": "arbitraje-2025",
@@ -1434,7 +1582,11 @@
     }
    }
   ],
-  "image": "arbitraje-2025"
+  "image": "arbitraje-2025",
+  "industries": [
+   "legal",
+   "language"
+  ]
  },
  {
   "id": "mastercard-2025",
@@ -1467,7 +1619,10 @@
    }
   ],
   "image": "mastercard-2025",
-  "featured": true
+  "industries": [
+   "financial",
+   "startups"
+  ]
  },
  {
   "id": "french-innovation-night-2025",
@@ -1493,7 +1648,10 @@
   "note": {
    "en": "With Carrefour and Iberdrola",
    "es": "Con Carrefour e Iberdrola"
-  }
+  },
+  "industries": [
+   "general"
+  ]
  },
  {
   "id": "cervantes-anuario-2025",
@@ -1518,7 +1676,7 @@
   },
   "links": [
    {
-    "href": "https://cvc.cervantes.es/lengua/anuario/anuario_25/default.htm",
+    "href": "https://observatoriodelespanol.cervantes.org/documentos/2025_el-espanol-lengua-para-el-mundo-2025_es_web-1-3.pdf#page=108",
     "label": {
      "en": "Read chapter",
      "es": "Leer capítulo"
@@ -1527,7 +1685,10 @@
   ],
   "video": {
    "id": "lqZeqh4F_ws"
-  }
+  },
+  "industries": [
+   "language"
+  ]
  },
  {
   "id": "iawards-2025",
@@ -1550,16 +1711,50 @@
    "en": "Madrid",
    "es": "Madrid"
   },
+  "image": "iawards-2025"
+ },
+ {
+  "id": "cervantes-chapter-2025",
+  "date": "2025-10-28",
+  "approx": false,
+  "type": "publication",
+  "role": {
+   "en": "Book chapter",
+   "es": "Capítulo de libro"
+  },
+  "title": {
+   "en": "Artificial intelligence and the Spanish language: current status and future prospects",
+   "es": "Inteligencia artificial y lengua española: panorama actual y perspectivas"
+  },
+  "sub": {
+   "en": "In “El español en el mundo 2025. Anuario del Instituto Cervantes”, pp. 134–154",
+   "es": "En «El español en el mundo 2025. Anuario del Instituto Cervantes», págs. 134–154"
+  },
   "links": [
    {
-    "href": "https://finnovating.com/",
+    "href": "https://observatoriodelespanol.cervantes.org/documentos/2025_el-espanol-lengua-para-el-mundo-2025_es_web-1-3.pdf#page=108",
     "label": {
-     "en": "Event page",
-     "es": "Web del evento"
+     "en": "Read chapter (ES)",
+     "es": "Leer capítulo"
+    }
+   },
+   {
+    "href": "https://observatoriodelespanol.cervantes.org/wp-content/uploads/2025/10/Spanish_a_language_to_the_world_2025.pdf#page=111",
+    "label": {
+     "en": "English version",
+     "es": "Versión en inglés"
+    }
+   },
+   {
+    "href": "https://dialnet.unirioja.es/servlet/articulo?codigo=10439975",
+    "label": {
+     "en": "Dialnet record",
+     "es": "Ficha en Dialnet"
     }
    }
   ],
-  "image": "iawards-2025"
+  "image": "pubs/cervantes-2025",
+  "highlight": true
  },
  {
   "id": "genai-unconference-2025",
@@ -1598,7 +1793,11 @@
     }
    }
   ],
-  "image": "genai-unconference-2025"
+  "image": "genai-unconference-2025",
+  "industries": [
+   "tech",
+   "financial"
+  ]
  },
  {
   "id": "tiempo-mujeres-2025",
@@ -1641,7 +1840,10 @@
     }
    }
   ],
-  "image": "tiempo-mujeres-2025"
+  "image": "tiempo-mujeres-2025",
+  "industries": [
+   "women"
+  ]
  },
  {
   "id": "legal-forum-2025",
@@ -1681,7 +1883,9 @@
    }
   ],
   "image": "legal-forum-2025",
-  "featured": true
+  "industries": [
+   "legal"
+  ]
  },
  {
   "id": "ica-conference-2025",
@@ -1724,7 +1928,46 @@
     }
    }
   ],
-  "image": "ica-conference-2025"
+  "image": "ica-conference-2025",
+  "industries": [
+   "boards"
+  ]
+ },
+ {
+  "id": "anaya-chapter-2025",
+  "date": "2025-10-16",
+  "approx": false,
+  "type": "publication",
+  "role": {
+   "en": "Book chapter",
+   "es": "Capítulo de libro"
+  },
+  "title": {
+   "en": "Artificial Intelligence and Language Technologies",
+   "es": "Inteligencia Artificial y Tecnologías del Lenguaje"
+  },
+  "sub": {
+   "en": "In “Inteligencia Artificial. Guía definitiva desde los orígenes a la IA generativa” — Anaya Multimedia, 448 pp.",
+   "es": "En «Inteligencia Artificial. Guía definitiva desde los orígenes a la IA generativa» — Anaya Multimedia, 448 págs."
+  },
+  "image": "anaya-chapter-2025",
+  "highlight": true,
+  "links": [
+   {
+    "href": "https://anayamultimedia.es/libro/manuales-imprescindibles/inteligencia-artificial-guia-definitiva-desde-los-origenes-a-la-ia-generativa-adrian-gonzalez-sanchez-9788441552128/",
+    "label": {
+     "en": "Publisher page",
+     "es": "Ficha del libro"
+    }
+   },
+   {
+    "href": "https://books.google.com/books/about/Inteligencia_Artificial_Guia_definitiva.html?id=hRegEQAAQBAJ",
+    "label": {
+     "en": "Google Books",
+     "es": "Google Books"
+    }
+   }
+  ]
  },
  {
   "id": "afi-graduation-2025",
@@ -1756,7 +1999,15 @@
     }
    }
   ],
-  "image": "afi-graduation-2025"
+  "image": "afi-graduation-2025",
+  "video": {
+   "id": "dIM4o-37nH0"
+  },
+  "industries": [
+   "education",
+   "financial"
+  ],
+  "featured": true
  },
  {
   "id": "edtech-2025",
@@ -1784,7 +2035,10 @@
     }
    }
   ],
-  "image": "edtech-2025"
+  "image": "edtech-2025",
+  "industries": [
+   "education"
+  ]
  },
  {
   "id": "businesswomen-award-2025",
@@ -1847,6 +2101,9 @@
      "es": "Publicación en LinkedIn"
     }
    }
+  ],
+  "industries": [
+   "financial"
   ]
  },
  {
@@ -1879,7 +2136,10 @@
     }
    }
   ],
-  "image": "hispano-noruega-2025"
+  "image": "hispano-noruega-2025",
+  "industries": [
+   "general"
+  ]
  },
  {
   "id": "prodware-2025",
@@ -1910,6 +2170,10 @@
      "es": "Publicación en LinkedIn"
     }
    }
+  ],
+  "industries": [
+   "general",
+   "tech"
   ]
  },
  {
@@ -1937,6 +2201,9 @@
      "es": "Publicación en LinkedIn"
     }
    }
+  ],
+  "industries": [
+   "education"
   ]
  },
  {
@@ -1969,7 +2236,10 @@
     }
    }
   ],
-  "image": "ica-program-2025"
+  "image": "ica-program-2025",
+  "industries": [
+   "boards"
+  ]
  },
  {
   "id": "afi-panel-2025",
@@ -2008,7 +2278,11 @@
   "video": {
    "id": "eniKU75KPSU",
    "start": 2121
-  }
+  },
+  "industries": [
+   "general"
+  ],
+  "featured": true
  },
  {
   "id": "south-summit-2025",
@@ -2040,7 +2314,10 @@
     }
    }
   ],
-  "image": "south-summit-2025"
+  "image": "south-summit-2025",
+  "industries": [
+   "startups"
+  ]
  },
  {
   "id": "luxury-2025",
@@ -2072,7 +2349,10 @@
     }
    }
   ],
-  "image": "luxury-2025b"
+  "image": "luxury-2025b",
+  "industries": [
+   "retail"
+  ]
  },
  {
   "id": "arbitraje-club-2025",
@@ -2099,6 +2379,9 @@
      "es": "Publicación en LinkedIn"
     }
    }
+  ],
+  "industries": [
+   "legal"
   ]
  },
  {
@@ -2189,7 +2472,10 @@
     }
    }
   ],
-  "image": "icai-ethics-2025"
+  "image": "icai-ethics-2025",
+  "industries": [
+   "education"
+  ]
  },
  {
   "id": "bros-2025",
@@ -2211,7 +2497,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "hr"
+  ]
  },
  {
   "id": "intereconomia-2025",
@@ -2229,16 +2518,7 @@
   "sub": {
    "en": "Capital — Radio Intereconomía, with Susana Criado",
    "es": "Capital — Radio Intereconomía, con Susana Criado"
-  },
-  "links": [
-   {
-    "href": "https://www.youtube.com/watch?v=i2PZsW-H-VQ&t=10489s",
-    "label": {
-     "en": "Listen",
-     "es": "Escuchar"
-    }
-   }
-  ]
+  }
  },
  {
   "id": "logipharma-2025",
@@ -2270,13 +2550,16 @@
     }
    }
   ],
-  "image": "logipharma-2025"
+  "image": "logipharma-2025",
+  "industries": [
+   "industry"
+  ]
  },
  {
   "id": "hdbr-2025",
   "date": "2025-04-02",
   "approx": false,
-  "type": "publication",
+  "type": "media",
   "role": {
    "en": "Featured profile",
    "es": "Perfil destacado"
@@ -2297,7 +2580,8 @@
      "es": "Leer"
     }
    }
-  ]
+  ],
+  "image": "press/hdbr-2025"
  },
  {
   "id": "nordic-capital-2025",
@@ -2330,7 +2614,9 @@
    }
   ],
   "image": "nordic-capital-2025",
-  "featured": true
+  "industries": [
+   "financial"
+  ]
  },
  {
   "id": "juno-house-2025",
@@ -2362,7 +2648,11 @@
     }
    }
   ],
-  "image": "juno-house-2025"
+  "image": "juno-house-2025",
+  "industries": [
+   "women",
+   "financial"
+  ]
  },
  {
   "id": "iwf-2025",
@@ -2395,7 +2685,10 @@
    }
   ],
   "image": "iwf-2025",
-  "featured": true
+  "industries": [
+   "women",
+   "general"
+  ]
  },
  {
   "id": "mwc-mckinsey-2025",
@@ -2433,6 +2726,9 @@
      "es": "Publicación en LinkedIn"
     }
    }
+  ],
+  "industries": [
+   "women"
   ]
  },
  {
@@ -2456,14 +2752,9 @@
    "en": "Murcia",
    "es": "Murcia"
   },
-  "links": [
-   {
-    "href": "https://www.elitemurcia.es/las-mujeres-toman-protagonismo-en-el-debate-sobre-la-inteligencia-artificial-en-la-universidad-de-murcia/",
-    "label": {
-     "en": "Read",
-     "es": "Leer"
-    }
-   }
+  "industries": [
+   "women",
+   "startups"
   ]
  },
  {
@@ -2517,7 +2808,11 @@
   "note": {
    "en": "With Beatriz Sanz Saiz and Tomás Martínez Buero",
    "es": "Con Beatriz Sanz Saiz y Tomás Martínez Buero"
-  }
+  },
+  "industries": [
+   "insurance",
+   "women"
+  ]
  },
  {
   "id": "csai-2025",
@@ -2549,7 +2844,10 @@
     }
    }
   ],
-  "image": "csai-2025"
+  "image": "csai-2025",
+  "industries": [
+   "boards"
+  ]
  },
  {
   "id": "orm-2025",
@@ -2576,7 +2874,8 @@
      "es": "Escuchar"
     }
    }
-  ]
+  ],
+  "image": "press/orm-2025"
  },
  {
   "id": "endeavor-sa-2025",
@@ -2608,7 +2907,10 @@
     }
    }
   ],
-  "image": "endeavor-sa-2025"
+  "image": "endeavor-sa-2025",
+  "industries": [
+   "startups"
+  ]
  },
  {
   "id": "laurel-2025",
@@ -2641,25 +2943,6 @@
    }
   ],
   "image": "laurel-2025"
- },
- {
-  "id": "anaya-chapter-2025",
-  "date": "2025",
-  "approx": false,
-  "type": "publication",
-  "role": {
-   "en": "Book chapter",
-   "es": "Capítulo de libro"
-  },
-  "title": {
-   "en": "Artificial Intelligence and Language Technologies",
-   "es": "Inteligencia Artificial y Tecnologías del Lenguaje"
-  },
-  "sub": {
-   "en": "In “Inteligencia Artificial. Guía definitiva desde los orígenes a la IA Generativa” — Anaya",
-   "es": "En «Inteligencia Artificial. Guía definitiva desde los orígenes a la IA Generativa» — Anaya"
-  },
-  "image": "anaya-chapter-2025"
  },
  {
   "id": "impact-2024",
@@ -2723,7 +3006,10 @@
     }
    }
   ],
-  "image": "ecija-ie-2024"
+  "image": "ecija-ie-2024",
+  "industries": [
+   "legal"
+  ]
  },
  {
   "id": "endeavor-mentor-2024",
@@ -2783,7 +3069,10 @@
     }
    }
   ],
-  "image": "samaipata-2024"
+  "image": "samaipata-2024",
+  "industries": [
+   "startups"
+  ]
  },
  {
   "id": "insead-2024",
@@ -2815,7 +3104,10 @@
     }
    }
   ],
-  "image": "insead-2024"
+  "image": "insead-2024",
+  "industries": [
+   "general"
+  ]
  },
  {
   "id": "observatorio-2024",
@@ -2854,7 +3146,11 @@
   "video": {
    "id": "n_WS7N1AS7c",
    "start": 3719
-  }
+  },
+  "industries": [
+   "language"
+  ],
+  "featured": true
  },
  {
   "id": "wandelbots-2024",
@@ -2874,7 +3170,10 @@
    "es": "Una plataforma universal para programar robots, con Wandelscript desarrollado con Microsoft"
   },
   "image": "wandelbots-2024",
-  "featured": true
+  "industries": [
+   "industry",
+   "tech"
+  ]
  },
  {
   "id": "databricks-2024",
@@ -2906,7 +3205,11 @@
     }
    }
   ],
-  "image": "databricks-2024"
+  "image": "databricks-2024",
+  "industries": [
+   "tech",
+   "women"
+  ]
  },
  {
   "id": "stanford-2024",
@@ -2929,7 +3232,10 @@
    "en": "Madrid",
    "es": "Madrid"
   },
-  "image": "stanford-2024"
+  "image": "stanford-2024",
+  "industries": [
+   "general"
+  ]
  },
  {
   "id": "ecija-partners-2024",
@@ -2947,7 +3253,10 @@
   "sub": {
    "en": "ECIJA VI Global Partners Meeting + AI Hackathon",
    "es": "VI Reunión Global de Socios de ECIJA + AI Hackathon"
-  }
+  },
+  "industries": [
+   "legal"
+  ]
  },
  {
   "id": "frenchfounders-2024",
@@ -2969,7 +3278,11 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "women",
+   "startups"
+  ]
  },
  {
   "id": "endeavor-workshop-2024",
@@ -2991,7 +3304,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "startups"
+  ]
  },
  {
   "id": "fundspeople-2024",
@@ -3009,7 +3325,10 @@
   "sub": {
    "en": "With Invesco EMEA",
    "es": "De la mano de Invesco EMEA"
-  }
+  },
+  "industries": [
+   "financial"
+  ]
  },
  {
   "id": "actualidad-economica-2024",
@@ -3017,16 +3336,16 @@
   "approx": false,
   "type": "media",
   "role": {
-   "en": "Interview",
-   "es": "Entrevista"
+   "en": "Profile interview",
+   "es": "Entrevista-perfil"
   },
   "title": {
-   "en": "Interview in Actualidad Económica",
-   "es": "Entrevista en Actualidad Económica"
+   "en": "Elena González-Blanco: the Murcian mind Microsoft trusts with one of its AI areas",
+   "es": "Elena González-Blanco: el cerebro de Murcia al que Microsoft confía una de sus áreas de IA"
   },
   "sub": {
-   "en": "EL MUNDO",
-   "es": "EL MUNDO"
+   "en": "Actualidad Económica — EL MUNDO",
+   "es": "Actualidad Económica — EL MUNDO"
   },
   "links": [
    {
@@ -3036,7 +3355,8 @@
      "es": "Leer"
     }
    }
-  ]
+  ],
+  "image": "press/actualidad-economica-2024"
  },
  {
   "id": "msr-india-2024",
@@ -3058,7 +3378,11 @@
   "place": {
    "en": "Bengaluru, India",
    "es": "Bengaluru, India"
-  }
+  },
+  "industries": [
+   "tech",
+   "language"
+  ]
  },
  {
   "id": "unia-2024",
@@ -3084,7 +3408,11 @@
   "note": {
    "en": "With Manuel Palomar, Senén Barro, German Rigau and Maite Martín",
    "es": "Con Manuel Palomar, Senén Barro, German Rigau y Maite Martín"
-  }
+  },
+  "industries": [
+   "education",
+   "language"
+  ]
  },
  {
   "id": "gasol-2024",
@@ -3102,7 +3430,10 @@
   "note": {
    "en": "Moderated by Amaya Valdemoro, with Pau Gasol and Forética",
    "es": "Mesa dirigida por Amaya Valdemoro, con Pau Gasol y Forética"
-  }
+  },
+  "industries": [
+   "retail"
+  ]
  },
  {
   "id": "envision-2024",
@@ -3127,7 +3458,12 @@
   },
   "video": {
    "id": "L6xzRG7sUhI"
-  }
+  },
+  "industries": [
+   "startups",
+   "tech"
+  ],
+  "featured": true
  },
  {
   "id": "mil-2024",
@@ -3158,6 +3494,14 @@
      "es": "Web del evento"
     }
    }
+  ],
+  "video": {
+   "id": "-QQTx7bMqjE",
+   "start": 5980
+  },
+  "industries": [
+   "tech",
+   "language"
   ]
  },
  {
@@ -3180,7 +3524,10 @@
   "place": {
    "en": "San Sebastián",
    "es": "San Sebastián"
-  }
+  },
+  "industries": [
+   "financial"
+  ]
  },
  {
   "id": "csic-2024",
@@ -3223,7 +3570,10 @@
   "sub": {
    "en": "Mapfre annual summit",
    "es": "Cumbre anual de Mapfre"
-  }
+  },
+  "industries": [
+   "insurance"
+  ]
  },
  {
   "id": "lafinca-2024",
@@ -3254,6 +3604,9 @@
      "es": "Web del evento"
     }
    }
+  ],
+  "industries": [
+   "startups"
   ]
  },
  {
@@ -3285,6 +3638,9 @@
      "es": "Web del evento"
     }
    }
+  ],
+  "industries": [
+   "general"
   ]
  },
  {
@@ -3320,6 +3676,42 @@
      "es": "Web del evento"
     }
    }
+  ],
+  "industries": [
+   "education"
+  ]
+ },
+ {
+  "id": "cibitec-2024",
+  "date": "2024-05",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "AI in Spanish",
+   "es": "IA en español"
+  },
+  "sub": {
+   "en": "13th CIBITEC — Official College of Computer Engineers of Madrid (COIIM)",
+   "es": "13.º CIBITEC — Colegio Oficial de Ingenieros en Informática de Madrid (COIIM)"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With OEI, Stanford University and Minsait",
+   "es": "Con la OEI, la Universidad de Stanford y Minsait"
+  },
+  "video": {
+   "id": "5d1z8T_tmlU"
+  },
+  "industries": [
+   "language",
+   "tech"
   ]
  },
  {
@@ -3357,8 +3749,14 @@
    }
   ],
   "video": {
-   "id": "AcwfTx_xnSY"
-  }
+   "id": "AcwfTx_xnSY",
+   "start": 2360
+  },
+  "industries": [
+   "tech",
+   "general"
+  ],
+  "featured": true
  },
  {
   "id": "qubic-2024",
@@ -3383,7 +3781,11 @@
   },
   "video": {
    "id": "Srh_0k8w__g"
-  }
+  },
+  "industries": [
+   "tech",
+   "startups"
+  ]
  },
  {
   "id": "ea-2024",
@@ -3405,7 +3807,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "tech"
+  ]
  },
  {
   "id": "laverdad-2024",
@@ -3436,7 +3841,8 @@
      "es": "Leer"
     }
    }
-  ]
+  ],
+  "image": "press/laverdad-2024"
  },
  {
   "id": "somosnlp-2024",
@@ -3454,7 +3860,15 @@
   "sub": {
    "en": "Somos NLP Hackathon",
    "es": "Somos NLP Hackathon"
-  }
+  },
+  "video": {
+   "id": "JzpvHRrqtSU"
+  },
+  "industries": [
+   "language",
+   "tech"
+  ],
+  "featured": true
  },
  {
   "id": "abc-2024",
@@ -3490,7 +3904,11 @@
   "sub": {
    "en": "Women in a Legal World & Harvard University — Meta, Madrid",
    "es": "Women in a Legal World y Harvard University — sede de Meta, Madrid"
-  }
+  },
+  "industries": [
+   "legal",
+   "women"
+  ]
  },
  {
   "id": "bestinver-2024",
@@ -3508,7 +3926,10 @@
   "sub": {
    "en": "Bestinver / ACCIONA",
    "es": "Bestinver / ACCIONA"
-  }
+  },
+  "industries": [
+   "financial"
+  ]
  },
  {
   "id": "databricks-2023",
@@ -3530,7 +3951,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "tech"
+  ]
  },
  {
   "id": "salesforce-innovation-2023",
@@ -3552,7 +3976,10 @@
   "place": {
    "en": "La Granja, Segovia",
    "es": "La Granja, Segovia"
-  }
+  },
+  "industries": [
+   "tech"
+  ]
  },
  {
   "id": "paradigma-2023",
@@ -3574,7 +4001,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "tech"
+  ]
  },
  {
   "id": "aon-2023",
@@ -3596,7 +4026,10 @@
   "place": {
    "en": "Monteverdi Arts Club",
    "es": "Monteverdi Arts Club"
-  }
+  },
+  "industries": [
+   "insurance"
+  ]
  },
  {
   "id": "hr-summit-2023",
@@ -3621,7 +4054,39 @@
   },
   "video": {
    "id": "dcYOwwZc1wY"
-  }
+  },
+  "industries": [
+   "hr",
+   "startups"
+  ]
+ },
+ {
+  "id": "businessinsider-2023",
+  "date": "2023-09-18",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Profile interview",
+   "es": "Entrevista-perfil"
+  },
+  "title": {
+   "en": "Elena González-Blanco, driving force behind the first large native Spanish AI model: “We are only seeing the tip of the iceberg”",
+   "es": "Elena González-Blanco, la impulsora del primer gran modelo nativo en español de la inteligencia artificial: «Estamos viendo solo la punta del iceberg»"
+  },
+  "sub": {
+   "en": "Business Insider España — by David Vázquez",
+   "es": "Business Insider España — por David Vázquez"
+  },
+  "links": [
+   {
+    "href": "https://www.businessinsider.es/tecnologia/elena-gonzalez-blanco-impulsora-primer-gran-modelo-ia-espanol-1301514",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/businessinsider-2023"
  },
  {
   "id": "uber-2023",
@@ -3639,7 +4104,10 @@
   "place": {
    "en": "Mexico City",
    "es": "Ciudad de México"
-  }
+  },
+  "industries": [
+   "general"
+  ]
  },
  {
   "id": "techcrunch-2023",
@@ -3666,7 +4134,8 @@
      "es": "Leer en TechCrunch"
     }
    }
-  ]
+  ],
+  "image": "press/techcrunch-2023"
  },
  {
   "id": "altman-2023",
@@ -3688,7 +4157,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "tech"
+  ]
  },
  {
   "id": "hora-inversor-2023",
@@ -3759,7 +4231,11 @@
   },
   "video": {
    "id": "zrSA4BrwiWo"
-  }
+  },
+  "industries": [
+   "general"
+  ],
+  "featured": true
  },
  {
   "id": "santalucia-2023",
@@ -3780,7 +4256,10 @@
   },
   "video": {
    "id": "P9gMWqZBqS0"
-  }
+  },
+  "industries": [
+   "financial"
+  ]
  },
  {
   "id": "telemadrid-2023",
@@ -3845,14 +4324,8 @@
    "en": "Mexico City",
    "es": "Ciudad de México"
   },
-  "links": [
-   {
-    "href": "https://es.wired.com/articulos/elena-gonzalez-blanco-la-impulsora-de-la-inteligencia-artificial-en-espanol",
-    "label": {
-     "en": "Read in Wired",
-     "es": "Leer en Wired"
-    }
-   }
+  "industries": [
+   "tech"
   ]
  },
  {
@@ -3875,7 +4348,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "tech"
+  ]
  },
  {
   "id": "casa-america-2022",
@@ -3897,7 +4373,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "general"
+  ]
  },
  {
   "id": "expansion-2022",
@@ -3915,7 +4394,116 @@
   "sub": {
    "en": "Expansión — inspiring conversations between executives and entrepreneurs",
    "es": "Expansión — conversaciones inspiradoras entre ejecutivas y emprendedoras"
-  }
+  },
+  "links": [
+   {
+    "href": "https://hablemosdefuturo.expansion.com/a-que-empresas-puede-ayudar-la-inteligencia-artificial.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/expansion-2022"
+ },
+ {
+  "id": "casa-america-2021",
+  "date": "2021-12-16",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Moderator",
+   "es": "Moderadora"
+  },
+  "title": {
+   "en": "Technology for AI in Spanish: infrastructure, algorithms and programming languages",
+   "es": "Tecnología para el desarrollo de la IA en español: infraestructuras, algoritmos y lenguajes de programación"
+  },
+  "sub": {
+   "en": "Seminar “Spanish at the heart of artificial intelligence” — Casa de América",
+   "es": "Seminario «El español en el corazón de la inteligencia artificial» — Casa de América"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "Opened by minister José Manuel Albares; with Oracle, AWS, Intel and Kustomer",
+   "es": "Inaugurado por el ministro José Manuel Albares; con Oracle, AWS, Intel y Kustomer"
+  },
+  "video": {
+   "id": "IP3t-VpcKoM",
+   "start": 7610
+  },
+  "industries": [
+   "language",
+   "tech"
+  ],
+  "featured": true
+ },
+ {
+  "id": "south-summit-2021",
+  "date": "2021-10",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Speaker",
+   "es": "Ponente"
+  },
+  "title": {
+   "en": "How AI impacts people’s lives",
+   "es": "Cómo impacta la IA en la vida de las personas"
+  },
+  "sub": {
+   "en": "South Summit 2021",
+   "es": "South Summit 2021"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Ruth Falquina (Estado Latente)",
+   "es": "Con Ruth Falquina (Estado Latente)"
+  },
+  "video": {
+   "id": "D4qgqc6aupY"
+  },
+  "industries": [
+   "startups",
+   "general"
+  ],
+  "featured": true
+ },
+ {
+  "id": "clarin-2021",
+  "date": "2021-09",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "Language technologies beyond research: from poetry to the music industry",
+   "es": "Tecnologías del lenguaje más allá de la investigación: de la poesía a la industria musical"
+  },
+  "sub": {
+   "en": "CLARIN Annual Conference 2021 — European research infrastructure for language resources",
+   "es": "Congreso anual CLARIN 2021 — infraestructura europea de recursos lingüísticos"
+  },
+  "place": {
+   "en": "Online",
+   "es": "En línea"
+  },
+  "video": {
+   "id": "1sizcpCcXcg"
+  },
+  "industries": [
+   "language",
+   "education"
+  ],
+  "featured": true
  },
  {
   "id": "iese-2021",
@@ -3936,7 +4524,10 @@
   },
   "video": {
    "id": "cs3JTEXVBM8"
-  }
+  },
+  "industries": [
+   "women"
+  ]
  },
  {
   "id": "ser-2021",
@@ -3960,6 +4551,130 @@
   }
  },
  {
+  "id": "pablovi-2021",
+  "date": "2021-02-03",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "The future of work",
+   "es": "El futuro del trabajo"
+  },
+  "sub": {
+   "en": "“Encuentros para una nueva era” — Fundación Pablo VI, broadcast on TRECE",
+   "es": "«Encuentros para una nueva era» — Fundación Pablo VI, emitido en TRECE"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "With Rosa García, former chair of Siemens Spain and Microsoft Iberia",
+   "es": "Con Rosa García, expresidenta de Siemens España y Microsoft Ibérica"
+  },
+  "video": {
+   "id": "M7SPTPWaFJ0"
+  },
+  "industries": [
+   "hr",
+   "education"
+  ]
+ },
+ {
+  "id": "wids-2021",
+  "date": "2021",
+  "type": "award",
+  "role": {
+   "en": "Award",
+   "es": "Premio"
+  },
+  "title": {
+   "en": "WIDS Prize for Women in Machine Learning and Data Science",
+   "es": "Premio WIDS a mujeres en machine learning y ciencia de datos"
+  },
+  "approx": false
+ },
+ {
+  "id": "aon-insurtech-2020",
+  "date": "2020-12",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Moderator",
+   "es": "Moderadora"
+  },
+  "title": {
+   "en": "Upscaling Europe’s digital transformation: the role of InsurTech and digital finance",
+   "es": "Acelerar la transformación digital de Europa: el papel del insurtech y las finanzas digitales"
+  },
+  "sub": {
+   "en": "Aon Spain",
+   "es": "Aon España"
+  },
+  "note": {
+   "en": "With Carlos San Basilio, Secretary General of the Treasury, and Vicente Cancio, CEO of Zurich Spain",
+   "es": "Con Carlos San Basilio, secretario general del Tesoro, y Vicente Cancio, CEO de Zurich España"
+  },
+  "video": {
+   "id": "xNw2Uqs350g"
+  },
+  "industries": [
+   "insurance",
+   "financial"
+  ]
+ },
+ {
+  "id": "insurance-40under40-2020",
+  "date": "2020",
+  "type": "award",
+  "role": {
+   "en": "Recognition",
+   "es": "Reconocimiento"
+  },
+  "title": {
+   "en": "#40under40 Insurance Leaders in Spain",
+   "es": "#40under40 líderes del sector asegurador en España"
+  },
+  "approx": false
+ },
+ {
+  "id": "telos-2019",
+  "date": "2019-07",
+  "approx": false,
+  "type": "publication",
+  "role": {
+   "en": "Article",
+   "es": "Artículo"
+  },
+  "title": {
+   "en": "Artificial intelligence and language technologies: at the heart of the crossroads",
+   "es": "Inteligencia artificial y tecnologías del lenguaje: en el corazón de la encrucijada"
+  },
+  "sub": {
+   "en": "Telos no. 111 — Fundación Telefónica, pp. 50–57",
+   "es": "Telos n.º 111 — Fundación Telefónica, págs. 50–57"
+  },
+  "links": [
+   {
+    "href": "https://dialnet.unirioja.es/servlet/articulo?codigo=7721744",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   },
+   {
+    "href": "https://theconversation.com/inteligencia-artificial-en-el-corazon-de-la-encrucijada-120356",
+    "label": {
+     "en": "The Conversation",
+     "es": "The Conversation"
+    }
+   }
+  ]
+ },
+ {
   "id": "inese-2019",
   "date": "2019-06-13",
   "approx": false,
@@ -3979,7 +4694,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "insurance"
+  ]
  },
  {
   "id": "aws-2019",
@@ -4001,7 +4719,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "tech"
+  ]
  },
  {
   "id": "icea-2019",
@@ -4019,7 +4740,39 @@
   "sub": {
    "en": "ICEA",
    "es": "ICEA"
-  }
+  },
+  "industries": [
+   "insurance"
+  ]
+ },
+ {
+  "id": "digitales-2019",
+  "date": "2019-02",
+  "approx": true,
+  "type": "talk",
+  "role": {
+   "en": "Keynote",
+   "es": "Keynote"
+  },
+  "title": {
+   "en": "Artificial intelligence and ethical frontiers",
+   "es": "Inteligencia artificial y fronteras éticas"
+  },
+  "sub": {
+   "en": "“Las mañanas del Mañana” breakfast — DigitalES",
+   "es": "Desayuno «Las mañanas del Mañana» — DigitalES"
+  },
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "video": {
+   "id": "mqNtU0qCypI"
+  },
+  "industries": [
+   "tech",
+   "general"
+  ]
  },
  {
   "id": "mit-club-2019",
@@ -4041,25 +4794,10 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
- },
- {
-  "id": "telos-2019",
-  "date": "2019",
-  "approx": false,
-  "type": "publication",
-  "role": {
-   "en": "Article",
-   "es": "Artículo"
   },
-  "title": {
-   "en": "“En el corazón de la encrucijada. IA y tecnologías del lenguaje”",
-   "es": "“En el corazón de la encrucijada. IA y tecnologías del lenguaje”"
-  },
-  "sub": {
-   "en": "Telos 111",
-   "es": "Telos 111"
-  }
+  "industries": [
+   "general"
+  ]
  },
  {
   "id": "aida-2019",
@@ -4081,7 +4819,72 @@
   "place": {
    "en": "Lisbon",
    "es": "Lisboa"
-  }
+  },
+  "industries": [
+   "insurance"
+  ]
+ },
+ {
+  "id": "digifin-2019",
+  "date": "2019",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Global ambition: FinTech & InsurTech upstarts think boundaryless",
+   "es": "Ambición global: fintech e insurtech sin fronteras"
+  },
+  "sub": {
+   "en": "Digital Finance Conference 2019 — Bitkom",
+   "es": "Digital Finance Conference 2019 — Bitkom"
+  },
+  "place": {
+   "en": "Germany",
+   "es": "Alemania"
+  },
+  "note": {
+   "en": "With N26, Stripe and Remitly",
+   "es": "Con N26, Stripe y Remitly"
+  },
+  "video": {
+   "id": "3l1myF_RB-I"
+  },
+  "industries": [
+   "financial",
+   "insurance"
+  ],
+  "featured": true
+ },
+ {
+  "id": "choiseul-2019",
+  "date": "2019",
+  "type": "award",
+  "role": {
+   "en": "Ranking",
+   "es": "Ranking"
+  },
+  "title": {
+   "en": "#3 in the Choiseul ranking “100 Economic Leaders for the Future of Spain”",
+   "es": "N.º 3 en el ranking Choiseul «100 líderes económicos del futuro de España»"
+  },
+  "approx": false
+ },
+ {
+  "id": "top100-2017-2019",
+  "date": "2019",
+  "type": "award",
+  "role": {
+   "en": "Recognition",
+   "es": "Reconocimiento"
+  },
+  "title": {
+   "en": "Top 100 Women Leaders in Spain — 2017, 2018 and 2019",
+   "es": "Top 100 Mujeres Líderes en España — 2017, 2018 y 2019"
+  },
+  "approx": false
  },
  {
   "id": "icai-2018",
@@ -4106,7 +4909,12 @@
   },
   "video": {
    "id": "VI85CRkg1Cw"
-  }
+  },
+  "industries": [
+   "general",
+   "education"
+  ],
+  "featured": true
  },
  {
   "id": "harvard-club-2018",
@@ -4128,6 +4936,104 @@
   "place": {
    "en": "Madrid",
    "es": "Madrid"
-  }
+  },
+  "industries": [
+   "general"
+  ]
+ },
+ {
+  "id": "choiseul-2018",
+  "date": "2018",
+  "type": "award",
+  "role": {
+   "en": "Ranking",
+   "es": "Ranking"
+  },
+  "title": {
+   "en": "#1 in the Choiseul ranking “100 Economic Leaders for the Future of Spain”",
+   "es": "N.º 1 en el ranking Choiseul «100 líderes económicos del futuro de España»"
+  },
+  "approx": false
+ },
+ {
+  "id": "julian-marias-2017",
+  "date": "2017",
+  "type": "award",
+  "role": {
+   "en": "Award",
+   "es": "Premio"
+  },
+  "title": {
+   "en": "Julián Marías Prize for researchers under 40",
+   "es": "Premio Julián Marías a investigadores menores de 40 años"
+  },
+  "sub": {
+   "en": "Community of Madrid",
+   "es": "Comunidad de Madrid"
+  },
+  "approx": false
+ },
+ {
+  "id": "cuaderna-via-2010",
+  "date": "2010",
+  "approx": false,
+  "type": "publication",
+  "role": {
+   "en": "Book",
+   "es": "Libro"
+  },
+  "title": {
+   "en": "La cuaderna vía española en su marco panrománico",
+   "es": "La cuaderna vía española en su marco panrománico"
+  },
+  "sub": {
+   "en": "Monograph on medieval Spanish versification in its pan-Romance context",
+   "es": "Monografía sobre la métrica medieval española en su contexto panrománico"
+  },
+  "links": [
+   {
+    "href": "https://www.researchgate.net/publication/299846692",
+    "label": {
+     "en": "View",
+     "es": "Ver"
+    }
+   }
+  ]
+ },
+ {
+  "id": "premios-nacionales-2004",
+  "date": "2005",
+  "type": "award",
+  "role": {
+   "en": "Award",
+   "es": "Premio"
+  },
+  "title": {
+   "en": "National End-of-Degree Awards — 2004 and 2005",
+   "es": "Premios Nacionales de Fin de Carrera — 2004 y 2005"
+  },
+  "sub": {
+   "en": "Spanish Ministry of Education",
+   "es": "Ministerio de Educación"
+  },
+  "approx": false
+ },
+ {
+  "id": "physics-olympiad-1999",
+  "date": "1999",
+  "type": "award",
+  "role": {
+   "en": "Award",
+   "es": "Premio"
+  },
+  "title": {
+   "en": "Gold Medal, National Physics Olympiad",
+   "es": "Medalla de Oro, Olimpiada Nacional de Física"
+  },
+  "sub": {
+   "en": "Spain",
+   "es": "España"
+  },
+  "approx": false
  }
 ]

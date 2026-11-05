@@ -74,17 +74,24 @@ function setupFilter(buttonSelector, attr, itemSelector, matches) {
 }
 setupFilter('.filters-pub .filter', 'data-filter', '.pub', (el, v) => (el.dataset.cat || '').split(' ').includes(v));
 
-// ── Speaking & media: filters, earlier years ─────────────
+// ── Talks: industry filters, tag chips, earlier years ────
 const evYears = [...document.querySelectorAll('.ev-year')];
 const evMore = document.getElementById('evMore');
+const evToolbar = document.getElementById('evToolbar');
 let evExpanded = false;
 let evFilter = 'all';
+
+function evMatches(card) {
+  if (evFilter === 'all') return true;
+  if (evFilter === 'video') return card.dataset.video === '1';
+  return (card.dataset.tags || '').split(' ').includes(evFilter);
+}
 
 function renderEvents() {
   evYears.forEach(year => {
     let visible = 0;
     year.querySelectorAll('.ev').forEach(card => {
-      const show = evFilter === 'all' || (evFilter === 'video' ? card.dataset.video === '1' : card.dataset.type === evFilter);
+      const show = evMatches(card);
       card.classList.toggle('hidden', !show);
       if (show) visible++;
     });
@@ -96,18 +103,28 @@ function renderEvents() {
     const count = year.querySelector('.ev-count');
     if (count) count.textContent = visible;
   });
+  document.querySelectorAll('.ev-tag').forEach(tag => tag.classList.toggle('on', tag.dataset.tag === evFilter));
   if (evMore) evMore.parentElement.hidden = evExpanded || evFilter !== 'all' || !evYears.some(y => y.hasAttribute('data-collapsed'));
 }
 
-document.querySelectorAll('[data-ev-filter]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    evFilter = btn.dataset.evFilter;
-    document.querySelectorAll('[data-ev-filter]').forEach(b => {
-      b.classList.toggle('active', b === btn);
-      b.setAttribute('aria-pressed', String(b === btn));
-    });
-    renderEvents();
+function setEvFilter(value) {
+  evFilter = value;
+  document.querySelectorAll('[data-ev-filter]').forEach(b => {
+    const on = b.dataset.evFilter === value;
+    b.classList.toggle('active', on);
+    b.setAttribute('aria-pressed', String(on));
   });
+  renderEvents();
+}
+
+document.querySelectorAll('[data-ev-filter]').forEach(btn => {
+  btn.addEventListener('click', () => setEvFilter(btn.dataset.evFilter));
+});
+document.addEventListener('click', e => {
+  const tag = e.target.closest('.ev-tag');
+  if (!tag) return;
+  setEvFilter(evFilter === tag.dataset.tag ? 'all' : tag.dataset.tag);
+  if (evToolbar) evToolbar.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 if (evMore) evMore.addEventListener('click', () => { evExpanded = true; renderEvents(); });
 renderEvents();
@@ -146,7 +163,7 @@ const lbCaption = lightbox.querySelector('.lb-caption');
 let lbReturnFocus = null;
 
 function openLightbox(trigger) {
-  const holder = trigger.closest('.ev, .slide');
+  const holder = trigger.closest('.ev, .slide, .mcard, .acard, .pfeat');
   const title = holder ? holder.querySelector('h3, h4') : null;
   lbStage.innerHTML = '';
   if (trigger.dataset.video) {
@@ -192,6 +209,18 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbo
 // ── Internationalisation (EN / ES) ───────────────────────
 const translations = {
   en: {
+    "pub.papers": "Research papers",
+    "pub.books": "Books, chapters & articles",
+    "awards.title": "Awards &amp; <em>Recognition</em>",
+    "awards.label": "05 / Awards",
+    "media.sub": "Newspaper clippings, interviews, podcasts and TV appearances.",
+    "media.title": "In the <em>Press</em>",
+    "media.label": "04 / Media",
+    "exp.group.academic": "Academic Roles",
+    "exp.group.board": "Board & Advisory Roles",
+    "exp.group.exec": "Executive Roles",
+    "nav.awards": "Awards",
+    "nav.media": "Media",
     "education.title": "Education & Training",
     "education.phd.title": "PhD in Philology (Comparative Linguistics) — \"Doctor Europeus\" · Extraordinary Prize",
     "education.phd.detail": "— Universidad Complutense de Madrid. Completed with 2 years as Visiting Scholar at Harvard University.",
@@ -200,7 +229,7 @@ const translations = {
     "social.huggingface": "Hugging Face — ClibrAIn open models",
     "nav.about": "About",
     "nav.experience": "Experience",
-    "nav.speaking": "Speaking",
+    "nav.speaking": "Talks",
     "nav.publications": "Publications",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
@@ -255,13 +284,13 @@ const translations = {
     "exp.job12.title": "Visiting Fellow &amp; Teaching Assistant",
     "exp.job12.date": "2006 — 2008",
     "exp.job12.desc": "Visiting Fellow and Teaching Assistant at the Real Colegio Complutense (RCC) at Harvard University, supported by a MAE-AECI grant. Research focused on Medieval Spanish metrics and comparative Romance versification — the foundation of her PhD in Philology (Comparative Linguistics), awarded by Universidad Complutense de Madrid with the \"Doctor Europeus\" distinction and the Extraordinary Prize.",
-    "speaking.label": "03 / Speaking & Media",
-    "speaking.title": "Keynotes, Media &amp; <em>Publications</em>",
-    "pub.label": "04 / Research",
-    "pub.title": "Academic Publications &amp; <em>Research Papers</em>",
-    "projects.label": "05 / Projects",
+    "speaking.label": "03 / Conferences & Talks",
+    "speaking.title": "Keynotes, Panels &amp; <em>Talks</em>",
+    "pub.label": "06 / Publications",
+    "pub.title": "Books, Chapters &amp; <em>Research</em>",
+    "projects.label": "07 / Projects",
     "projects.title": "Key Research <em>Initiatives</em>",
-    "contact.label": "06 / Contact",
+    "contact.label": "08 / Contact",
     "contact.title": "Let's <em>Work Together</em>",
     "contact.name": "Name",
     "contact.namePlaceholder": "Your full name",
@@ -280,12 +309,12 @@ const translations = {
     "hero.stat4": "Annual Azure revenue target",
     "logos.label": "Career across",
     "about.expertise": "Expertise",
-    "speaking.sub": "Keynote speaker at the world's leading AI, tech and innovation events.",
+    "speaking.sub": "Keynote speaker at the world's leading AI, tech and innovation events, across industries.",
     "speaking.youtube": "Watch talks on YouTube",
     "speaking.orcid": "Full Publication List (ORCID)",
     "link.read": "Read",
     "link.view": "View",
-    "pub.sub": "58 scientific publications · keynote speaker at AWS, Salesforce, Databricks, Wired & more",
+    "pub.sub": "Author of 4 books and 58 scientific publications on AI, language technologies and digital humanities.",
     "pub.viewAll": "View full list",
     "pub.more": "View All 58+ Publications",
     "pub.citations": "citations",
@@ -304,6 +333,18 @@ const translations = {
     "footer.top": "Back to top"
   },
   es: {
+    "pub.papers": "Artículos de investigación",
+    "pub.books": "Libros, capítulos y artículos",
+    "awards.title": "Premios y <em>reconocimientos</em>",
+    "awards.label": "05 / Premios",
+    "media.sub": "Recortes de prensa, entrevistas, podcasts y apariciones en televisión.",
+    "media.title": "En la <em>prensa</em>",
+    "media.label": "04 / Medios",
+    "exp.group.academic": "Trayectoria académica",
+    "exp.group.board": "Consejos y comités asesores",
+    "exp.group.exec": "Cargos ejecutivos",
+    "nav.awards": "Premios",
+    "nav.media": "Medios",
     "education.title": "Educación y formación",
     "education.phd.title": "Doctorado en Filología (Lingüística Comparada) — \"Doctor Europeus\" · Premio Extraordinario",
     "education.phd.detail": "— Universidad Complutense de Madrid. Completado con una estancia de 2 años como Visiting Scholar en Harvard University.",
@@ -367,13 +408,13 @@ const translations = {
     "exp.job12.title": "Visiting Fellow y Teaching Assistant",
     "exp.job12.date": "2006 — 2008",
     "exp.job12.desc": "Visiting Fellow y Profesora Ayudante en el Real Colegio Complutense (RCC) de la Universidad de Harvard, con una beca MAE-AECI. La investigación se centró en la métrica medieval española y la versificación románica comparada, base de su doctorado en Filología (Lingüística Comparada) por la Universidad Complutense de Madrid, galardonado con la distinción \"Doctor Europeus\" y el Premio Extraordinario.",
-    "speaking.label": "03 / Conferencias y medios",
-    "speaking.title": "Conferencias, medios y <em>publicaciones</em>",
-    "pub.label": "04 / Investigación",
-    "pub.title": "Publicaciones académicas &amp; <em>Artículos científicos</em>",
-    "projects.label": "05 / Proyectos",
+    "speaking.label": "03 / Conferencias y charlas",
+    "speaking.title": "Keynotes, mesas y <em>conferencias</em>",
+    "pub.label": "06 / Publicaciones",
+    "pub.title": "Libros, capítulos e <em>investigación</em>",
+    "projects.label": "07 / Proyectos",
     "projects.title": "Iniciativas de <em>Investigación</em>",
-    "contact.label": "06 / Contacto",
+    "contact.label": "08 / Contacto",
     "contact.title": "¿<em>Trabajamos juntos</em>?",
     "contact.name": "Nombre",
     "contact.namePlaceholder": "Tu nombre completo",
@@ -392,12 +433,12 @@ const translations = {
     "hero.stat4": "Objetivo anual de ingresos en Azure",
     "logos.label": "Trayectoria en",
     "about.expertise": "Especialidades",
-    "speaking.sub": "Ponente en los principales eventos de IA, tecnología e innovación.",
+    "speaking.sub": "Ponente en los principales eventos de IA, tecnología e innovación, en todos los sectores.",
     "speaking.youtube": "Ver conferencias en YouTube",
     "speaking.orcid": "Lista completa de publicaciones (ORCID)",
     "link.read": "Leer",
     "link.view": "Ver",
-    "pub.sub": "58 publicaciones científicas · ponente en AWS, Salesforce, Databricks, Wired y más",
+    "pub.sub": "Autora de 4 libros y 58 publicaciones científicas sobre IA, tecnologías del lenguaje y humanidades digitales.",
     "pub.viewAll": "Ver lista completa",
     "pub.more": "Ver las más de 58 publicaciones",
     "pub.citations": "citas",
