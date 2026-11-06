@@ -694,3 +694,9 @@ body.lb-open { overflow: hidden; }
 .filter-star::before { content: "★"; font-size: 11px; margin-right: 6px; color: var(--c-award); }
 .filter-star.active::before { color: #fff; }
 .slide--star { box-shadow: 0 0 0 2px rgba(242, 203, 92, .55); }
+
+/* Media filters */
+.filters-media { margin: -12px 0 32px; }
+.mcard.hidden { display: none; }
+.prow[hidden] { display: none; }
+#mediaPlainTitle[hidden] { display: none; }

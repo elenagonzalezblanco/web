@@ -130,6 +130,53 @@ document.addEventListener('click', e => {
 if (evMore) evMore.addEventListener('click', () => { evExpanded = true; renderEvents(); });
 renderEvents();
 
+// ── Media: type filters and "show all" ───────────────────
+const mediaGrid = document.getElementById('mediaGrid');
+if (mediaGrid) {
+  const mediaCards = [...mediaGrid.querySelectorAll('.mcard')];
+  const mediaRows = [...document.querySelectorAll('#mediaPlain .prow')];
+  const mediaMore = document.getElementById('mediaMore');
+  const mediaMoreN = document.getElementById('mediaMoreN');
+  const plainTitle = document.getElementById('mediaPlainTitle');
+  const limit = parseInt(mediaGrid.dataset.visible || '9', 10);
+  let mediaFilter = 'all';
+  let mediaExpanded = false;
+  const renderMedia = () => {
+    let shown = 0, matching = 0;
+    mediaCards.forEach(card => {
+      const match = mediaFilter === 'all' || card.dataset.kind === mediaFilter;
+      if (match) matching++;
+      const show = match && (mediaExpanded || shown < limit);
+      if (show) shown++;
+      card.classList.toggle('hidden', !show);
+      if (show) card.classList.add('in');
+    });
+    let rows = 0;
+    mediaRows.forEach(row => {
+      const show = mediaFilter === 'all' || row.dataset.kind === mediaFilter;
+      row.hidden = !show;
+      if (show) rows++;
+    });
+    if (plainTitle) plainTitle.hidden = rows === 0;
+    const rest = matching - shown;
+    mediaMore.parentElement.hidden = rest <= 0;
+    if (mediaMoreN) mediaMoreN.textContent = rest > 0 ? `+${rest}` : '';
+  };
+  document.querySelectorAll('[data-media-filter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      mediaFilter = btn.dataset.mediaFilter;
+      document.querySelectorAll('[data-media-filter]').forEach(b => {
+        const on = b === btn;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-pressed', String(on));
+      });
+      renderMedia();
+    });
+  });
+  mediaMore.addEventListener('click', () => { mediaExpanded = true; renderMedia(); });
+  renderMedia();
+}
+
 // ── Research projects: logo tiles reveal details ─────────
 const projLogos = [...document.querySelectorAll('.proj-logo')];
 projLogos.forEach(btn => {

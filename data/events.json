@@ -23,6 +23,34 @@
   "image": "press/elmundo-2026"
  },
  {
+  "id": "elespanol-autoria-media-2026",
+  "date": "2026-10-22",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "From codex to code: the AutorIA exhibition recreates the journey from La Rioja’s scribes to language models",
+   "es": "Del códice al código: la exposición «AutorIA» recrea el viaje desde los copistas de La Rioja a los modelos de lenguaje"
+  },
+  "sub": {
+   "en": "EL ESPAÑOL — by Víctor Núñez",
+   "es": "EL ESPAÑOL — por Víctor Núñez"
+  },
+  "links": [
+   {
+    "href": "https://www.elespanol.com/eventos/2026/autoria/20261022/codice-codigo-exposicion-autoria-recrea-viaje-copistas-rioja-modelos-lenguaje/1003744430425_0.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/elespanol-autoria-2026"
+ },
+ {
   "id": "cegid-2026",
   "date": "2026-10-20",
   "approx": false,
@@ -422,6 +450,13 @@
      "en": "LinkedIn post",
      "es": "Publicación en LinkedIn"
     }
+   },
+   {
+    "href": "https://www.murciastartup.com/actualidad/caja-rural-albarracin-frecom-elena-gonzalez-blanco-brillaran-dia-region/20260602181809009214.html",
+    "label": {
+     "en": "Murcia Startup",
+     "es": "Murcia Startup"
+    }
    }
   ],
   "image": "murcia-diploma-2026"
@@ -578,6 +613,41 @@
   "featured": true,
   "spotlight": 2,
   "focus": "72% 50%"
+ },
+ {
+  "id": "aed-live-2026",
+  "date": "2026-05-22",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Webinar",
+   "es": "Webinar"
+  },
+  "title": {
+   "en": "AI and leadership: redesigning organisations where humans and agents work together",
+   "es": "IA y liderazgo: cómo rediseñar organizaciones donde humanos y agentes trabajan juntos"
+  },
+  "sub": {
+   "en": "AED Live — Spanish Association of Executives",
+   "es": "AED Live — Asociación Española de Directivos"
+  },
+  "industries": [
+   "boards",
+   "hr"
+  ],
+  "place": {
+   "en": "Online",
+   "es": "En línea"
+  },
+  "links": [
+   {
+    "href": "https://asociaciondedirectivos.org/archivos/55858",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ]
  },
  {
   "id": "lseg-insight-2026",
@@ -2078,6 +2148,13 @@
      "en": "LinkedIn post",
      "es": "Publicación en LinkedIn"
     }
+   },
+   {
+    "href": "https://businesswomenrm.es/business-women-rm-reconoce-a-encarna-pinero-elena-gonzalez-blanco-y-anabel-diaz/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
    }
   ],
   "image": "businesswomen-award-2025"
@@ -2665,6 +2742,34 @@
   ]
  },
  {
+  "id": "larazon-2025",
+  "date": "2025-03-23",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Feature",
+   "es": "Reportaje"
+  },
+  "title": {
+   "en": "Women in artificial intelligence: breaking barriers and leading the future",
+   "es": "Mujeres en la inteligencia artificial: rompiendo barreras y liderando el futuro"
+  },
+  "sub": {
+   "en": "LA RAZÓN — by Rosa Carvajal, with Patricia Pérez (Baker McKenzie) and Eva Díaz (Shaping The New)",
+   "es": "LA RAZÓN — por Rosa Carvajal, con Patricia Pérez (Baker McKenzie) y Eva Díaz (Shaping The New)"
+  },
+  "links": [
+   {
+    "href": "https://www.larazon.es/economia/mujeres-inteligencia-artificial-rompiendo-barreras-liderando-futuro_2025032367dc042b310a4800019c2b9b.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/larazon-2025"
+ },
+ {
   "id": "iwf-2025",
   "date": "2025-03-18",
   "approx": false,
@@ -2927,6 +3032,62 @@
   ]
  },
  {
+  "id": "businesswomen-semana-2025",
+  "date": "2025-01-20",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Profile",
+   "es": "Perfil"
+  },
+  "title": {
+   "en": "Woman of the week: Elena González-Blanco, Microsoft’s head of AI, Laurel award",
+   "es": "Mujer de la semana: Elena González-Blanco, jefa de Inteligencia Artificial de Microsoft, premio Laurel"
+  },
+  "sub": {
+   "en": "Business Women RM",
+   "es": "Business Women RM"
+  },
+  "links": [
+   {
+    "href": "https://businesswomenrm.es/elena-gonzalez-blanco-jefa-de-inteligencia-artificial-de-microsoft-premio-laurel-en-ciencia-e-investigacion/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/businesswomen-semana-2025"
+ },
+ {
+  "id": "laopinion-2025",
+  "date": "2025-01-19",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Opinion column",
+   "es": "Columna de opinión"
+  },
+  "title": {
+   "en": "“The good AI” — column by Yayo Delgado devoted to Elena",
+   "es": "«La IA buena» — columna de Yayo Delgado dedicada a Elena"
+  },
+  "sub": {
+   "en": "La Opinión de Murcia — Achopijo",
+   "es": "La Opinión de Murcia — Achopijo"
+  },
+  "links": [
+   {
+    "href": "https://www.laopiniondemurcia.es/opinion/2025/01/19/ia-buena-113483943.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/laopinion-2025"
+ },
+ {
   "id": "laurel-2025",
   "date": "2025-01-15",
   "approx": false,
@@ -2954,9 +3115,35 @@
      "en": "LinkedIn post",
      "es": "Publicación en LinkedIn"
     }
+   },
+   {
+    "href": "https://www.ciudaddemurcia.es/2024/12/19-laureles-de-murcia-2024--en-clave-femenina.asp",
+    "label": {
+     "en": "Ciudad de Murcia",
+     "es": "Ciudad de Murcia"
+    }
    }
   ],
   "image": "laurel-2025"
+ },
+ {
+  "id": "laverdad-2025",
+  "date": "2025-01-12",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "“Artificial intelligence won’t take your job, but someone who knows how to use it will”",
+   "es": "«La inteligencia artificial no te va a quitar el empleo, pero sí el que sabe utilizarla»"
+  },
+  "sub": {
+   "en": "LA VERDAD (Sunday print edition, p. 14, front-page teaser) — by David Gómez",
+   "es": "LA VERDAD (edición impresa del domingo, p. 14, con llamada en portada) — por David Gómez"
+  },
+  "image": "press/laverdad-2025"
  },
  {
   "id": "womenvalue-2024",
@@ -3345,6 +3532,41 @@
   ]
  },
  {
+  "id": "tiempo-mujeres-2024",
+  "date": "2024-10-03",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Panel",
+   "es": "Mesa redonda"
+  },
+  "title": {
+   "en": "Talent in dialogue — artificial intelligence roundtable",
+   "es": "El talento se pone a dialogar — mesa redonda sobre inteligencia artificial"
+  },
+  "sub": {
+   "en": "El Tiempo de las Mujeres 2024 — El Mundo & Yo Dona",
+   "es": "El Tiempo de las Mujeres 2024 — El Mundo y Yo Dona"
+  },
+  "industries": [
+   "women"
+  ],
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "links": [
+   {
+    "href": "https://www.elmundo.es/album/yodona/actualidad/2024/10/04/66ffc6d2fdddff00198b457a_35.html",
+    "label": {
+     "en": "Photo gallery",
+     "es": "Galería de fotos"
+    }
+   }
+  ],
+  "image": "tiempo-mujeres-2024"
+ },
+ {
   "id": "fundspeople-2024",
   "date": "2024-10",
   "approx": true,
@@ -3565,6 +3787,34 @@
   ]
  },
  {
+  "id": "elreferente-2024",
+  "date": "2024-06-07",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "“When we design an AI, we don’t create a brain but a machine 100% under our control”",
+   "es": "«Cuando queremos diseñar una IA, no creamos un cerebro sino una máquina sometida 100% a nuestro control»"
+  },
+  "sub": {
+   "en": "El Referente — by Fede Durán",
+   "es": "El Referente — por Fede Durán"
+  },
+  "links": [
+   {
+    "href": "https://elreferente.es/entrevistas/cuando-queremos-disenar-una-ia-no-creamos-un-cerebro-sino-una-maquina-sometida-100-a-nuestro-control/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/elreferente-2024"
+ },
+ {
   "id": "csic-2024",
   "date": "2024-06-03",
   "approx": false,
@@ -3643,6 +3893,34 @@
   "industries": [
    "startups"
   ]
+ },
+ {
+  "id": "innovaspain-2024",
+  "date": "2024-05-16",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "“I envy countries like France and their commitment to artificial intelligence”",
+   "es": "«Me dan envidia países como Francia y su apuesta por la inteligencia artificial»"
+  },
+  "sub": {
+   "en": "Innovaspain — Mujeres STEAM, by Eugenio Mallol",
+   "es": "Innovaspain — Mujeres STEAM, por Eugenio Mallol"
+  },
+  "links": [
+   {
+    "href": "https://www.innovaspain.com/elena-gonzalez-blanco-microsoft/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/innovaspain-2024"
  },
  {
   "id": "augac-2024",
@@ -3848,6 +4126,34 @@
   ]
  },
  {
+  "id": "murciadiario-2024",
+  "date": "2024-03-24",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "Businesswoman of the Month (March): Elena González-Blanco (Microsoft Europe, Middle East and Africa)",
+   "es": "«Empresari@ del Mes» de marzo: Elena González-Blanco (Microsoft Europa, Oriente Próximo y África)"
+  },
+  "sub": {
+   "en": "Murcia Diario",
+   "es": "Murcia Diario"
+  },
+  "links": [
+   {
+    "href": "https://www.murciadiario.com/entrevistas-md/elena-gonzalez-blanco-microsoft-empresaria-mes-marzo-murcia-diario/20240324091822107301.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/murciadiario-2024"
+ },
+ {
   "id": "aeit-2024",
   "date": "2024-03-15",
   "approx": false,
@@ -3936,6 +4242,34 @@
   "featured": true
  },
  {
+  "id": "wired-2024",
+  "date": "2024-02-16",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "Elena González-Blanco joins Microsoft as Head of Artificial Intelligence",
+   "es": "Elena González-Blanco se ha unido a Microsoft como Jefa de Inteligencia Artificial"
+  },
+  "sub": {
+   "en": "WIRED en Español — by Anna Lagos",
+   "es": "WIRED en Español — por Anna Lagos"
+  },
+  "links": [
+   {
+    "href": "https://es.wired.com/articulos/elena-gonzalez-blanco-se-he-unido-a-microsoft-como-jefa-de-inteligencia-artificial",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/wired-2024"
+ },
+ {
   "id": "abc-2024",
   "date": "2024-01-12",
   "approx": false,
@@ -4021,6 +4355,33 @@
    "tech"
   ],
   "highlight": true
+ },
+ {
+  "id": "producthackers-2023",
+  "date": "2023-11-01",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Podcast",
+   "es": "Podcast"
+  },
+  "title": {
+   "en": "LINCE: generative AI for the Spanish-speaking world",
+   "es": "LINCE: IA generativa en el mundo hispanohablante"
+  },
+  "sub": {
+   "en": "Growth y negocios — Product Hackers podcast",
+   "es": "Podcast Growth y negocios — Product Hackers"
+  },
+  "links": [
+   {
+    "href": "https://www.ivoox.com/lince-ia-generativa-mundo-hispanohablante-audios-mp3_rf_118769558_1.html",
+    "label": {
+     "en": "Listen",
+     "es": "Escuchar"
+    }
+   }
+  ]
  },
  {
   "id": "salesforce-innovation-2023",
@@ -4178,6 +4539,57 @@
   "highlight": true
  },
  {
+  "id": "forbes-creativos-2023",
+  "date": "2023-09",
+  "approx": false,
+  "type": "award",
+  "role": {
+   "en": "Recognition",
+   "es": "Reconocimiento"
+  },
+  "title": {
+   "en": "Forbes Spain — 100 most creative people in business 2023",
+   "es": "Forbes España — Los 100 más creativos en el mundo de los negocios 2023"
+  },
+  "links": [
+   {
+    "href": "https://forbes.es/100-creativos-en-el-mundo-de-los-negocios-2023/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ]
+ },
+ {
+  "id": "infonegocios-2023",
+  "date": "2023-08-10",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "Elena González-Blanco, an activist for AI in Spanish",
+   "es": "Elena González-Blanco, una activista del desarrollo de la IA en español"
+  },
+  "sub": {
+   "en": "Infonegocios Madrid — by Lourdes Leblebidjian",
+   "es": "Infonegocios Madrid — por Lourdes Leblebidjian"
+  },
+  "links": [
+   {
+    "href": "https://infonegocios.madrid/nota-principal/elena-gonzalez-blanco-una-activista-del-desarrollo-de-la-ia-en-espanol",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/infonegocios-2023"
+ },
+ {
   "id": "techcrunch-2023",
   "date": "2023-07-12",
   "approx": false,
@@ -4204,6 +4616,90 @@
    }
   ],
   "image": "press/techcrunch-2023"
+ },
+ {
+  "id": "elespanol-mujer-2023",
+  "date": "2023-06-20",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Profile",
+   "es": "Perfil"
+  },
+  "title": {
+   "en": "Elena González-Blanco, the philologist revolutionising the market with AI designed for Spanish speakers",
+   "es": "Elena González-Blanco, la filóloga que revoluciona el mercado con IA diseñada para hispanohablantes"
+  },
+  "sub": {
+   "en": "EL ESPAÑOL — Magas, by María Marañón",
+   "es": "EL ESPAÑOL — Magas, por María Marañón"
+  },
+  "links": [
+   {
+    "href": "https://www.elespanol.com/mujer/protagonistas/20230620/elena-gonzalez-blanco-filologa-revoluciona-ia-disenada-hispanohablantes/772672888_0.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/elespanol-mujer-2023"
+ },
+ {
+  "id": "vozpopuli-2023",
+  "date": "2023-06-01",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "How will artificial intelligence affect artistic creation?",
+   "es": "¿Cómo afectará la inteligencia artificial a la creación artística?"
+  },
+  "sub": {
+   "en": "Vozpópuli — by Grego Casanova",
+   "es": "Vozpópuli — por Grego Casanova"
+  },
+  "links": [
+   {
+    "href": "https://www.vozpopuli.com/altavoz/cultura/inteligencia-artificial-creacion-artistica.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/vozpopuli-2023"
+ },
+ {
+  "id": "elperiodico-2023",
+  "date": "2023-05-29",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Profile",
+   "es": "Perfil"
+  },
+  "title": {
+   "en": "Elena González-Blanco, the philologist teaching Spanish to AI",
+   "es": "Elena González-Blanco, la filóloga que enseña español a la IA"
+  },
+  "sub": {
+   "en": "El Periódico — Activos, by Paula Blanco",
+   "es": "El Periódico — Activos, por Paula Blanco"
+  },
+  "links": [
+   {
+    "href": "https://www.elperiodico.com/es/economia/20230529/elena-gonzalez-blanco-filologa-ensena-117649608",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/elperiodico-2023"
  },
  {
   "id": "altman-2023",
@@ -4292,6 +4788,33 @@
   "video": {
    "id": "hlWbXhi4-vw"
   }
+ },
+ {
+  "id": "capitalradio-2023",
+  "date": "2023-05",
+  "approx": true,
+  "type": "media",
+  "role": {
+   "en": "Radio",
+   "es": "Radio"
+  },
+  "title": {
+   "en": "Clibrain: AI in Spanish",
+   "es": "Clibrain: IA en español"
+  },
+  "sub": {
+   "en": "Capital Radio — Mercado Abierto",
+   "es": "Capital Radio — Mercado Abierto"
+  },
+  "links": [
+   {
+    "href": "https://www.capitalradio.es/audio/680c7098a5b8080e1cce1b18/116105812",
+    "label": {
+     "en": "Listen",
+     "es": "Escuchar"
+    }
+   }
+  ]
  },
  {
   "id": "gran-pregunta-2023",
@@ -4465,6 +4988,34 @@
   ]
  },
  {
+  "id": "invertia-2022",
+  "date": "2022-06-03",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "González-Blanco (Banco Santander) on applying AI: “I worry about not moving as fast as the market”",
+   "es": "González-Blanco (Banco Santander), ante la aplicación de la IA: «Me preocupa no ir tan rápido como el mercado»"
+  },
+  "sub": {
+   "en": "EL ESPAÑOL — Invertia, by Sandra Viñas",
+   "es": "EL ESPAÑOL — Invertia, por Sandra Viñas"
+  },
+  "links": [
+   {
+    "href": "https://www.elespanol.com/invertia/disruptores/grandes-actores/corporaciones/20220603/gonzalez-blanco-banco-santander-aplicacion-ia-preocupa-no/677182450_0.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/invertia-2022"
+ },
+ {
   "id": "casa-america-2022",
   "date": "2022-05-11",
   "approx": false,
@@ -4513,34 +5064,6 @@
    "financial",
    "general"
   ]
- },
- {
-  "id": "expansion-2022",
-  "date": "2022",
-  "approx": false,
-  "type": "media",
-  "role": {
-   "en": "Press",
-   "es": "Prensa"
-  },
-  "title": {
-   "en": "“¿A qué empresas puede ayudar la IA?”",
-   "es": "“¿A qué empresas puede ayudar la IA?”"
-  },
-  "sub": {
-   "en": "Expansión — inspiring conversations between executives and entrepreneurs",
-   "es": "Expansión — conversaciones inspiradoras entre ejecutivas y emprendedoras"
-  },
-  "links": [
-   {
-    "href": "https://hablemosdefuturo.expansion.com/a-que-empresas-puede-ayudar-la-inteligencia-artificial.html",
-    "label": {
-     "en": "Read",
-     "es": "Leer"
-    }
-   }
-  ],
-  "image": "press/expansion-2022"
  },
  {
   "id": "casa-america-2021",
@@ -4612,6 +5135,33 @@
   ]
  },
  {
+  "id": "madrimasd-interview-2021",
+  "date": "2021-10-24",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "“The Community of Madrid award recognised the need to connect research with the humanities and technology”",
+   "es": "«El premio de la Comunidad de Madrid supuso el reconocimiento a la necesidad de conectar la investigación con las humanidades y la tecnología»"
+  },
+  "sub": {
+   "en": "madri+d",
+   "es": "madri+d"
+  },
+  "links": [
+   {
+    "href": "https://www.madrimasd.org/premio-comunidad-madrid-supuso-reconocimiento-necesidad-conectar-investigacion-las-humanidades-tecnologia",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ]
+ },
+ {
   "id": "south-summit-2021",
   "date": "2021-10",
   "approx": true,
@@ -4646,6 +5196,33 @@
   "featured": true
  },
  {
+  "id": "coffeehouse-2021",
+  "date": "2021-09-21",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Podcast",
+   "es": "Podcast"
+  },
+  "title": {
+   "en": "Be curious and move fast — with Elena González-Blanco, GM Europe, CoverWallet",
+   "es": "Be curious and move fast — with Elena González-Blanco, GM Europe, CoverWallet"
+  },
+  "sub": {
+   "en": "The Insurance Coffee House — Insurance Search",
+   "es": "The Insurance Coffee House — Insurance Search"
+  },
+  "links": [
+   {
+    "href": "https://insurance-search.com/captivate-podcast/elena-gonzalez-blanco-garcia-coverwallet/",
+    "label": {
+     "en": "Listen",
+     "es": "Escuchar"
+    }
+   }
+  ]
+ },
+ {
   "id": "clarin-2021",
   "date": "2021-09",
   "approx": true,
@@ -4674,6 +5251,34 @@
    "education"
   ],
   "featured": true
+ },
+ {
+  "id": "mujeresycia-2021",
+  "date": "2021-07-14",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "Elena González-Blanco, honorary Top 100, elected to the Board of LLYC",
+   "es": "Elena González-Blanco, Top100 Honoraria, elegida miembro del Consejo de LLYC"
+  },
+  "sub": {
+   "en": "Mujeres&Cia",
+   "es": "Mujeres&Cia"
+  },
+  "links": [
+   {
+    "href": "https://mujeresycia.com/elena-gonzalez-blanco-top100-honoraria-elegida-miembro-del-consejo-de-llyc/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/mujeresycia-2021"
  },
  {
   "id": "iese-2021",
@@ -4727,6 +5332,89 @@
   "industries": [
    "education",
    "women"
+  ]
+ },
+ {
+  "id": "abc-2021",
+  "date": "2021-05-02",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "“We offer the same training as 50 years ago and the market asks for hybrid profiles”",
+   "es": "«Ofrecemos la misma formación que hace 50 años y el mercado pide perfiles híbridos»"
+  },
+  "sub": {
+   "en": "ABC — Economía, by Laura Montero Carretero",
+   "es": "ABC — Economía, por Laura Montero Carretero"
+  },
+  "links": [
+   {
+    "href": "https://www.abc.es/economia/abci-elena-gonzalez-blancoofrecemos-misma-formacion-hace-50-anos-y-mercado-pide-perfiles-hibridos-202105020110_noticia.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/abc-2021"
+ },
+ {
+  "id": "cordis-2021",
+  "date": "2021-04-23",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Feature",
+   "es": "Reportaje"
+  },
+  "title": {
+   "en": "Closing the digital gap between poetry and technology",
+   "es": "Closing the digital gap between poetry and technology"
+  },
+  "sub": {
+   "en": "CORDIS, European Commission — POSTDATA “Results in Brief”",
+   "es": "CORDIS, Comisión Europea — «Results in Brief» del proyecto POSTDATA"
+  },
+  "links": [
+   {
+    "href": "https://cordis.europa.eu/article/id/429725-closing-the-digital-gap-between-poetry-and-technology",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/cordis-2021"
+ },
+ {
+  "id": "segurosnews-2021",
+  "date": "2021-03-18",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "“The insurtech moment is the industrial revolution 4.0 turning insurance upside down”",
+   "es": "«El momento insurtech es la revolución industrial 4.0 que pone el seguro patas arriba»"
+  },
+  "sub": {
+   "en": "SegurosNews",
+   "es": "SegurosNews"
+  },
+  "links": [
+   {
+    "href": "https://segurosnews.com/ultimas-noticias/insurtech-la-revolucion-industrial-4-0-que-ha-puesto-el-seguro-patas-arriba",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
   ]
  },
  {
@@ -4899,6 +5587,92 @@
   "approx": false
  },
  {
+  "id": "expansion-2022",
+  "date": "2019-12",
+  "approx": true,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "“¿A qué empresas puede ayudar la IA?”",
+   "es": "“¿A qué empresas puede ayudar la IA?”"
+  },
+  "sub": {
+   "en": "Expansión — inspiring conversations between executives and entrepreneurs",
+   "es": "Expansión — conversaciones inspiradoras entre ejecutivas y emprendedoras"
+  },
+  "links": [
+   {
+    "href": "https://hablemosdefuturo.expansion.com/a-que-empresas-puede-ayudar-la-inteligencia-artificial.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/expansion-2022",
+  "note": {
+   "en": "Conversation with Cristina San José, CDO of Grupo Santander",
+   "es": "Conversación con Cristina San José, CDO del Grupo Santander"
+  }
+ },
+ {
+  "id": "wattba-2019",
+  "date": "2019-11-24",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Podcast",
+   "es": "Podcast"
+  },
+  "title": {
+   "en": "“We have to banish the idea that AI is an entity”",
+   "es": "«Tenemos que desterrar la idea de que la I.A. es un ente»"
+  },
+  "sub": {
+   "en": "#WATTBA podcast — Rewisor Magazine",
+   "es": "Podcast #WATTBA — Rewisor Magazine"
+  },
+  "links": [
+   {
+    "href": "https://www.ivoox.com/wattba-elena-gonzalez-blanco-tenemos-desterrar-la-audios-mp3_rf_44664297_1.html",
+    "label": {
+     "en": "Listen",
+     "es": "Escuchar"
+    }
+   }
+  ]
+ },
+ {
+  "id": "emprendedores-2019",
+  "date": "2019-11",
+  "approx": false,
+  "type": "award",
+  "role": {
+   "en": "Ranking",
+   "es": "Ranking"
+  },
+  "title": {
+   "en": "One of the 9 most influential young Spanish entrepreneurs",
+   "es": "Una de los 9 jóvenes emprendedores españoles más influyentes"
+  },
+  "sub": {
+   "en": "Emprendedores magazine",
+   "es": "Revista Emprendedores"
+  },
+  "links": [
+   {
+    "href": "https://postdata.linhd.uned.es/elena-gonzalez-blanco-among-the-9-most-influential-young-spanish-entrepreneurs/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ]
+ },
+ {
   "id": "cto-ai-summit-2019",
   "date": "2019-10",
   "approx": true,
@@ -5005,6 +5779,34 @@
    "women",
    "startups"
   ]
+ },
+ {
+  "id": "inese-choiseul-2019",
+  "date": "2019-09-05",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "Elena González-Blanco García (CoverWallet), economic leader of tomorrow",
+   "es": "Elena González-Blanco García (CoverWallet), líder económico del mañana"
+  },
+  "sub": {
+   "en": "INESE — Choiseul 100 Spain ranking",
+   "es": "INESE — ranking Choiseul 100 España"
+  },
+  "links": [
+   {
+    "href": "https://www.inese.es/elena-gonzalez-blanco-garcia-coverwallet-lider-economico-del-manana/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/inese-2019"
  },
  {
   "id": "ftef-2019",
@@ -5162,6 +5964,47 @@
   "industries": [
    "insurance"
   ]
+ },
+ {
+  "id": "reyes-ciencia-2019",
+  "date": "2019-03-21",
+  "approx": false,
+  "type": "talk",
+  "role": {
+   "en": "Invited researcher",
+   "es": "Investigadora invitada"
+  },
+  "title": {
+   "en": "“Meeting with Science: Spanish research in the 21st century” with King Felipe VI and Queen Letizia",
+   "es": "«Encuentro con la Ciencia: la investigación española en el siglo XXI» con los Reyes"
+  },
+  "sub": {
+   "en": "Royal Household — Palacio de El Pardo",
+   "es": "Casa Real — Palacio de El Pardo"
+  },
+  "industries": [
+   "education"
+  ],
+  "place": {
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "note": {
+   "en": "Working meeting with senior and junior Spanish scientists selected by the Ministry of Science",
+   "es": "Reunión de trabajo con científicos senior y junior seleccionados por el Ministerio de Ciencia"
+  },
+  "links": [
+   {
+    "href": "https://www.elconfidencial.com/ultima-hora-en-vivo/2019-03-21/los-reyes-abordan-con-investigadores-el-reto-de-mas-recursos-para-la-ciencia_2082662/",
+    "label": {
+     "en": "El Confidencial (EFE)",
+     "es": "El Confidencial (EFE)"
+    }
+   }
+  ],
+  "video": {
+   "id": "BoqkK6ZUuIk"
+  }
  },
  {
   "id": "digitales-2019",
@@ -5389,6 +6232,34 @@
   ]
  },
  {
+  "id": "computerworld-2018",
+  "date": "2018-04-25",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Press",
+   "es": "Prensa"
+  },
+  "title": {
+   "en": "“Technology improves the relationship between customer and insurer”",
+   "es": "«La tecnología mejora la relación entre el cliente y el asegurador»"
+  },
+  "sub": {
+   "en": "Computerworld España — Financial IT Forum",
+   "es": "Computerworld España — Foro Financial IT"
+  },
+  "links": [
+   {
+    "href": "https://www.computerworld.es/article/2131612/la-tecnologia-mejora-la-relacion-entre-el-cliente-y-el-asegurador.html",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ],
+  "image": "press/computerworld-2018"
+ },
+ {
   "id": "icai-2018",
   "date": "2018-04-05",
   "approx": false,
@@ -5444,6 +6315,33 @@
    "general"
   ],
   "highlight": true
+ },
+ {
+  "id": "mujeresycia-2018",
+  "date": "2018-01-19",
+  "approx": false,
+  "type": "media",
+  "role": {
+   "en": "Interview",
+   "es": "Entrevista"
+  },
+  "title": {
+   "en": "“Science and technology can transform the world”",
+   "es": "«La ciencia y la tecnología pueden transformar el mundo»"
+  },
+  "sub": {
+   "en": "Mujeres&Cia",
+   "es": "Mujeres&Cia"
+  },
+  "links": [
+   {
+    "href": "https://mujeresycia.com/elena-gonzalez-blanco-la-ciencia-y-la-tecnologia-pueden-transformar-el-mundo/",
+    "label": {
+     "en": "Read",
+     "es": "Leer"
+    }
+   }
+  ]
  },
  {
   "id": "choiseul-2018",

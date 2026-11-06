@@ -290,6 +290,20 @@ def build_talks(events):
 '''
 
 
+AUDIO_ROLES = {'Podcast', 'Radio'}
+MEDIA_KINDS = [('all', 'All', 'Todo'), ('press', 'Press & interviews', 'Prensa y entrevistas'),
+               ('audio', 'Radio & podcasts', 'Radio y podcasts'), ('video', 'TV & video', 'TV y vídeo')]
+MEDIA_VISIBLE = 9
+
+
+def media_kind(ev):
+    if ev['role']['en'] in AUDIO_ROLES:
+        return 'audio'
+    if ev.get('video'):
+        return 'video'
+    return 'press'
+
+
 def media_card(ev):
     is_video = bool(ev.get('video'))
     classes = ['mcard', f'mcard--{ev["type"]}']
@@ -299,7 +313,7 @@ def media_card(ev):
         classes.append('mcard--clip')
     links = links_html(ev)
     links = f'<div class="ev-links">{links}</div>' if links else ''
-    return (f'<article class="{" ".join(classes)}" id="ev-{esc(ev["id"])}">{media_button(ev, "sm", "mcard-media")}'
+    return (f'<article class="{" ".join(classes)}" data-kind="{media_kind(ev)}" id="ev-{esc(ev["id"])}">{media_button(ev, "sm", "mcard-media")}'
             f'<div class="mcard-body"><div class="ev-meta">{date_html(ev)}<span class="ev-role">{bi(ev["role"])}</span></div>'
             f'<h4>{bi(ev["title"])}</h4>{details(ev)}{links}</div></article>')
 
@@ -309,7 +323,8 @@ def plain_row(ev):
     sub = f'<p class="ev-sub">{bi(ev["sub"])}</p>' if ev.get('sub') else ''
     links = links_html(ev)
     links = f'<div class="ev-links">{links}</div>' if links else ''
-    return (f'<li class="prow prow--{ev["type"]}" id="ev-{esc(ev["id"])}">'
+    kind = f' data-kind="{media_kind(ev)}"' if ev['type'] == 'media' else ''
+    return (f'<li class="prow prow--{ev["type"]}"{kind} id="ev-{esc(ev["id"])}">'
             f'<div class="ev-meta">{date_html(ev)}<span class="ev-role">{bi(ev["role"])}</span>{place}</div>'
             f'<h4>{bi(ev["title"])}</h4>{sub}{links}</li>')
 
@@ -317,10 +332,18 @@ def plain_row(ev):
 def build_media(events):
     items = [e for e in events if e['type'] == 'media']
     visual, plain = visual_split(items)
-    out = f'<div class="mgrid" data-reveal>{"".join(media_card(e) for e in visual)}</div>'
+    counts = Counter(media_kind(e) for e in items)
+    filters = ''.join(
+        f'<button class="filter{" active" if k == "all" else ""}" data-media-filter="{k}" aria-pressed="{"true" if k == "all" else "false"}">'
+        f'{bi_raw(esc(en), esc(es))}<span class="filter-n">{len(items) if k == "all" else counts[k]}</span></button>'
+        for k, en, es in MEDIA_KINDS if k == 'all' or counts[k])
+    out = (f'<div class="filters filters-media" role="group" aria-label="Filter media" data-reveal>{filters}</div>'
+           f'<div class="mgrid" id="mediaGrid" data-visible="{MEDIA_VISIBLE}" data-reveal>{"".join(media_card(e) for e in visual)}</div>'
+           f'<div class="center-btns"><button type="button" class="btn btn-glass" id="mediaMore">{bi_raw("Show all press coverage", "Ver toda la cobertura")}'
+           f' <span class="filter-n" id="mediaMoreN"></span></button></div>')
     if plain:
-        out += (f'<h3 class="mini-title mini-title-sep">{bi_raw("More interviews and mentions", "Más entrevistas y menciones")}</h3>'
-                f'<ul class="plist" data-reveal>{"".join(plain_row(e) for e in plain)}</ul>')
+        out += (f'<h3 class="mini-title mini-title-sep" id="mediaPlainTitle">{bi_raw("More interviews, podcasts and mentions", "Más entrevistas, podcasts y menciones")}</h3>'
+                f'<ul class="plist" id="mediaPlain" data-reveal>{"".join(plain_row(e) for e in plain)}</ul>')
     return '\n      ' + out + '\n      '
 
 
